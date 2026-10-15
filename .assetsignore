@@ -1,0 +1,22 @@
+# Anything listed here is NOT uploaded and NOT served publicly.
+
+# Real customers' names and their trips. These must never be on the web.
+Itenaries/
+
+# Server code - runs on Vercel, must not be downloadable
+api/
+functions/
+worker.js
+dev-server.js
+check-airtable.js
+
+# The assistant's knowledge base - used by the Vercel function, not the browser
+ai/
+
+# Repo furniture
+.git/
+node_modules/
+components/
+*.md
+wrangler.jsonc
+.assetsignore
