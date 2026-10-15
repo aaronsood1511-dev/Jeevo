@@ -18,15 +18,17 @@
   min-width:0;
   margin:0 clamp(12px,2vw,30px);
   color:#C5521E;                 /* the brand's terracotta */
-  opacity:0;
-  transform:translateY(5px);
+  opacity:.62;
+  transform:none;
   transition:opacity .45s ease,transform .45s ease;
   pointer-events:none;           /* decorative - never intercepts a click */
 }
 
-/* only once the bar has gone solid */
-.navbar.scrolled .jv-monuments{ opacity:.62; transform:none; }
-.navbar.scrolled .jv-monuments:hover{ opacity:.85; }
+/* Hidden ONLY while the bar is genuinely transparent over the hero photo.
+   Keying off .scrolled alone was wrong: the bar is already white at the top
+   of the page, so the frieze never appeared. */
+.navbar--hero:not(.scrolled) .jv-monuments{ opacity:0; transform:translateY(5px); }
+.jv-monuments:hover{ opacity:.85; }
 
 .jv-monuments svg{
   height:clamp(26px,3.2vw,38px);

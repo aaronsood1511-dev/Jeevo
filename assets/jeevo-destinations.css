@@ -13,7 +13,10 @@
 .destination-story__body { display:flex; flex:1; flex-direction:column; align-items:flex-start; padding-top:21px; }
 .destination-story__meta { color:#a9461c; font-size:14px; line-height:1.5; font-weight:600; letter-spacing:.045em; }
 .destination-story h3 { color:#472b1e; font-family:var(--font-heading,'Playfair Display',serif); font-size:28px; line-height:1.2; margin:9px 0 12px; overflow-wrap:break-word; }
-.destination-story--lead h3 { font-size:38px; }
+/* The lead card used to span six columns, where 38px was proportionate.
+   It now sits in an equal row with the other two, so a larger heading
+   reads as a mistake rather than as hierarchy. */
+.destination-story--lead h3 { font-size:28px; }
 .destination-story p { color:#6c615b; font-size:17px; line-height:1.55; margin:0 0 19px; }
 .destination-story__link { display:flex; align-items:center; justify-content:space-between; gap:20px; width:100%; min-height:44px; margin-top:auto; font-size:16px; font-weight:600; color:#a9461c; }
 .destination-story__link i { font-size:14px; transition:transform 250ms ease; }
