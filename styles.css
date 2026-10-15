@@ -559,6 +559,12 @@ p {
 
 .about-images {
     position: relative;
+    /* Nudged off centre toward the top. Centring against a much taller text
+       column left a large hole above the photo; stretching the image to fill
+       it cropped the Harmandir Sahib into a strip, which was worse. This
+       moves it up without distorting anything. */
+    align-self: start;
+    margin-top: clamp(40px, 9vw, 150px);
 }
 
 .about-img-main {
