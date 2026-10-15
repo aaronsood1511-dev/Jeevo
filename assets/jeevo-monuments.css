@@ -1,0 +1,46 @@
+/* ------------------------------------------------------------------
+   Monument frieze in the navbar.
+
+   The bar has a wide gap between the logo and "Plan a trip" once the
+   links move into the drawer. This fills it - but only after the bar
+   turns white, because over the hero photo it would be noise competing
+   with the headline.
+
+   Drawn rather than photographed: no licence to track, crisp at any
+   size, tints with the brand, and costs no extra request.
+   ------------------------------------------------------------------ */
+.jv-monuments{
+  flex:1 1 auto;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:clamp(14px,2.4vw,34px);
+  min-width:0;
+  margin:0 clamp(12px,2vw,30px);
+  color:#C5521E;                 /* the brand's terracotta */
+  opacity:0;
+  transform:translateY(5px);
+  transition:opacity .45s ease,transform .45s ease;
+  pointer-events:none;           /* decorative - never intercepts a click */
+}
+
+/* only once the bar has gone solid */
+.navbar.scrolled .jv-monuments{ opacity:.62; transform:none; }
+.navbar.scrolled .jv-monuments:hover{ opacity:.85; }
+
+.jv-monuments svg{
+  height:clamp(26px,3.2vw,38px);
+  width:auto;
+  display:block;
+  flex:0 0 auto;
+}
+
+/* the two widest drop first as the bar narrows, so the row never crowds
+   the logo or the button */
+@media (max-width:1180px){ .jv-monuments svg:nth-child(5){ display:none } }
+@media (max-width:1040px){ .jv-monuments svg:nth-child(1){ display:none } }
+@media (max-width:920px){  .jv-monuments{ display:none } }
+
+@media (prefers-reduced-motion:reduce){
+  .jv-monuments{ transition:none }
+}
