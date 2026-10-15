@@ -640,7 +640,6 @@ p {
     color: var(--dark);
     font-size: 1.12rem;
     line-height: 1.75;
-    font-weight: 500;
 }
 
 .about-features {

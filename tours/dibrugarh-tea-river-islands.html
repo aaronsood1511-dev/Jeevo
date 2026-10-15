@@ -20,6 +20,23 @@
     <link rel="stylesheet" href="../assets/jeevo-navigation.css?v=20261015-menu3">
     <link rel="icon" href="../assets/jeevo-logo.svg" type="image/svg+xml">
     <link rel="preload" as="image" href="../assets/img/dibrugarh-tea-estate-1280.webp" fetchpriority="high">
+<style>
+/* ------------------------------------------------------------------
+   First-paint cover. The intro's veil is built by JavaScript, so without
+   this the page paints, is seen, and only then gets covered - which reads
+   as a glitch rather than an intro. This sits in the head so it applies on
+   the very first frame, and lifts when the loader adds .jv-ready.
+   Sits one below the JS veil (9990) so the handover has no gap.
+   ------------------------------------------------------------------ */
+html:not(.jv-ready)::before{
+  content:"";position:fixed;inset:0;background:#FFFDF8;z-index:9989;
+  pointer-events:none;
+}
+</style>
+<noscript><style>
+/* no JavaScript means .jv-ready never arrives - never leave the page blank */
+html:not(.jv-ready)::before{ display:none !important }
+</style></noscript>
 </head>
 <body>
 <script src="../assets/jeevo-loader.js?v=20261015-clean"></script>

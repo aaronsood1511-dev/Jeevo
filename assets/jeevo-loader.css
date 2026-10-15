@@ -20,8 +20,9 @@
   font:700 10px/1.25 'Martel','Mukta',Georgia,serif;
   /* dark brown, not a lighter shade of the wordmark: at this size the old
      #CE7A2E reached only 3.2:1 on the cream, which is why it read faint.
-     #4A2410 is 13.3:1 - it reads at a glance. */
-  color:#4A2410; letter-spacing:.01em;
+     #0C3D1C is the deep green from the journeys section - 11.8:1, still
+     reads at a glance, and ties the lockup to the rest of the palette. */
+  color:#0C3D1C; letter-spacing:.01em;
   /* ONE line, pinned to the centre of the logo. It is taken out of flow so
      it cannot widen the lockup and shove the logo off the page gutter, and
      translateX(-50%) makes any overhang fall evenly either side - a centred
