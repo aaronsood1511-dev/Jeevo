@@ -13,7 +13,7 @@
 
   var STEPS = [
     { key:'region', q:"Where are you drawn to?",
-      opts:[ ['Rajasthan','Rajasthan'], ['Kerala & the south','South India'],
+      opts:[ ['Rajasthan','Rajasthan'], ['Keralam & the south','South India'],
              ['Delhi, Agra & Jaipur','Rajasthan'], ['East India & Kolkata','East India'],
              ['India & Nepal','India & Nepal'], ['Vietnam','Vietnam'],
              ["I'm not sure yet",''] ] },
@@ -533,7 +533,7 @@
       if(hits.length) out.destination = hits.slice(0,6).join(', ');
     }
     var REG = ['Golden Triangle','South India','North India','East India',
-               'Rajasthan','Kerala','Nepal','Vietnam'];
+               'Rajasthan','Keralam','Nepal','Vietnam'];
     for(var i=0;i<REG.length;i++){
       if(low.indexOf(REG[i].toLowerCase())!==-1){
         out.destination = out.destination ? REG[i]+' — '+out.destination : REG[i];
