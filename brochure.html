@@ -162,6 +162,90 @@ h2 em{font-style:normal;color:var(--brown)}
 .sign .logo svg text{fill:var(--saffron)!important}
 .sign em{font-style:normal;font-family:'Martel',serif;font-size:9.5px;letter-spacing:.2em;
  text-transform:uppercase;opacity:.75}
+
+/* ============ journeys index ============ */
+.jnx{display:grid;grid-template-columns:1fr 1fr;gap:0 9mm}
+.jrow{display:flex;align-items:baseline;gap:3mm;padding:2.6mm 0;border-bottom:1px solid #ece0d0}
+.jrow .dy{flex:none;width:12mm;font-family:'Rozha One',serif;font-size:15px;color:var(--brown);line-height:1}
+.jrow .nm{flex:1;font-size:10.6px;line-height:1.35;color:var(--dark);font-weight:600}
+.jrow .rg{flex:none;font-size:8.2px;letter-spacing:.1em;text-transform:uppercase;color:#a2907f;text-align:right;max-width:30mm}
+.jrow.on .nm{color:var(--deep)}
+.jrow.on .dy{color:var(--saffron)}
+.jrow .pg{flex:none;font-size:8.2px;letter-spacing:.1em;text-transform:uppercase;color:var(--saffron);font-weight:700;width:13mm;text-align:right}
+.jxband{flex:1;min-height:30mm;margin:8mm -17mm 0;position:relative;overflow:hidden}
+.jxband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.jxband .sc{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,42,19,.95) 0,rgba(8,42,19,.80) 46%,rgba(8,42,19,.22) 100%)}
+.jxband .tx{position:absolute;inset:0;padding:8mm 86mm 8mm 17mm;display:flex;flex-direction:column;justify-content:center;color:var(--cream)}
+.jxband h4{font-family:'Rozha One',serif;font-weight:400;font-size:20px;margin:0 0 2.5mm;color:var(--saffron)}
+.jxband p{margin:0;font-size:10.8px;line-height:1.65;opacity:.93}
+.jnote{padding-top:5mm;font-size:10.6px;line-height:1.65;color:#675a51}
+.jnote b{color:var(--dark)}
+
+/* ============ one itinerary per page ============ */
+.itin .inner{padding:0}
+.itn-hero{height:60mm;position:relative;overflow:hidden;flex:none}
+.itn-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.itn-hero .sc{position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,42,19,.97) 2%,rgba(8,42,19,.62) 42%,rgba(8,42,19,.30) 100%)}
+.itn-cap{position:absolute;left:17mm;right:17mm;bottom:6.5mm;color:var(--cream)}
+.itn-cap .kk{font-family:'Martel',serif;font-weight:700;font-size:8.6px;letter-spacing:.26em;
+ text-transform:uppercase;color:var(--saffron);margin-bottom:2mm}
+.itn-cap h2{font-family:'Rozha One',serif;font-weight:400;font-size:29px;line-height:1.1;margin:0;color:#fff}
+.itn-days{position:absolute;right:17mm;top:7mm;background:var(--saffron);color:#43250a;
+ font-family:'Rozha One',serif;font-size:19px;line-height:1;padding:3mm 4mm;text-align:center}
+.itn-days small{display:block;font-family:'Mukta';font-size:7.4px;font-weight:700;letter-spacing:.16em;
+ text-transform:uppercase;margin-top:1mm}
+.itn-b{padding:7mm 17mm 14mm;flex:1;display:flex;flex-direction:column;min-height:0}
+.itn-lede{font-size:11.6px;line-height:1.6;color:#5d4e44;margin:0 0 4mm;max-width:150mm}
+.itn-route{font-family:'Martel',serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+ color:var(--deep);line-height:1.7;border-top:2px solid var(--saffron);border-bottom:1px solid #e3d5c3;
+ padding:3mm 0;margin-bottom:5mm}
+.days{columns:2;column-gap:9mm}
+.day{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;
+ padding:0 0 3.1mm 9.5mm;position:relative}
+.day i{position:absolute;left:0;top:-0.4mm;font-style:normal;font-family:'Rozha One',serif;
+ font-size:14px;color:var(--brown);line-height:1.2}
+.day b{display:block;font-size:10.2px;font-weight:700;color:var(--dark);line-height:1.32;margin-bottom:.6mm}
+.day span{display:block;font-size:9.4px;line-height:1.5;color:#7d6f65}
+.itn-tail{flex:1;min-height:24mm;margin:7mm -17mm 0;position:relative;overflow:hidden}
+.itn-tail img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.itn-tail .sc{position:absolute;inset:0;
+ background:linear-gradient(180deg,rgba(8,42,19,.08) 0,rgba(8,42,19,.55) 72%,rgba(8,42,19,.88) 100%)}
+.itn-tail em{position:absolute;left:17mm;bottom:5mm;font-style:normal;color:var(--cream);
+ font-family:'Martel',serif;font-weight:700;font-size:8.6px;letter-spacing:.24em;text-transform:uppercase}
+.itn-foot{padding-top:4.5mm;font-size:10px;line-height:1.6;color:#8a7a6e}
+.itn-foot b{color:var(--dark)}
+/* short trips get a single, airier column so the page still reads full */
+.itin.short .days{columns:1}
+.itin.short .day{padding-bottom:5.4mm}
+.itin.short .day b{font-size:11.4px}
+.itin.short .day span{font-size:10.4px}
+.itin.short .itn-hero{height:84mm}
+.itin.mid .day{padding-bottom:4.2mm}
+
+/* ============ Arjun / custom ============ */
+.arjun{background:var(--deep);color:var(--cream)}
+.arjun .jaali{opacity:.1;filter:invert(1)}
+.arjun h2{color:#fff;font-size:38px;margin-bottom:5mm}
+.arjun h2 em{color:var(--saffron)}
+.arjun .lede{color:rgba(255,253,248,.85);max-width:152mm}
+.aj-art{margin:-15mm -17mm 9mm;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:2mm;height:90mm}
+.aj-art figure{overflow:hidden}
+.aj-art img{width:100%;height:100%;object-fit:cover;display:block}
+.aj-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-bottom:7mm}
+.aj-steps div{border:1px solid rgba(255,255,255,.22);border-top:3px solid var(--saffron);padding:6.5mm 5mm}
+.aj-steps b{display:block;font-family:'Rozha One',serif;font-weight:400;font-size:16px;color:var(--saffron);margin-bottom:2mm}
+.aj-steps p{margin:0;font-size:10.4px;line-height:1.62;color:rgba(255,253,248,.88)}
+.aj-ex{border-top:1px solid rgba(255,255,255,.22);padding-top:8mm}
+.aj-ex b{display:block;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--saffron);margin-bottom:3.5mm}
+.aj-ex ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9mm 9mm}
+.aj-ex li{font-size:10.6px;line-height:1.5;padding-left:6mm;position:relative;color:rgba(255,253,248,.9)}
+.aj-ex li::before{content:"\201C";position:absolute;left:0;top:1mm;color:var(--saffron);font-family:'Rozha One',serif;font-size:15px;line-height:1}
+.aj-cta{margin-top:auto;background:var(--saffron);color:#3d2106;padding:6mm 7mm;
+ display:flex;align-items:center;justify-content:space-between;gap:6mm}
+.aj-cta b{font-family:'Rozha One',serif;font-weight:400;font-size:21px;display:block;line-height:1.15}
+.aj-cta p{margin:1.5mm 0 0;font-size:10.8px;line-height:1.55;max-width:105mm}
+.aj-cta .url{font-family:'Martel',serif;font-weight:700;font-size:15px;letter-spacing:.06em;
+ white-space:nowrap;border-left:1px solid rgba(61,33,6,.3);padding-left:6mm}
 @media print{body{background:#fff}.page{margin:0}@page{size:A4;margin:0}}
 @media screen{.page{box-shadow:0 10px 40px rgba(0,0,0,.35)}body{padding:16px 0}}
 </style></head><body>
@@ -219,13 +303,160 @@ h2 em{font-style:normal;color:var(--brown)}
   </div>
 </div><div class="rule"></div></section>
 
-<!-- ======== 4 · SIGNATURE JOURNEYS ======== -->
+<!-- ======== 4 · THE JOURNEYS (index) ======== -->
 <section class="page"><div class="jaali"></div><div class="inner">
-  <div class="kick">Signature journeys</div>
-  <h2>Routes we have<br><em>actually run</em>.</h2>
-  <p class="lede">Every one of these has been operated, timed and walked. Any of them can be reshaped around your dates, your pace and your budget.</p>
-  <div class="cards"><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/kerala-backwaters-640.webp" alt="From Southern Serenity to Northern Grandeur"><span class="dur">19 Days</span></div><div class="ct"><h3>From Southern Serenity to Northern Grandeur</h3><p>Varanasi and Khajuraho, Agra and Jaipur, then Munnar, the backwaters and the Kerala coast.</p><div class="rg">South India</div></div></article><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/rajasthan-jaisalmer-640.webp" alt="Kingdom of Eternal Splendours"><span class="dur">18 Days</span></div><div class="ct"><h3>Kingdom of Eternal Splendours</h3><p>Jaipur, Jodhpur, Jaisalmer, Udaipur, and the desert between them.</p><div class="rg">Rajasthan</div></div></article><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/varanasi-ghats-640.webp" alt="Spiritual Wellness"><span class="dur">18 Days</span></div><div class="ct"><h3>Spiritual Wellness</h3><p>Varanasi and Bodhgaya, the Golden Temple at Amritsar, then Dharamshala and Rishikesh.</p><div class="rg">North &amp; Central</div></div></article><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/amber-fort-640.webp" alt="Palaces, Tigers &amp; the Ganges"><span class="dur">15 Days</span></div><div class="ct"><h3>Palaces, Tigers &amp; the Ganges</h3><p>Forts, Ranthambore, and the river that runs through it.</p><div class="rg">North &amp; Central</div></div></article><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/seven-sisters-kaziranga-640.webp" alt="Seven Sisters"><span class="dur">12 Days</span></div><div class="ct"><h3>Seven Sisters</h3><p>Rivers, rainforests and living traditions across the North East.</p><div class="rg">North East</div></div></article><article class="card"><div class="ph"><img loading="lazy" decoding="async" src="assets/img/taj-mahal-640.webp" alt="Back to the Mughal Era"><span class="dur">7 Days</span></div><div class="ct"><h3>Back to the Mughal Era</h3><p>Delhi, Neemrana, Jaipur, Abhaneri, Fatehpur Sikri, Agra.</p><div class="rg">Golden Triangle</div></div></article></div>
-  <div class="tailor"><span class="mk">&rdquo;</span><span><b>None of these is a fixed departure.</b> Tell us how long you have and what you want out of it, and we will build the trip around that — different season, slower pace, more time in one place, or somewhere not on this list at all.</span></div>
+  <div class="kick">The journeys</div>
+  <h2>Eighteen routes we have<br><em>actually run</em>.</h2>
+  <p class="lede">Every one of these has been operated, timed and walked by our own team. The six
+  marked with a page number are set out day by day on the pages that follow.</p>
+  <div class="jnx"><div class="jrow on"><span class="dy">19d</span><span class="nm">From Southern Serenity to Northern Grandeur</span><span class="rg">South</span><span class="pg">p9</span></div><div class="jrow on"><span class="dy">18d</span><span class="nm">Kingdom of Eternal Splendours</span><span class="rg">Rajasthan</span><span class="pg">p7</span></div><div class="jrow"><span class="dy">18d</span><span class="nm">Royalty, Art &amp; Spirituality</span><span class="rg">Rajasthan</span><span class="pg"></span></div><div class="jrow on"><span class="dy">18d</span><span class="nm">Spiritual &amp; Wellness</span><span class="rg">North &amp; Central</span><span class="pg">p8</span></div><div class="jrow"><span class="dy">15d</span><span class="nm">Delhi &amp; Kathmandu</span><span class="rg">India &amp; Nepal</span><span class="pg"></span></div><div class="jrow on"><span class="dy">15d</span><span class="nm">Palaces, Tigers &amp; the Ganges</span><span class="rg">North &amp; Central</span><span class="pg">p6</span></div><div class="jrow"><span class="dy">15d</span><span class="nm">Flavours, Faces &amp; the South</span><span class="rg">South</span><span class="pg"></span></div><div class="jrow"><span class="dy">15d</span><span class="nm">Splendours of South India</span><span class="rg">South</span><span class="pg"></span></div><div class="jrow on"><span class="dy">12d</span><span class="nm">Seven Sisters</span><span class="rg">Northeast</span><span class="pg">p10</span></div><div class="jrow"><span class="dy">8d</span><span class="nm">Breathtaking Vietnam</span><span class="rg">Vietnam</span><span class="pg"></span></div><div class="jrow on"><span class="dy">7d</span><span class="nm">Back to the Mughal Era</span><span class="rg">Rajasthan</span><span class="pg">p5</span></div><div class="jrow"><span class="dy">7d</span><span class="nm">Taj &amp; Kolkata (by air)</span><span class="rg">East</span><span class="pg"></span></div><div class="jrow"><span class="dy">7d</span><span class="nm">Taj &amp; Kolkata (by rail)</span><span class="rg">East</span><span class="pg"></span></div><div class="jrow"><span class="dy">6d</span><span class="nm">Munnar &amp; the Kerala Hills</span><span class="rg">South</span><span class="pg"></span></div><div class="jrow"><span class="dy">6d</span><span class="nm">Kolkata &amp; Bhubaneswar</span><span class="rg">East</span><span class="pg"></span></div><div class="jrow"><span class="dy">6d</span><span class="nm">Dibrugarh: Tea Gardens &amp; River Islands</span><span class="rg">Assam</span><span class="pg"></span></div><div class="jrow"><span class="dy">4d</span><span class="nm">Ayodhya &amp; Varanasi</span><span class="rg">North &amp; Central</span><span class="pg"></span></div><div class="jrow"><span class="dy">3d</span><span class="nm">Corporate Offsite, Jaipur</span><span class="rg">Rajasthan</span><span class="pg"></span></div></div>
+  <div class="jxband">
+    <img loading="lazy" decoding="async" src="assets/img/maharashtra-ellora-640.webp" alt="Ellora, Maharashtra"><div class="sc"></div>
+    <div class="tx"><h4>Every route here has been run</h4>
+    <p>These are not catalogue pages bought from a wholesaler. Each one was built, costed and
+    operated by our own team, which is why the drive times in this brochure are the real ones.</p></div>
+  </div>
+  <p class="jnote"><b>Nothing here is a fixed departure.</b> These are the routes we know best, and
+  each is a starting point &mdash; different season, slower pace, more time in one place, or a
+  region not listed here at all. Trips to Nepal and Vietnam run alongside the Indian routes.</p>
+</div><div class="rule"></div></section>
+
+<section class="page itin short"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/taj-mahal-640.webp" alt="Back to the Mughal Era"><div class="sc"></div>
+    <div class="itn-days">7<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">Golden Triangle</div><h2>Back to the Mughal Era</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">The classic first trip to India, at a pace that still lets you stop.</p>
+    <div class="itn-route">Delhi · Neemrana · Jaipur · Abhaneri · Fatehpur Sikri · Agra</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrive Delhi</b><span>Met at Delhi International and transferred to your hotel.</span></div><div class="day"><i>02</i><b>Delhi</b><span>Old Delhi's lanes and bazaars, and the landmarks of the Mughal city.</span></div><div class="day"><i>03</i><b>Delhi &rarr; Neemrana &rarr; Jaipur</b><span>269 km · 5 hrs, by way of Neemrana Fort Palace, a restored 15th-century fort in the Aravallis.</span></div><div class="day"><i>04</i><b>Jaipur</b><span>Amber Fort &mdash; the Rajput hill capital, 11 km from the city.</span></div><div class="day"><i>05</i><b>Jaipur &rarr; Abhaneri &rarr; Fatehpur Sikri &rarr; Agra</b><span>257 km · 5 hrs, by way of Chand Baori, the 8th&ndash;9th century stepwell.</span></div><div class="day"><i>06</i><b>Agra</b><span>The Taj Mahal, Shah Jahan's marble memorial.</span></div><div class="day"><i>07</i><b>Agra &rarr; Delhi</b><span>239 km · 4 hrs to Delhi airport for your onward flight.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/hawa-mahal-640.webp" alt=""><div class="sc"></div>
+      <em>Delhi &mdash; Agra</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+<section class="page itin long"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/amber-fort-640.webp" alt="Palaces, Tigers &amp; the Ganges"><div class="sc"></div>
+    <div class="itn-days">15<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">North &amp; Central India</div><h2>Palaces, Tigers &amp; the Ganges</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">Forts and painted palaces, two days of safari, and the river at sunrise.</p>
+    <div class="itn-route">Delhi · Shahpura · Jaipur · Ranthambore · Agra · Orchha · Khajuraho · Varanasi</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrival in Delhi</b><span>Met at the airport and transferred to your hotel.</span></div><div class="day"><i>02</i><b>Old Delhi &amp; New Delhi</b><span>India Gate, Qutub Minar and Jama Masjid, then a rickshaw ride through Chandni Chowk.</span></div><div class="day"><i>03</i><b>Delhi &rarr; Neemrana &rarr; Shahpura</b><span>Neemrana Fort Palace in the Aravalli Hills &mdash; its terraces and royal architecture.</span></div><div class="day"><i>04</i><b>Shahpura &rarr; Jaipur &amp; Sanganer</b><span>Sanganer's block printing, handmade paper and carved Jain temple exteriors.</span></div><div class="day"><i>05</i><b>Amber Fort &amp; the Pink City</b><span>Diwan-i-Aam, Jai Mandir and Sukh Niwas, then City Palace, Mubarak Mahal and Jantar Mantar.</span></div><div class="day"><i>06</i><b>Jaipur &rarr; Chokhi Dhani &rarr; Ranthambore</b><span>Village traditions at Chokhi Dhani &mdash; folk dance, regional cooking, the Kalagram market.</span></div><div class="day"><i>07</i><b>Ranthambore safaris</b><span>Morning and afternoon drives with a naturalist. Tiger, nilgai, crocodile and birdlife; sightings depend on movement.</span></div><div class="day"><i>08</i><b>Ranthambore &rarr; Abhaneri &rarr; Fatehpur Sikri &rarr; Agra</b><span>Chand Baori's geometric tiers, then Panch Mahal and the Tomb of Sheikh Salim Chishti.</span></div><div class="day"><i>09</i><b>Agra</b><span>The Taj Mahal beside the Yamuna, Agra Fort and Musamman Burj, and Itmad-ud-Daulah's &lsquo;Baby Taj&rsquo;.</span></div><div class="day"><i>10</i><b>Agra &rarr; Jhansi &rarr; Orchha</b><span>By express train to Jhansi, then Jahangir Mahal, Raj Mahal and the Ram Raja Temple.</span></div><div class="day"><i>11</i><b>Orchha &rarr; Khajuraho</b><span>An easy drive, with the rest of the day free.</span></div><div class="day"><i>12</i><b>Khajuraho</b><span>The Western and Eastern Groups &mdash; Kandariya Mahadev, Devi Jagdambe, Parsvanath, Adinatha.</span></div><div class="day"><i>13</i><b>Khajuraho &rarr; Varanasi</b><span>By express train; met on arrival and transferred to your hotel.</span></div><div class="day"><i>14</i><b>Varanasi &amp; Sarnath</b><span>A sunrise boat ride past the ghats, then Kashi Vishwanath and the city's temples.</span></div><div class="day"><i>15</i><b>Varanasi &rarr; Delhi</b><span>Flight to Delhi for your onward international departure.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/ranthambore-safari-640.webp" alt=""><div class="sc"></div>
+      <em>Delhi &mdash; Varanasi</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+<section class="page itin long"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/rajasthan-jaisalmer-640.webp" alt="Kingdom of Eternal Splendours"><div class="sc"></div>
+    <div class="itn-days">18<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">Rajasthan</div><h2>Kingdom of Eternal Splendours</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">The length of Rajasthan, from the Pink City out to the desert forts.</p>
+    <div class="itn-route">Delhi · Varanasi · Khajuraho · Orchha · Agra · Ranthambore · Jaipur · Udaipur · Jodhpur · Jaisalmer · Bikaner</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrive Delhi</b><span>Met at the airport and transferred to your hotel.</span></div><div class="day"><i>02</i><b>Delhi</b><span>A day across the capital &mdash; the old city and the imperial quarter.</span></div><div class="day"><i>03</i><b>Delhi &rarr; Varanasi</b><span>By flight; met on arrival.</span></div><div class="day"><i>04</i><b>Varanasi</b><span>A full day in the river city.</span></div><div class="day"><i>05</i><b>Varanasi &rarr; Khajuraho</b><span>By express train.</span></div><div class="day"><i>06</i><b>Khajuraho &rarr; Orchha</b><span>173 km · 2 hrs to Orchha, on the Betwa.</span></div><div class="day"><i>07</i><b>Orchha &rarr; Jhansi &rarr; Agra</b><span>17 km to Jhansi, then express train to Agra Cantt.</span></div><div class="day"><i>08</i><b>Agra &rarr; Fatehpur Sikri &rarr; Ranthambore</b><span>308 km · 5 hrs, by way of Akbar's abandoned capital.</span></div><div class="day"><i>09</i><b>Ranthambore</b><span>A full day at the park.</span></div><div class="day"><i>10</i><b>Ranthambore &rarr; Chokhi Dhani &rarr; Jaipur</b><span>177 km · 3 hrs.</span></div><div class="day"><i>11</i><b>Jaipur</b><span>A full day in the Pink City.</span></div><div class="day"><i>12</i><b>Jaipur &rarr; Chittorgarh &rarr; Udaipur</b><span>424 km · 7 hrs, by way of Chittorgarh.</span></div><div class="day"><i>13</i><b>Udaipur</b><span>Palaces, temples and the lakes.</span></div><div class="day"><i>14</i><b>Udaipur &rarr; Ranakpur &rarr; Jodhpur</b><span>262 km · 5 hrs, by way of the Ranakpur temples. On to the Blue City.</span></div><div class="day"><i>15</i><b>Jodhpur &rarr; Pokharan &rarr; Jaisalmer</b><span>288 km · 4 hrs, by way of Pokhran Fort.</span></div><div class="day"><i>16</i><b>Jaisalmer</b><span>Salim Singh Ki Haveli and the ornate upper storeys of the golden city.</span></div><div class="day"><i>17</i><b>Jaisalmer &rarr; Bikaner</b><span>330 km · 5 hrs.</span></div><div class="day"><i>18</i><b>Bikaner &rarr; Delhi</b><span>By train to Delhi for your onward flight.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/madhya-pradesh-khajuraho-640.webp" alt=""><div class="sc"></div>
+      <em>Delhi &mdash; Bikaner</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+<section class="page itin long"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/himalayan-amritsar-640.webp" alt="Spiritual &amp; Wellness"><div class="sc"></div>
+    <div class="itn-days">18<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">North India</div><h2>Spiritual &amp; Wellness</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">Varanasi and Bodhgaya, the Golden Temple, and the Ganges where it leaves the hills.</p>
+    <div class="itn-route">Delhi · Varanasi · Bodhgaya · Patna · Amritsar · Dharamshala · Shimla · Chandigarh · Haridwar · Rishikesh</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrival Delhi</b><span>Met at the airport and transferred to your hotel.</span></div><div class="day"><i>02</i><b>Delhi &rarr; Varanasi</b><span>By flight; met on arrival.</span></div><div class="day"><i>03</i><b>Varanasi</b><span>A full day on the river.</span></div><div class="day"><i>04</i><b>Varanasi &rarr; Bodhgaya</b><span>255 km · 5 hrs to where the Buddha reached enlightenment.</span></div><div class="day"><i>05</i><b>Bodhgaya &rarr; Patna</b><span>116 km · 2 hrs.</span></div><div class="day"><i>06</i><b>Patna &rarr; Amritsar</b><span>By flight, via Delhi.</span></div><div class="day"><i>07</i><b>Amritsar</b><span>A full day in Amritsar.</span></div><div class="day"><i>08</i><b>Amritsar &rarr; Dharamshala</b><span>201 km · 4 hrs into the Himalayan foothills.</span></div><div class="day"><i>09</i><b>Dharamshala</b><span>A full day in Dharamshala.</span></div><div class="day"><i>10</i><b>Dharamshala &rarr; Shimla</b><span>232 km · 6 hrs.</span></div><div class="day"><i>11</i><b>Shimla</b><span>A walking tour of the hill station.</span></div><div class="day"><i>12</i><b>Shimla &rarr; Chandigarh</b><span>109 km · 2 hrs.</span></div><div class="day"><i>13</i><b>Chandigarh</b><span>A half-day tour of the planned city.</span></div><div class="day"><i>14</i><b>Chandigarh &rarr; Haridwar</b><span>226 km · 4 hrs, to the Ganges.</span></div><div class="day"><i>15</i><b>Haridwar &rarr; Rishikesh &rarr; Haridwar</b><span>26 km each way.</span></div><div class="day"><i>16</i><b>Haridwar &rarr; Delhi</b><span>By express train.</span></div><div class="day"><i>17</i><b>Delhi</b><span>A free day in Delhi.</span></div><div class="day"><i>18</i><b>Depart Delhi</b><span>Transferred to the airport for your onward flight.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/varanasi-ghats-640.webp" alt=""><div class="sc"></div>
+      <em>Delhi &mdash; Rishikesh</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+<section class="page itin long"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/kerala-backwaters-640.webp" alt="From Southern Serenity to Northern Grandeur"><div class="sc"></div>
+    <div class="itn-days">19<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">North &amp; South India</div><h2>From Southern Serenity to Northern Grandeur</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">The length of the country &mdash; the Ganges and the Mughal cities, then Kerala.</p>
+    <div class="itn-route">Delhi · Varanasi · Khajuraho · Orchha · Agra · Jaipur · Cochin · Munnar · Periyar · Alleppey · Kumarakom · Kovalam</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrive Delhi</b><span>Met at the airport and transferred to your hotel.</span></div><div class="day"><i>02</i><b>Delhi</b><span>Into the heart of Old Delhi and the walled city.</span></div><div class="day"><i>03</i><b>Delhi &rarr; Varanasi</b><span>By flight; met on arrival.</span></div><div class="day"><i>04</i><b>Varanasi</b><span>A full day on the Ganges.</span></div><div class="day"><i>05</i><b>Varanasi &rarr; Khajuraho</b><span>By express train.</span></div><div class="day"><i>06</i><b>Khajuraho &rarr; Orchha</b><span>173 km · 2 hrs.</span></div><div class="day"><i>07</i><b>Orchha &rarr; Jhansi &rarr; Agra</b><span>By express train to Agra Cantt.</span></div><div class="day"><i>08</i><b>Agra &rarr; Fatehpur Sikri &rarr; Abhaneri &rarr; Jaipur</b><span>252 km · 5 hrs, by way of Fatehpur Sikri and Chand Baori.</span></div><div class="day"><i>09</i><b>Jaipur</b><span>A full day in Jaipur.</span></div><div class="day"><i>10</i><b>Jaipur &rarr; Cochin</b><span>By flight, down to the Kerala coast.</span></div><div class="day"><i>11</i><b>Cochin &rarr; Munnar</b><span>125 km · 4 hrs up into the hills.</span></div><div class="day"><i>12</i><b>Munnar</b><span>Attukad Waterfalls and the tea country.</span></div><div class="day"><i>13</i><b>Munnar &rarr; Periyar</b><span>96 km · 3 hrs.</span></div><div class="day"><i>14</i><b>Periyar &rarr; Alleppey</b><span>132 km · 3 hrs, then aboard a houseboat for the night.</span></div><div class="day"><i>15</i><b>Alleppey &rarr; Kumarakom</b><span>37 km · 1 hr, with an afternoon village tour.</span></div><div class="day"><i>16</i><b>Kumarakom &rarr; Kovalam</b><span>179 km · 5 hrs, to the coast.</span></div><div class="day"><i>17</i><b>Kovalam</b><span>Ayurveda therapy.</span></div><div class="day"><i>18</i><b>Kovalam</b><span>Ayurveda therapy.</span></div><div class="day"><i>19</i><b>Kovalam &rarr; Trivandrum</b><span>Transferred to the airport for your onward flight.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/taj-mahal-640.webp" alt=""><div class="sc"></div>
+      <em>Delhi &mdash; Kovalam</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+<section class="page itin mid"><div class="jaali"></div><div class="inner">
+  <div class="itn-hero">
+    <img loading="lazy" decoding="async" src="assets/img/seven-sisters-kaziranga-640.webp" alt="Seven Sisters"><div class="sc"></div>
+    <div class="itn-days">12<small>Days</small></div>
+    <div class="itn-cap"><div class="kk">North East India</div><h2>Seven Sisters</h2></div>
+  </div>
+  <div class="itn-b">
+    <p class="itn-lede">Rivers, rainforests and living traditions across all seven states.</p>
+    <div class="itn-route">Guwahati · Shillong · Sohra · Bhalukpong · Kaziranga · Kohima · Imphal · Aizawl · Agartala</div>
+    <div class="days"><div class="day"><i>01</i><b>Arrive Guwahati &rarr; Shillong</b><span>Into Meghalaya, with a stop at Umiam Lake. An arrival before midday is preferred.</span></div><div class="day"><i>02</i><b>Sohra's waterfalls &amp; caves</b><span>The Nohkalikai Falls viewpoint and Mawsmai Cave, subject to access.</span></div><div class="day"><i>03</i><b>Shillong &rarr; Bhalukpong</b><span>A long transfer through Assam to the Arunachal foothills. Sightseeing kept light.</span></div><div class="day"><i>04</i><b>Tipi's orchids &rarr; Kaziranga</b><span>The Tipi Orchid Research Centre and its collections, then on through Assam.</span></div><div class="day"><i>05</i><b>Kaziranga safari &rarr; Dimapur</b><span>An early jeep safari &mdash; one-horned rhinoceros, wild buffalo, deer, elephant and birdlife.</span></div><div class="day"><i>06</i><b>Dimapur &rarr; Khonoma &rarr; Kohima</b><span>Khonoma, an Angami village known for community conservation, walked with a local guide.</span></div><div class="day"><i>07</i><b>Kohima &rarr; Dimapur &rarr; Imphal</b><span>By road to Dimapur, then a flight to Imphal.</span></div><div class="day"><i>08</i><b>Loktak Lake &amp; Imphal</b><span>The floating vegetation of Loktak, and the INA Memorial at Moirang.</span></div><div class="day"><i>09</i><b>Imphal &rarr; Aizawl</b><span>By air into Mizoram, landing at Lengpui.</span></div><div class="day"><i>10</i><b>Reiek &amp; Aizawl</b><span>The heritage village at Reiek, traditional Mizo homes, and the hill scenery.</span></div><div class="day"><i>11</i><b>Aizawl &rarr; Agartala</b><span>By air into Tripura.</span></div><div class="day"><i>12</i><b>Neermahal &amp; departure</b><span>The water palace on Rudrasagar Lake, visited by boat, before a late departure.</span></div></div>
+    <div class="itn-tail"><img loading="lazy" decoding="async" src="assets/img/seven-sisters-loktak-640.webp" alt=""><div class="sc"></div>
+      <em>Guwahati &mdash; Agartala</em></div>
+    <p class="itn-foot"><b>Not a fixed departure.</b> Any day here can be lengthened, shortened or
+    swapped &mdash; and the whole route can be rebuilt around your dates and pace. Distances and
+    drive times are the real ones. Flights and trains are quoted for your own dates.</p>
+  </div>
+</div><div class="rule"></div></section>
+
+<!-- ======== 11 · PLAN WITH ARJUN ======== -->
+<section class="page arjun"><div class="jaali"></div><div class="inner">
+  <div class="aj-art">
+    <figure><img loading="lazy" decoding="async" src="assets/img/goa-beach-640.webp" alt="Goa"></figure>
+    <figure><img loading="lazy" decoding="async" src="assets/img/ladakh-640.webp" alt="Ladakh"></figure>
+    <figure><img loading="lazy" decoding="async" src="assets/img/dibrugarh-tea-estate-640.webp" alt="Assam tea country"></figure>
+    <figure><img loading="lazy" decoding="async" src="assets/img/gujarat-modhera-640.webp" alt="Gujarat"></figure>
+  </div>
+  <div class="kick" style="color:var(--saffron)">Not on this list?</div>
+  <h2>Tell us the trip you want.<br>We will <em>build it</em>.</h2>
+  <p class="lede">Most of our travellers end up on something that is not in this brochure. The routes
+  on the previous pages are the ones we run most often &mdash; they are not the limit of where we go.</p>
+  <div class="aj-steps">
+    <div><b>Say it in plain words</b><p>Arjun, our planning assistant at jeevo.co.in, asks where, when,
+    how many and how you want it to feel. No forms, no jargon.</p></div>
+    <div><b>Read it a minute later</b><p>He drafts a day-by-day outline in about a minute &mdash;
+    a real route with real drive times, not a brochure page.</p></div>
+    <div><b>A person takes it from there</b><p>One of us picks up the draft, checks it against the
+    seasons and the roads, and comes back to you with the version you can actually book.</p></div>
+  </div>
+  <div class="aj-ex"><b>Things people have asked him for</b><ul>
+    <li>Three weeks in the south, no fort we have already seen</li>
+    <li>Ladakh, but only if the passes are open</li>
+    <li>Rajasthan with two teenagers who get bored</li>
+    <li>Goa at the end, after the temples</li>
+    <li>The North East, slowly, with a birder</li>
+    <li>Kerala and nothing else, for ten days</li>
+  </ul></div>
+  <div class="aj-cta">
+    <div><b>Plan with Arjun</b><p>Free, no account, no obligation. Start it on your phone and
+    finish it with one of us on the telephone.</p></div>
+    <div class="url">jeevo.co.in</div>
+  </div>
 </div><div class="rule"></div></section>
 
 <!-- ======== 5 · HOW IT WORKS ======== -->
