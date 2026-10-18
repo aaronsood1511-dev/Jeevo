@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeevo Tours &amp; Travels — Brochure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@300;400;500;600;700&family=Martel:wght@400;600;700;900&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --saffron:#FF9933; --deep:#0C3D1C; --cream:#FFFDF8; --ink:#2E1708;
+  --brown:#CE7A2E; --darkbrown:#4A2410; --gold:#D9A441; --rose:#A8322A;
+  --page-w:210mm; --page-h:297mm;
+}
+*{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+body{margin:0; background:#55433a; font-family:'Mukta',system-ui,sans-serif; color:var(--ink)}
+
+.page{
+  width:var(--page-w); min-height:var(--page-h);
+  margin:0 auto 18px; background:var(--cream);
+  position:relative; overflow:hidden; page-break-after:always;
+  display:flex; flex-direction:column;
+}
+.page:last-child{page-break-after:auto}
+
+/* ---------- ornament: a repeating jaali-style border ---------- */
+.jaali{
+  position:absolute; inset:0; pointer-events:none; opacity:.09;
+  background-image:
+    radial-gradient(circle at 50% 0, transparent 9px, var(--deep) 9px, var(--deep) 10px, transparent 10px),
+    radial-gradient(circle at 0 50%, transparent 9px, var(--deep) 9px, var(--deep) 10px, transparent 10px);
+  background-size:26px 26px;
+}
+.rule{height:5px; background:
+  repeating-linear-gradient(90deg, var(--saffron) 0 14px, var(--cream) 14px 18px, var(--deep) 18px 32px, var(--cream) 32px 36px)}
+
+/* ---------- 1. cover ---------- */
+.cover{background:var(--deep); color:var(--cream); justify-content:space-between}
+.cover .jaali{opacity:.14; filter:invert(1)}
+.cover-top{padding:17mm 16mm 0; position:relative; z-index:2}
+.brandmark{font-family:'Rozha One',serif; font-size:86px; line-height:.9; color:var(--saffron); letter-spacing:-.01em}
+.brandmark small{display:block; font-family:'Martel',serif; font-weight:700;
+  font-size:11.5px; letter-spacing:.34em; color:var(--cream); margin-top:9px; opacity:.92}
+.cover-art{position:relative; z-index:2; height:118mm; margin:9mm 0; display:grid;
+  grid-template-columns:1.25fr 1fr 1fr; gap:3mm; padding:0 16mm}
+.cover-art figure{margin:0; overflow:hidden; border:2px solid var(--saffron); position:relative}
+.cover-art img{width:100%; height:100%; object-fit:cover; display:block}
+.cover-art figure:nth-child(2){margin-top:11mm}
+.cover-art figure:nth-child(3){margin-top:22mm}
+.cover-bottom{padding:0 16mm 16mm; position:relative; z-index:2}
+.cover h1{font-family:'Rozha One',serif; font-weight:400; font-size:50px; line-height:1.08;
+  margin:0 0 7mm; color:var(--cream)}
+.cover h1 em{font-style:normal; color:var(--saffron)}
+.cover-meta{display:flex; gap:8mm; font-size:12.5px; letter-spacing:.17em;
+  text-transform:uppercase; color:var(--saffron); font-weight:600; border-top:1px solid #ffffff38; padding-top:5mm}
+
+/* ---------- shared ---------- */
+.inner{padding:15mm 16mm; position:relative; z-index:2; flex:1}
+.kicker{font-family:'Martel',serif; font-weight:700; font-size:11px; letter-spacing:.3em;
+  text-transform:uppercase; color:var(--rose); display:flex; align-items:center; gap:10px; margin-bottom:5mm}
+.kicker::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,var(--gold),transparent)}
+h2.big{font-family:'Rozha One',serif; font-weight:400; font-size:40px; line-height:1.12;
+  margin:0 0 6mm; color:var(--darkbrown)}
+h2.big em{font-style:normal; color:var(--brown)}
+p.lede{font-size:14.5px; line-height:1.72; color:#5a4a3e; margin:0 0 4mm}
+p.body{font-size:12.6px; line-height:1.76; color:#60524a; margin:0 0 3.4mm}
+
+/* ---------- 2. story ---------- */
+.story-grid{display:grid; grid-template-columns:1.08fr .92fr; gap:9mm; align-items:start}
+.portrait{border:3px solid var(--gold); padding:4px; background:#fff}
+.portrait img{width:100%; height:92mm; object-fit:cover; display:block}
+.pullquote{margin:6mm 0 0; padding:6mm; background:var(--deep); color:var(--cream);
+  font-family:'Rozha One',serif; font-size:19px; line-height:1.4; position:relative}
+.pullquote::before{content:"\201C"; font-size:60px; color:var(--saffron); position:absolute;
+  top:-6px; left:7px; opacity:.5}
+.pullquote span{display:block; margin-top:4mm; font-family:'Mukta'; font-size:11px;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--saffron)}
+
+/* ---------- 3. regions ---------- */
+.regions{display:grid; grid-template-columns:repeat(3,1fr); gap:3.5mm; margin-top:5mm}
+.region{position:relative; height:40mm; overflow:hidden; border:1.5px solid var(--gold)}
+.region img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.12)}
+.region figcaption{position:absolute; left:0; right:0; bottom:0; padding:9px 10px;
+  background:linear-gradient(transparent, rgba(12,61,28,.93) 58%); color:var(--cream)}
+.region b{font-family:'Rozha One',serif; font-weight:400; font-size:17px; display:block; line-height:1.1}
+.region small{font-size:9.6px; letter-spacing:.14em; text-transform:uppercase; color:var(--saffron)}
+.strip{margin-top:6mm; padding:5mm 6mm; background:var(--saffron);
+  display:flex; justify-content:space-between; gap:4mm}
+.strip div{text-align:center; flex:1}
+.strip b{display:block; font-family:'Rozha One',serif; font-size:27px; color:var(--darkbrown); line-height:1}
+.strip small{font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:#6b3a10; font-weight:600}
+
+/* ---------- 4. journeys ---------- */
+.jlist{margin-top:4mm}
+.j{display:grid; grid-template-columns:20mm 1fr auto; gap:5mm; align-items:center;
+  padding:3.6mm 0; border-bottom:1px solid #e6d8c9}
+.j:first-child{border-top:1px solid #e6d8c9}
+.j .n{font-family:'Rozha One',serif; font-size:26px; color:var(--brown); line-height:1}
+.j .n small{display:block; font-family:'Mukta'; font-size:8.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:#9b8778; font-weight:600}
+.j b{font-size:14px; color:var(--darkbrown); font-weight:600; display:block}
+.j span{font-size:11.4px; color:#7d6c60}
+.j .reg{font-family:'Martel',serif; font-size:10px; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--deep); background:#eef3ec; padding:4px 9px; white-space:nowrap; font-weight:700}
+
+/* ---------- 5. how it works ---------- */
+.steps{display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:6mm}
+.step{padding:6mm 5mm; background:#fff; border-top:4px solid var(--saffron); position:relative}
+.step i{font-family:'Rozha One',serif; font-style:normal; font-size:34px; color:#eadbc8; position:absolute; top:4mm; right:5mm; line-height:1}
+.step b{display:block; font-family:'Rozha One',serif; font-weight:400; font-size:19px;
+  color:var(--darkbrown); margin-bottom:2.5mm}
+.step p{margin:0; font-size:11.6px; line-height:1.66; color:#6b5c52}
+.promise{margin-top:7mm; padding:6mm; border:2px solid var(--deep); background:#f4f8f2}
+.promise b{font-family:'Rozha One',serif; font-size:20px; color:var(--deep); display:block; margin-bottom:3mm}
+.promise ul{margin:0; padding-left:5mm; columns:2; column-gap:8mm}
+.promise li{font-size:11.6px; line-height:1.8; color:#4e5f4e; break-inside:avoid}
+
+/* ---------- 6. back ---------- */
+.back{background:var(--deep); color:var(--cream); justify-content:space-between}
+.back .jaali{opacity:.13; filter:invert(1)}
+.back-art{height:95mm; display:grid; grid-template-columns:1fr 1fr; gap:3mm; padding:0 16mm; position:relative; z-index:2}
+.back-art figure{margin:0; overflow:hidden; border:2px solid var(--saffron)}
+.back-art img{width:100%; height:100%; object-fit:cover; display:block}
+.contact{padding:0 16mm 16mm; position:relative; z-index:2}
+.contact h2{font-family:'Rozha One',serif; font-weight:400; font-size:38px; color:var(--saffron); margin:0 0 5mm}
+.crow{display:grid; grid-template-columns:repeat(2,1fr); gap:5mm 9mm; border-top:1px solid #ffffff33; padding-top:6mm}
+.crow div b{display:block; font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--saffron); margin-bottom:2mm; font-weight:600}
+.crow div span{font-size:13.5px; line-height:1.6}
+.sign{margin-top:8mm; padding-top:5mm; border-top:1px solid #ffffff33;
+  font-family:'Martel',serif; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase; opacity:.8}
+
+@media print{
+  body{background:#fff}
+  .page{margin:0; box-shadow:none}
+  @page{size:A4; margin:0}
+}
+@media screen{ .page{box-shadow:0 10px 40px rgba(0,0,0,.4)} body{padding:18px 0} }
+</style>
+</head>
+<body>
+
+<!-- ======================= 1. COVER ======================= -->
+<section class="page cover">
+  <div class="jaali"></div>
+  <div class="cover-top">
+    <div class="brandmark">jeevo<small>Experiential Tours With a Personal Touch</small></div>
+  </div>
+  <div class="cover-art">
+    <figure><img src="assets/img/ladakh-1280.webp" alt="Ladakh"></figure>
+    <figure><img src="assets/img/holi-1280.webp" alt="Holi"></figure>
+    <figure><img src="assets/img/kerala-backwaters-1280.webp" alt="Keralam backwaters"></figure>
+  </div>
+  <div class="rule"></div>
+  <div class="cover-bottom" style="padding-top:9mm">
+    <h1>India, arranged by people<br>who <em>live there</em>.</h1>
+    <div class="cover-meta"><span>Gurugram · India</span><span>Inbound tour operator</span><span>jeevo.co.in</span></div>
+  </div>
+</section>
+
+<!-- ======================= 2. STORY ======================= -->
+<section class="page">
+  <div class="jaali"></div>
+  <div class="inner">
+    <div class="kicker">Our story</div>
+    <h2 class="big">A family business,<br>carried <em>forward</em>.</h2>
+    <div class="story-grid">
+      <div>
+        <p class="lede">Carrying forward the legacy of Mike Chatterjee, his wife Mrs. Promila Chatterjee continues the journey he began: creating travel that goes far beyond sightseeing and the logistics of getting from one place to another.</p>
+        <p class="body">Mike believed every journey should be more than a visit to a destination. It should be a story worth telling, a memory worth cherishing, and a chance to form real connections with the people, cultures and places met along the way.</p>
+        <p class="body">That philosophy is still the whole of it. We curate journeys that bring you closer to the soul of a place — ancient temples, food cooked the way it has always been cooked, and time spent with the communities that give each region its character.</p>
+        <p class="body">What sets the trips apart is the care behind the detail. Every traveller is looked after as a guest of the family, not as a booking reference.</p>
+      </div>
+      <div>
+        <div class="portrait"><img src="assets/img/harmandir-sahib-1280.webp" alt="Harmandir Sahib at dawn"></div>
+        <div class="pullquote">A morning at the Harmandir Sahib as the first prayers carry across the water — where anyone who walks in is fed, and nobody is asked who they are.<span>Amritsar</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="rule"></div>
+</section>
+
+<!-- ======================= 3. WHERE WE GO ======================= -->
+<section class="page">
+  <div class="jaali"></div>
+  <div class="inner">
+    <div class="kicker">Where we go</div>
+    <h2 class="big">One country.<br>Many ways to <em>explore it</em>.</h2>
+    <p class="lede" style="max-width:150mm">From Himalayan passes to Keralam's backwaters, from the tea gardens of Assam to the temple coast of Odisha — eleven regions, each run by people on the ground.</p>
+    <div class="regions">
+      <figure class="region"><img src="assets/img/rajasthan-jaisalmer-1280.webp" alt="Jaisalmer"><figcaption><small>North West</small><b>Rajasthan</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/kerala-backwaters-1280.webp" alt="Keralam"><figcaption><small>The South</small><b>Keralam</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/ladakh-1280.webp" alt="Ladakh"><figcaption><small>High Himalaya</small><b>Ladakh</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/seven-sisters-kaziranga-1280.webp" alt="Kaziranga"><figcaption><small>North East</small><b>Seven Sisters</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/goa-beach-1280.webp" alt="Goa"><figcaption><small>West Coast</small><b>Goa</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/gujarat-modhera-1280.webp" alt="Modhera"><figcaption><small>West</small><b>Gujarat</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/maharashtra-ellora-1280.webp" alt="Ellora"><figcaption><small>Deccan</small><b>Maharashtra</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/madhya-pradesh-khajuraho-1280.webp" alt="Khajuraho"><figcaption><small>Central</small><b>Madhya Pradesh</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/odisha-konark-1280.webp" alt="Konark"><figcaption><small>East Coast</small><b>Odisha</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/dibrugarh-tea-estate-1280.webp" alt="Dibrugarh"><figcaption><small>Assam</small><b>Tea Country</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/kedarnath-1280.webp" alt="Kedarnath"><figcaption><small>Foothills</small><b>Himalayan Trails</b></figcaption></figure>
+      <figure class="region"><img src="assets/img/halong-bay-1280.webp" alt="Ha Long Bay"><figcaption><small>Beyond India</small><b>Nepal &amp; Vietnam</b></figcaption></figure>
+    </div>
+    <div class="strip">
+      <div><b>11</b><small>Regions</small></div>
+      <div><b>18</b><small>Itineraries</small></div>
+      <div><b>89</b><small>Towns &amp; cities</small></div>
+      <div><b>24/7</b><small>On-trip support</small></div>
+    </div>
+  </div>
+  <div class="rule"></div>
+</section>
+
+<!-- ======================= 4. JOURNEYS ======================= -->
+<section class="page">
+  <div class="jaali"></div>
+  <div class="inner">
+    <div class="kicker">Signature journeys</div>
+    <h2 class="big">Routes we have<br><em>actually run</em>.</h2>
+    <p class="lede" style="max-width:150mm">Every one of these has been operated, timed and walked. Any of them can be reshaped around your dates, your pace and your budget.</p>
+    <div class="jlist">
+      <div class="j"><div class="n">19<small>Days</small></div><div><b>From Southern Serenity to Northern Grandeur</b><span>The length of the country, temple coast to Himalaya</span></div><div class="reg">South India</div></div>
+      <div class="j"><div class="n">18<small>Days</small></div><div><b>Kingdom of Eternal Splendours</b><span>Jaipur, Jodhpur, Jaisalmer, Udaipur and the desert in between</span></div><div class="reg">Rajasthan</div></div>
+      <div class="j"><div class="n">18<small>Days</small></div><div><b>Royalty, Art &amp; Spirituality</b><span>A journey through the heart of India</span></div><div class="reg">Rajasthan</div></div>
+      <div class="j"><div class="n">18<small>Days</small></div><div><b>Spiritual Wellness</b><span>Varanasi, Rishikesh and the Ganges at first light</span></div><div class="reg">North &amp; Central</div></div>
+      <div class="j"><div class="n">15<small>Days</small></div><div><b>Palaces, Tigers &amp; the Ganges</b><span>Forts, Ranthambore and the river</span></div><div class="reg">North &amp; Central</div></div>
+      <div class="j"><div class="n">15<small>Days</small></div><div><b>Delhi &amp; Kathmandu</b><span>Across the border into Nepal</span></div><div class="reg">India &amp; Nepal</div></div>
+      <div class="j"><div class="n">15<small>Days</small></div><div><b>Splendours of South India</b><span>Madurai, Tanjore, Mysore and the Keralam coast</span></div><div class="reg">South India</div></div>
+      <div class="j"><div class="n">12<small>Days</small></div><div><b>Seven Sisters</b><span>Rivers, rainforests and living traditions across the North East</span></div><div class="reg">North East</div></div>
+      <div class="j"><div class="n">8<small>Days</small></div><div><b>Vietnam</b><span>Hanoi, Ha Long Bay, Hoi An and Saigon</span></div><div class="reg">Vietnam</div></div>
+      <div class="j"><div class="n">7<small>Days</small></div><div><b>Back to the Mughal Era</b><span>Delhi, Neemrana, Jaipur, Abhaneri, Fatehpur Sikri, Agra</span></div><div class="reg">Golden Triangle</div></div>
+    </div>
+  </div>
+  <div class="rule"></div>
+</section>
+
+<!-- ======================= 5. HOW IT WORKS ======================= -->
+<section class="page">
+  <div class="jaali"></div>
+  <div class="inner">
+    <div class="kicker">How a trip comes together</div>
+    <h2 class="big">Planned in a day.<br>Looked after <em>throughout</em>.</h2>
+    <div class="steps">
+      <div class="step"><i>01</i><b>Tell us</b><p>Where, when, how many, and roughly what you want it to feel like. Arjun, our planning assistant on the website, will draft a day-by-day outline in about a minute.</p></div>
+      <div class="step"><i>02</i><b>We shape it</b><p>A consultant takes that draft and makes it real — the right order, sensible drives, the hotels we trust, and the mornings worth getting up for.</p></div>
+      <div class="step"><i>03</i><b>We run it</b><p>Our own drivers and guides on the ground, reachable at any hour. If something changes, we change with it.</p></div>
+    </div>
+    <div class="promise">
+      <b>What you can expect from us</b>
+      <ul>
+        <li>Itineraries built from routes we have run</li>
+        <li>Honest drive times, not optimistic ones</li>
+        <li>Guides who live where they guide</li>
+        <li>A real person reachable on the trip</li>
+        <li>No commission-driven shopping stops</li>
+        <li>Pace set to you, not to a coach timetable</li>
+      </ul>
+    </div>
+    <p class="body" style="margin-top:7mm"><strong>For trade partners.</strong> Jeevo works with overseas tour operators and agents as a ground handler across India, Nepal and Vietnam. Rates, sample costings and references on request.</p>
+  </div>
+  <div class="rule"></div>
+</section>
+
+<!-- ======================= 6. BACK ======================= -->
+<section class="page back">
+  <div class="jaali"></div>
+  <div class="back-art">
+    <figure><img src="assets/img/amber-fort-1280.webp" alt="Amber Fort"></figure>
+    <figure><img src="assets/img/india-gate-1280.webp" alt="India Gate"></figure>
+  </div>
+  <div class="rule" style="margin:8mm 0"></div>
+  <div class="contact">
+    <h2>Let us plan<br>something for you.</h2>
+    <div class="crow">
+      <div><b>Office</b><span>31 Wellington Estate, DLF Phase 5<br>Gurugram 122002, Haryana, India</span></div>
+      <div><b>Online</b><span>jeevo.co.in<br>jeevotoursandtravels@gmail.com</span></div>
+      <div><b>Telephone</b><span>+91 88004 92691<br>+91 98100 22651</span></div>
+      <div><b>Plan with Arjun</b><span>jeevo.co.in — our planning assistant will draft an itinerary free, in about a minute.</span></div>
+    </div>
+    <div class="sign">Jeevo Tours &amp; Travels — Experiential tours with a personal touch</div>
+  </div>
+</section>
+
+</body>
+</html>
