@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Jeevo Tours &amp; Travels — Brochure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@300;400;500;600;700&family=Martel:wght@400;600;700;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--saffron:#FF9933;--deep:#0C3D1C;--deep2:#0a3317;--cream:#FFFDF8;--ink:#2E1708;
+ --brown:#CE7A2E;--dark:#4A2410;--gold:#C9972F;--paper:#FBF4EA}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+figure{margin:0}
+body{margin:0;background:#4a3c34;font-family:'Mukta',system-ui,sans-serif;color:var(--ink)}
+.page{width:210mm;height:297mm;margin:0 auto 16px;background:var(--cream);
+ position:relative;overflow:hidden;page-break-after:always;display:flex;flex-direction:column}
+.page:last-child{page-break-after:auto}
+.jaali{position:absolute;inset:0;pointer-events:none;opacity:.055;z-index:1;
+ background-image:radial-gradient(circle at 50% 0,transparent 11px,var(--deep) 11px,var(--deep) 12px,transparent 12px);
+ background-size:30px 30px}
+.rule{height:4px;flex:none;position:relative;z-index:4;background:repeating-linear-gradient(90deg,
+ var(--saffron) 0 18px,transparent 18px 23px,var(--deep) 23px 41px,transparent 41px 46px)}
+.logo svg{width:100%;height:auto;display:block}
+.inner{padding:15mm 17mm;position:relative;z-index:2;flex:1;display:flex;flex-direction:column;min-height:0}
+.bleed{margin-left:-17mm;margin-right:-17mm}
+
+/* ============ COVER — full-bleed hero ============ */
+.cover{background:var(--deep)}
+.cover .hero{position:absolute;inset:0;z-index:0}
+.cover .hero img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.06) contrast(1.05)}
+.cover .scrim{position:absolute;inset:0;z-index:1;background:
+  linear-gradient(180deg,rgba(8,42,19,.90) 0,rgba(8,42,19,.52) 17%,rgba(8,42,19,.06) 37%,
+  rgba(8,42,19,.40) 58%,rgba(8,42,19,.92) 77%,rgba(8,42,19,.98) 100%)}
+.cover .frame{position:absolute;inset:8mm;z-index:2;border:1px solid rgba(255,153,51,.55);pointer-events:none}
+.cover .inner{z-index:3;color:var(--cream);padding:17mm 19mm 16mm}
+.cover .logo{width:72mm}
+.cover .logo svg text{fill:var(--saffron)!important}
+.cover .tag{font-family:'Martel',serif;font-weight:700;font-size:10px;letter-spacing:.28em;
+ margin-top:-1.5mm;color:#fff;opacity:.95;padding-left:1mm;
+ text-shadow:0 1px 6px rgba(0,0,0,.65)}
+.cvr-h{margin-top:auto}
+.cvr-eyebrow{font-family:'Martel',serif;font-weight:700;font-size:9.5px;letter-spacing:.34em;
+ text-transform:uppercase;color:var(--saffron);margin-bottom:5mm;
+ display:flex;align-items:center;gap:9px}
+.cvr-eyebrow::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(255,153,51,.75),transparent)}
+.cover h1{font-family:'Rozha One',serif;font-weight:400;font-size:50px;line-height:1.1;margin:0 0 7mm;
+ color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.cover h1 em{font-style:normal;color:var(--saffron)}
+.cvr-meta{display:flex;gap:7mm;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+ font-weight:600;color:var(--saffron);border-top:1px solid rgba(255,255,255,.3);padding-top:5mm}
+.cvr-meta span:not(:last-child){border-right:1px solid rgba(255,255,255,.22);padding-right:7mm}
+
+/* ============ shared ============ */
+.kick{font-family:'Martel',serif;font-weight:700;font-size:10px;letter-spacing:.3em;
+ text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:9px;margin-bottom:4mm}
+.kick::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--gold),transparent)}
+h2{font-family:'Rozha One',serif;font-weight:400;font-size:34px;line-height:1.14;margin:0 0 5mm;color:var(--dark)}
+h2 em{font-style:normal;color:var(--brown)}
+.lede{font-size:13px;line-height:1.72;color:#5d4e44;margin:0 0 5mm;max-width:152mm}
+.body{font-size:11.6px;line-height:1.76;color:#675a51;margin:0 0 3mm}
+
+/* ============ P2 story ============ */
+.story{display:grid;grid-template-columns:1fr 70mm;gap:9mm;align-items:start}
+.pbox{border:1px solid var(--gold);padding:3.5mm;background:#fff}
+.pbox img{width:100%;height:76mm;object-fit:cover;display:block}
+.pbox figcaption{font-family:'Martel',serif;font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+ color:var(--gold);text-align:center;padding-top:3mm}
+.credo{margin-top:5mm;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--saffron)}
+.credo div{padding:4.5mm 4mm;border-right:1px solid #e8dccd}
+.credo div:last-child{border-right:0;padding-right:0}
+.credo b{display:block;font-family:'Rozha One',serif;font-weight:400;font-size:16px;color:var(--dark);margin-bottom:1.5mm}
+.credo p{margin:0;font-size:10.2px;line-height:1.6;color:#776a60}
+/* bottom full-bleed quote band */
+.qband{margin-top:auto;position:relative;height:122mm;margin-bottom:-15mm;overflow:hidden}
+.qband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.qband .sc{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,42,19,.95) 0,rgba(8,42,19,.88) 48%,rgba(8,42,19,.25) 100%)}
+.qband .qt{position:absolute;inset:0;padding:12mm 90mm 12mm 19mm;display:flex;flex-direction:column;justify-content:center;color:var(--cream)}
+.qband .qt p{font-family:'Rozha One',serif;font-size:19px;line-height:1.42;margin:0}
+.qband .qt span{margin-top:4mm;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--saffron);font-weight:600}
+
+/* ============ P3 regions ============ */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm}
+.cell{position:relative;height:44.5mm;overflow:hidden}
+.cell img{width:100%;height:100%;object-fit:cover;display:block}
+.cell figcaption{position:absolute;inset:auto 0 0;padding:9px 10px;
+ background:linear-gradient(transparent,rgba(8,42,19,.96) 62%);color:var(--cream)}
+.cell b{font-family:'Rozha One',serif;font-weight:400;font-size:16px;display:block;line-height:1.05}
+.cell small{font-size:8.4px;letter-spacing:.16em;text-transform:uppercase;color:var(--saffron);font-weight:600}
+.bar{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--saffron);
+ background:var(--paper)}
+.bar div{padding:5mm 2mm;text-align:center;border-right:1px solid #e8dccd}
+.bar div:last-child{border-right:0}
+.bar b{display:block;font-family:'Rozha One',serif;font-size:26px;color:var(--brown);line-height:1}
+.bar small{font-size:8.6px;letter-spacing:.16em;text-transform:uppercase;color:#8d7b6c;font-weight:600}
+
+/* ============ P4 journeys ============ */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.card{border:1px solid #e3d5c3;background:#fff;display:flex;flex-direction:column}
+.card .ph{height:36mm;overflow:hidden;position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.card .dur{position:absolute;left:0;bottom:0;background:var(--saffron);color:#43250a;
+ font-size:8.6px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px}
+.card .ct{padding:4mm 4.5mm 4.5mm;flex:1;display:flex;flex-direction:column}
+.card h3{font-family:'Rozha One',serif;font-weight:400;font-size:17px;line-height:1.14;margin:0 0 2mm;color:var(--dark)}
+.card p{margin:0 0 3mm;font-size:10.4px;line-height:1.58;color:#776a60}
+.card .rg{margin-top:auto;font-family:'Martel',serif;font-size:8.6px;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--deep);font-weight:700;border-top:1px solid #eee2d2;padding-top:2.5mm}
+.tailor{margin-top:auto;padding-top:5mm;display:flex;align-items:center;gap:6mm;
+ border-top:1px solid #e3d5c3;font-size:11px;line-height:1.65;color:#675a51}
+.tailor b{color:var(--dark)}
+.tailor .mk{flex:none;font-family:'Rozha One',serif;font-size:30px;color:var(--brown);line-height:1}
+
+/* ============ P5 process ============ */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm}
+.stp{background:#fff;border:1px solid #e3d5c3;border-top:3px solid var(--saffron);padding:5.5mm 5mm;position:relative}
+.stp i{position:absolute;top:4mm;right:5mm;font-style:normal;font-family:'Rozha One',serif;
+ font-size:30px;color:#efe3d2;line-height:1}
+.stp b{display:block;font-family:'Rozha One',serif;font-weight:400;font-size:17px;color:var(--dark);margin-bottom:2mm}
+.stp p{margin:0;font-size:10.6px;line-height:1.64;color:#6f6158}
+.promise{margin-top:5mm;background:var(--paper);border:1px solid #e3d5c3;padding:6mm}
+.promise b{font-family:'Rozha One',serif;font-size:18px;color:var(--deep);display:block;margin-bottom:3mm}
+.promise ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2mm 7mm}
+.promise li{font-size:10.6px;line-height:1.6;color:#55604f;padding-left:7mm;position:relative}
+.promise li::before{content:"\2713";position:absolute;left:0;color:var(--saffron);font-weight:700}
+.season{margin-top:5mm}
+.season>b{font-family:'Rozha One',serif;font-weight:400;font-size:18px;color:var(--deep);display:block;margin-bottom:3.5mm}
+.srow{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--saffron)}
+.srow div{padding:4.5mm 4mm 0;border-right:1px solid #e8dccd}
+.srow div:first-child{padding-left:0}
+.srow div:last-child{border-right:0;padding-right:0}
+.srow em{font-style:normal;display:block;font-family:'Martel',serif;font-weight:700;font-size:10.5px;
+ letter-spacing:.14em;text-transform:uppercase;color:var(--brown);margin-bottom:2mm}
+.srow span{font-size:10.2px;line-height:1.58;color:#776a60;display:block}
+.tband{margin-top:auto;position:relative;height:121mm;margin-bottom:-15mm;overflow:hidden}
+.tband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.tband .sc{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,42,19,.96) 0,rgba(8,42,19,.86) 52%,rgba(8,42,19,.3) 100%)}
+.tband .tx{position:absolute;inset:0;padding:10mm 88mm 10mm 19mm;display:flex;flex-direction:column;justify-content:center;color:var(--cream)}
+.tband h4{font-family:'Rozha One',serif;font-weight:400;font-size:21px;margin:0 0 3mm;color:var(--saffron)}
+.tband p{margin:0;font-size:11px;line-height:1.7;opacity:.93}
+
+/* ============ P6 back ============ */
+.back{background:var(--deep);color:var(--cream)}
+.back .jaali{opacity:.1;filter:invert(1)}
+.bk-art{margin:-15mm -17mm 9mm;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2mm;height:96mm}
+.bk-art figure{margin:0;overflow:hidden}
+.bk-art img{width:100%;height:100%;object-fit:cover;display:block}
+.back h2{color:#fff;font-size:36px;margin-bottom:5mm}
+.back h2 em{color:var(--saffron)}
+.back .lede{color:rgba(255,253,248,.82);max-width:150mm;margin-bottom:7mm}
+.crow{display:grid;grid-template-columns:1fr 1fr;gap:6mm 9mm;
+ border-top:1px solid rgba(255,255,255,.22);padding-top:6mm}
+.crow b{display:block;font-size:9px;letter-spacing:.26em;text-transform:uppercase;
+ color:var(--saffron);margin-bottom:2mm;font-weight:600}
+.crow span{font-size:12.5px;line-height:1.65}
+.cta{margin-top:7mm;background:var(--saffron);color:#3d2106;padding:6mm 7mm;
+ display:flex;align-items:center;justify-content:space-between;gap:6mm}
+.cta b{font-family:'Rozha One',serif;font-weight:400;font-size:21px;display:block;line-height:1.15}
+.cta p{margin:1.5mm 0 0;font-size:10.8px;line-height:1.55;max-width:105mm}
+.cta .url{font-family:'Martel',serif;font-weight:700;font-size:15px;letter-spacing:.06em;
+ white-space:nowrap;border-left:1px solid rgba(61,33,6,.3);padding-left:6mm}
+.sign{margin-top:auto;padding-top:6mm;border-top:1px solid rgba(255,255,255,.22);
+ display:flex;justify-content:space-between;align-items:center}
+.sign .logo{width:40mm}
+.sign .logo svg text{fill:var(--saffron)!important}
+.sign em{font-style:normal;font-family:'Martel',serif;font-size:9.5px;letter-spacing:.2em;
+ text-transform:uppercase;opacity:.75}
+@media print{body{background:#fff}.page{margin:0}@page{size:A4;margin:0}}
+@media screen{.page{box-shadow:0 10px 40px rgba(0,0,0,.35)}body{padding:16px 0}}
+</style></head><body>
+
+<!-- ======== 1 · COVER ======== -->
+<section class="page cover">
+  <div class="hero"><img src="assets/img/taj-mahal-1920.webp" alt="The Taj Mahal, Agra"></div>
+  <div class="scrim"></div><div class="frame"></div>
+  <div class="inner">
+    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 200" class="jv-logo" role="img" aria-label="Jeevo"> <g class="jv-logo__word"> <text x="10" y="118" font-family="'Playfair Display', Didot, 'Bodoni 72', Georgia, serif" font-size="126" fill="#CE7A2E">jeev</text> </g> <g class="jv-logo__globe" transform="translate(300,72)"> <circle cx="0" cy="0" r="54" fill="#F5A623"/> <clipPath id="jvLogoClip"><circle cx="0" cy="0" r="54"/></clipPath> <g clip-path="url(#jvLogoClip)"> <g class="jv-spin"> <g fill="#D8830B"> <path d="M-30-34c8-3 15 2 16 9 1 8-5 12-4 19 1 6 8 8 8 15 0 9-9 13-10 21 -1 8 3 16-4 19-7 3-13-5-14-12-3-13-1-25 0-37 1-13 3-31 8-34Z"/> <path d="M8-38c13-2 24 4 27 12 3 8-3 14 0 20 3 7 11 9 11 17 0 9-10 12-17 10 -7-1-13-6-19-3-6 3-6 12-5 19 1 9 5 17 0 24-6 6-15 1-17-6 -6-14-3-28-1-42 1-14 4-30 11-43 3-5 6-8 10-8Z"/> </g> <g stroke="#FFFFFF" stroke-width="2.2" fill="none" opacity=".9"> <path d="M-52-22 H52"/><path d="M-54 2 H54"/><path d="M-50 26 H50"/> <ellipse cx="0" cy="0" rx="22" ry="54"/> <line x1="0" y1="-54" x2="0" y2="54"/> </g> </g> </g> </g> <g class="jv-logo__swoosh"> <path fill="#CE7A2E" d="M 146 122 C 206 152, 292 152, 340 120 C 374 97, 382 62, 372 38 C 388 64, 382 104, 346 130 C 296 166, 200 160, 146 122 Z"/> <g transform="translate(382,30) rotate(-28) scale(0.40)"> <path fill="#CE7A2E" d="M 62 0 L 30 -4 L 8 -26 L -2 -26 L 10 -5 L -18 -3 L -30 -16 L -38 -16 L -32 -2 L -42 0 L -32 2 L -38 16 L -30 16 L -18 3 L 10 5 L -2 26 L 8 26 L 30 4 Z"/> </g> </g> </svg></div>
+    <div class="tag">EXPERIENTIAL TOURS WITH A PERSONAL TOUCH</div>
+    <div class="cvr-h">
+      <div class="cvr-eyebrow">Inbound tour operator · Est. Gurugram</div>
+      <h1>India, arranged<br>by people who <em>live there</em>.</h1>
+      <div class="cvr-meta"><span>Gurugram · India</span><span>Nepal · Bhutan · Sri Lanka · Vietnam</span><span>jeevo.co.in</span></div>
+    </div>
+  </div><div class="rule"></div></section>
+
+<!-- ======== 2 · OUR STORY ======== -->
+<section class="page"><div class="jaali"></div><div class="inner">
+  <div class="kick">Our story</div>
+  <h2>A family business,<br>carried <em>forward</em>.</h2>
+  <div class="story">
+    <div>
+      <p class="lede">Carrying forward the legacy of Mike Chatterjee, his wife Mrs. Promila Chatterjee continues the journey he began: creating travel that goes far beyond sightseeing and the logistics of getting from one place to another.</p>
+      <p class="body">Mike believed every journey should be more than a visit to a destination. It should be a story worth telling, a memory worth cherishing, and a chance to form real connections with the people, cultures and places met along the way.</p>
+      <p class="body">That philosophy is still the whole of it. We curate journeys that bring you closer to the soul of a place — ancient temples, food cooked the way it has always been cooked, and time spent with the communities that give each region its character.</p>
+      <p class="body">What sets the trips apart is the care behind the detail. Every traveller is looked after as a guest of the family, not as a booking reference.</p>
+    </div>
+    <figure class="pbox"><img src="assets/img/hawa-mahal-640.webp" alt="Hawa Mahal, Jaipur"><figcaption>Jaipur</figcaption></figure>
+  </div>
+  <div class="credo">
+    <div><b>Run by us</b><p>Our own drivers and guides, not a chain of subcontractors.</p></div>
+    <div><b>Walked first</b><p>Every route on these pages has been operated and timed.</p></div>
+    <div><b>Reachable</b><p>A real person on the phone for the whole of your trip.</p></div>
+  </div>
+  <div class="qband bleed">
+    <img src="assets/img/harmandir-sahib-1280.webp" alt="Harmandir Sahib, Amritsar"><div class="sc"></div>
+    <div class="qt"><p>A morning at the Harmandir Sahib as the first prayers carry across the water — where anyone who walks in is fed, and nobody is asked who they are.</p>
+    <span>From our Spiritual India journey</span></div>
+  </div>
+</div><div class="rule"></div></section>
+
+<!-- ======== 3 · WHERE WE GO ======== -->
+<section class="page"><div class="jaali"></div><div class="inner">
+  <div class="kick">Where we go</div>
+  <h2>One country.<br>Many ways to <em>explore it</em>.</h2>
+  <p class="lede">From Himalayan passes to Keralam's backwaters, from the tea gardens of Assam to the temple coast of Odisha — eleven regions, every one run by our own people on the ground.</p>
+  <div class="grid bleed"><figure class="cell"><img src="assets/img/rajasthan-jaisalmer-640.webp" alt="Rajasthan"><figcaption><small>North West</small><b>Rajasthan</b></figcaption></figure><figure class="cell"><img src="assets/img/kerala-backwaters-640.webp" alt="Keralam"><figcaption><small>The South</small><b>Keralam</b></figcaption></figure><figure class="cell"><img src="assets/img/ladakh-640.webp" alt="Ladakh"><figcaption><small>High Himalaya</small><b>Ladakh</b></figcaption></figure><figure class="cell"><img src="assets/img/seven-sisters-kaziranga-640.webp" alt="Seven Sisters"><figcaption><small>North East</small><b>Seven Sisters</b></figcaption></figure><figure class="cell"><img src="assets/img/goa-beach-640.webp" alt="Goa"><figcaption><small>West Coast</small><b>Goa</b></figcaption></figure><figure class="cell"><img src="assets/img/gujarat-modhera-640.webp" alt="Gujarat"><figcaption><small>The West</small><b>Gujarat</b></figcaption></figure><figure class="cell"><img src="assets/img/maharashtra-ellora-640.webp" alt="Maharashtra"><figcaption><small>Deccan</small><b>Maharashtra</b></figcaption></figure><figure class="cell"><img src="assets/img/madhya-pradesh-khajuraho-640.webp" alt="Madhya Pradesh"><figcaption><small>Central</small><b>Madhya Pradesh</b></figcaption></figure><figure class="cell"><img src="assets/img/odisha-konark-640.webp" alt="Odisha"><figcaption><small>East Coast</small><b>Odisha</b></figcaption></figure><figure class="cell"><img src="assets/img/dibrugarh-tea-estate-640.webp" alt="Tea Country"><figcaption><small>Assam</small><b>Tea Country</b></figcaption></figure><figure class="cell"><img src="assets/img/harmandir-sahib-640.webp" alt="Amritsar"><figcaption><small>Punjab</small><b>Amritsar</b></figcaption></figure><figure class="cell"><img src="assets/img/halong-bay-640.webp" alt="Nepal &amp; Vietnam"><figcaption><small>Beyond India</small><b>Nepal &amp; Vietnam</b></figcaption></figure></div>
+  <div class="bar bleed">
+    <div><b>11</b><small>Regions</small></div>
+    <div><b>18</b><small>Itineraries</small></div>
+    <div><b>89</b><small>Towns &amp; Cities</small></div>
+    <div><b>24/7</b><small>On-trip Support</small></div>
+  </div>
+</div><div class="rule"></div></section>
+
+<!-- ======== 4 · SIGNATURE JOURNEYS ======== -->
+<section class="page"><div class="jaali"></div><div class="inner">
+  <div class="kick">Signature journeys</div>
+  <h2>Routes we have<br><em>actually run</em>.</h2>
+  <p class="lede">Every one of these has been operated, timed and walked. Any of them can be reshaped around your dates, your pace and your budget.</p>
+  <div class="cards"><article class="card"><div class="ph"><img src="assets/img/kerala-backwaters-640.webp" alt="From Southern Serenity to Northern Grandeur"><span class="dur">19 Days</span></div><div class="ct"><h3>From Southern Serenity to Northern Grandeur</h3><p>The length of the country, from the temple coast to the Himalaya.</p><div class="rg">South to North</div></div></article><article class="card"><div class="ph"><img src="assets/img/rajasthan-jaisalmer-640.webp" alt="Kingdom of Eternal Splendours"><span class="dur">18 Days</span></div><div class="ct"><h3>Kingdom of Eternal Splendours</h3><p>Jaipur, Jodhpur, Jaisalmer, Udaipur, and the desert between them.</p><div class="rg">Rajasthan</div></div></article><article class="card"><div class="ph"><img src="assets/img/kedarnath-640.webp" alt="Spiritual Wellness"><span class="dur">18 Days</span></div><div class="ct"><h3>Spiritual Wellness</h3><p>Varanasi, Rishikesh, and the Ganges at first light.</p><div class="rg">North &amp; Central</div></div></article><article class="card"><div class="ph"><img src="assets/img/amber-fort-640.webp" alt="Palaces, Tigers &amp; the Ganges"><span class="dur">15 Days</span></div><div class="ct"><h3>Palaces, Tigers &amp; the Ganges</h3><p>Forts, Ranthambore, and the river that runs through it.</p><div class="rg">North &amp; Central</div></div></article><article class="card"><div class="ph"><img src="assets/img/seven-sisters-kaziranga-640.webp" alt="Seven Sisters"><span class="dur">12 Days</span></div><div class="ct"><h3>Seven Sisters</h3><p>Rivers, rainforests and living traditions across the North East.</p><div class="rg">North East</div></div></article><article class="card"><div class="ph"><img src="assets/img/taj-mahal-640.webp" alt="Back to the Mughal Era"><span class="dur">7 Days</span></div><div class="ct"><h3>Back to the Mughal Era</h3><p>Delhi, Neemrana, Jaipur, Abhaneri, Fatehpur Sikri, Agra.</p><div class="rg">Golden Triangle</div></div></article></div>
+  <div class="tailor"><span class="mk">&rdquo;</span><span><b>None of these is a fixed departure.</b> Tell us how long you have and what you want out of it, and we will build the trip around that — different season, slower pace, more time in one place, or somewhere not on this list at all.</span></div>
+</div><div class="rule"></div></section>
+
+<!-- ======== 5 · HOW IT WORKS ======== -->
+<section class="page"><div class="jaali"></div><div class="inner">
+  <div class="kick">How a trip comes together</div>
+  <h2>Planned in a day.<br>Looked after <em>throughout</em>.</h2>
+  <div class="steps">
+    <div class="stp"><i>01</i><b>Tell us</b><p>Where, when, how many, and roughly how you want it to feel. Arjun, our planning assistant at jeevo.co.in, drafts a day-by-day outline in about a minute.</p></div>
+    <div class="stp"><i>02</i><b>We shape it</b><p>A consultant takes that draft and makes it real — the right order, sensible drives, hotels we trust, and the mornings worth getting up for.</p></div>
+    <div class="stp"><i>03</i><b>We run it</b><p>Our own drivers and guides on the ground, reachable at any hour. If something changes, we change with it.</p></div>
+  </div>
+  <div class="promise"><b>What you can expect from us</b><ul>
+    <li>Itineraries built from routes we have run</li>
+    <li>Honest drive times, not optimistic ones</li>
+    <li>Guides who live where they guide</li>
+    <li>A real person reachable during the trip</li>
+    <li>No commission-driven shopping stops</li>
+    <li>A pace set by you, not by a coach timetable</li>
+  </ul></div>
+  <div class="season"><b>When to travel</b><div class="srow">
+    <div><em>Oct &ndash; Mar</em><span>Rajasthan, the Golden Triangle and the north</span></div>
+    <div><em>Nov &ndash; Feb</em><span>Keralam, Tamil Nadu and the south</span></div>
+    <div><em>Jun &ndash; Sep</em><span>Ladakh and the high Himalayan passes</span></div>
+    <div><em>Nov &ndash; Apr</em><span>Assam, the North East and Kaziranga</span></div>
+  </div></div>
+  <div class="tband bleed">
+    <img src="assets/img/karnataka-hampi-1280.webp" alt="Hampi, Karnataka"><div class="sc"></div>
+    <div class="tx"><h4>For trade partners</h4>
+    <p>Jeevo works with overseas tour operators and agents as a ground handler across India, Nepal and Vietnam. Rates, sample costings and references are available on request.</p></div>
+  </div>
+</div><div class="rule"></div></section>
+
+<!-- ======== 6 · CONTACT ======== -->
+<section class="page back"><div class="jaali"></div><div class="inner">
+  <div class="bk-art">
+    <figure><img src="assets/img/amber-fort-640.webp" alt="Amber Fort, Jaipur"></figure>
+    <figure><img src="assets/img/varanasi-ghats-640.webp" alt="Varanasi"></figure>
+    <figure><img src="assets/img/odisha-konark-640.webp" alt="Konark"></figure>
+  </div>
+  <h2>Let us plan<br>something <em>for you</em>.</h2>
+  <p class="lede">Tell us roughly what you have in mind and we will come back with a real day-by-day plan — no obligation, and no charge for the planning.</p>
+  <div class="crow">
+    <div><b>Office</b><span>31 Wellington Estate, DLF Phase 5<br>Gurugram 122002, Haryana, India</span></div>
+    <div><b>Online</b><span>jeevo.co.in<br>jeevotoursandtravels@gmail.com</span></div>
+    <div><b>Telephone</b><span>+91 88004 92691<br>+91 98100 22651</span></div>
+    <div><b>Languages</b><span>English, Hindi, Punjabi<br>Interpreters arranged on request</span></div>
+  </div>
+  <div class="cta">
+    <div><b>Plan with Arjun</b><p>Our planning assistant drafts a free day-by-day itinerary in about a minute, then one of us picks it up from there.</p></div>
+    <div class="url">jeevo.co.in</div>
+  </div>
+  <div class="sign"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 200" class="jv-logo" role="img" aria-label="Jeevo"> <g class="jv-logo__word"> <text x="10" y="118" font-family="'Playfair Display', Didot, 'Bodoni 72', Georgia, serif" font-size="126" fill="#CE7A2E">jeev</text> </g> <g class="jv-logo__globe" transform="translate(300,72)"> <circle cx="0" cy="0" r="54" fill="#F5A623"/> <clipPath id="jvLogoClip"><circle cx="0" cy="0" r="54"/></clipPath> <g clip-path="url(#jvLogoClip)"> <g class="jv-spin"> <g fill="#D8830B"> <path d="M-30-34c8-3 15 2 16 9 1 8-5 12-4 19 1 6 8 8 8 15 0 9-9 13-10 21 -1 8 3 16-4 19-7 3-13-5-14-12-3-13-1-25 0-37 1-13 3-31 8-34Z"/> <path d="M8-38c13-2 24 4 27 12 3 8-3 14 0 20 3 7 11 9 11 17 0 9-10 12-17 10 -7-1-13-6-19-3-6 3-6 12-5 19 1 9 5 17 0 24-6 6-15 1-17-6 -6-14-3-28-1-42 1-14 4-30 11-43 3-5 6-8 10-8Z"/> </g> <g stroke="#FFFFFF" stroke-width="2.2" fill="none" opacity=".9"> <path d="M-52-22 H52"/><path d="M-54 2 H54"/><path d="M-50 26 H50"/> <ellipse cx="0" cy="0" rx="22" ry="54"/> <line x1="0" y1="-54" x2="0" y2="54"/> </g> </g> </g> </g> <g class="jv-logo__swoosh"> <path fill="#CE7A2E" d="M 146 122 C 206 152, 292 152, 340 120 C 374 97, 382 62, 372 38 C 388 64, 382 104, 346 130 C 296 166, 200 160, 146 122 Z"/> <g transform="translate(382,30) rotate(-28) scale(0.40)"> <path fill="#CE7A2E" d="M 62 0 L 30 -4 L 8 -26 L -2 -26 L 10 -5 L -18 -3 L -30 -16 L -38 -16 L -32 -2 L -42 0 L -32 2 L -38 16 L -30 16 L -18 3 L 10 5 L -2 26 L 8 26 L 30 4 Z"/> </g> </g> </svg></div><em>Experiential tours with a personal touch</em></div>
+</div><div class="rule"></div></section>
+
+</body></html>
