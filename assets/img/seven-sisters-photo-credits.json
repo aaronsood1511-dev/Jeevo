@@ -27,16 +27,18 @@
   },
   {
     "slug": "seven-sisters-kaziranga",
-    "source": "https://commons.wikimedia.org/wiki/File:Kaziranga%20Rhinoceros%20unicornis.jpg",
-    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Kaziranga_Rhinoceros_unicornis.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
-    "author": "Diganta Talukdar",
-    "license": "CC BY 2.0",
+    "title": "Rhinos in Kaziranga National Park.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rhinos_in_Kaziranga_National_Park.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Rhinos_in_Kaziranga_National_Park.jpg",
+    "author": "Sai Adikarla",
     "original_size": [
-      1024,
-      683
+      3840,
+      2564
     ],
-    "changes": "Resized and converted to WebP; display may crop to fit.",
-    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+    "changes": "Resized and converted to WebP; display may crop. Adaptations retain the source license.",
+    "alt": "Rhinos in Kaziranga National Park",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "license": "CC BY 2.0"
   },
   {
     "slug": "seven-sisters-khonoma",

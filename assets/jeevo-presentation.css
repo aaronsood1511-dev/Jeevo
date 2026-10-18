@@ -7,7 +7,7 @@ body { background:transparent !important /* was #fff, which painted over the
 section { background-color:#fff !important; }
 section:nth-of-type(even) { background-color:#fff8f2 !important; }
 section.hero,section.tour-hero,section.cta-section { background-color:#c5521e !important; }
-section.jv-selector-section { background:#0C3D1C !important; }   /* same India green as the menu */
+
 .jv-wash,.jv-pigment { display:none; }
 .jv-ribbon { background:#c5521e; padding:15px 0; border:0; }
 .jv-progress { background:#e96a28; height:3px; }
