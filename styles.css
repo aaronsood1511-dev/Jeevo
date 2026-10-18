@@ -1665,3 +1665,68 @@ textarea:focus-visible {
         animation: none;
     }
 }
+
+/* ========== CORPORATE & WEDDINGS ========== */
+.jv-events { background: var(--bg-light); }
+.jv-ev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+.jv-ev-card {
+    background: var(--white);
+    border: 1px solid rgba(71, 43, 30, .12);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+.jv-ev-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.jv-ev-ph { position: relative; aspect-ratio: 16 / 9; overflow: hidden; }
+.jv-ev-ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.jv-ev-kick {
+    position: absolute; left: 0; bottom: 0;
+    font-family: var(--font-ui);
+    background: var(--gradient-primary);
+    color: #43250a;
+    font-weight: 700; font-size: .78rem;
+    letter-spacing: 1.4px; text-transform: uppercase;
+    padding: 8px 16px;
+}
+.jv-ev-body { padding: 26px 26px 28px; flex: 1; }
+.jv-ev-body h3 { margin: 0 0 10px; color: var(--dark); font-size: 1.45rem; }
+.jv-ev-body p { margin: 0 0 16px; color: var(--gray); line-height: 1.7; }
+.jv-ev-body ul { margin: 0; padding: 0; list-style: none; }
+.jv-ev-body li {
+    position: relative;
+    padding: 0 0 9px 26px;
+    color: var(--gray-dark);
+    line-height: 1.6;
+    font-size: .97rem;
+}
+.jv-ev-body li::before {
+    content: "\2713";
+    position: absolute; left: 0; top: 0;
+    color: var(--primary); font-weight: 700;
+}
+.jv-ev-cta {
+    margin: 36px 0 0;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--gray-dark);
+}
+.jv-ev-cta a {
+    display: inline-block;
+    margin: 6px 10px 0;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 107, 53, .4);
+}
+.jv-ev-cta a:hover { border-bottom-color: var(--primary); }
+@media (max-width: 600px) {
+    .jv-ev-body { padding: 22px 20px 24px; }
+    .jv-ev-body h3 { font-size: 1.3rem; }
+}
