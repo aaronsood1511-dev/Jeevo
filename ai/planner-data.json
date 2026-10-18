@@ -294,6 +294,156 @@
    "region": "Rajasthan",
    "nights": 1,
    "popularity": 4
+  },
+  "Goa": {
+   "region": "Goa",
+   "nights": 3,
+   "popularity": 3
+  },
+  "Panjim": {
+   "region": "Goa",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Gokarna": {
+   "region": "Goa",
+   "nights": 2,
+   "popularity": 0
+  },
+  "Leh": {
+   "region": "Ladakh & the Himalaya",
+   "nights": 3,
+   "popularity": 3
+  },
+  "Nubra Valley": {
+   "region": "Ladakh & the Himalaya",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Pangong Lake": {
+   "region": "Ladakh & the Himalaya",
+   "nights": 1,
+   "popularity": 2
+  },
+  "Srinagar": {
+   "region": "Ladakh & the Himalaya",
+   "nights": 3,
+   "popularity": 2
+  },
+  "Manali": {
+   "region": "Ladakh & the Himalaya",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Guwahati": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 2
+  },
+  "Shillong": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Cherrapunji": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Bhalukpong": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 0
+  },
+  "Kaziranga": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 3
+  },
+  "Dimapur": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 0
+  },
+  "Khonoma": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Kohima": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Imphal": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Aizawl": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Agartala": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Dibrugarh": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Majuli": {
+   "region": "North East India",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Sivasagar": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Jorhat": {
+   "region": "North East India",
+   "nights": 1,
+   "popularity": 0
+  },
+  "Mumbai": {
+   "region": "North & Central India",
+   "nights": 2,
+   "popularity": 3
+  },
+  "Hyderabad": {
+   "region": "South India",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Hampi": {
+   "region": "South India",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Darjeeling": {
+   "region": "East India",
+   "nights": 2,
+   "popularity": 2
+  },
+  "Gangtok": {
+   "region": "East India",
+   "nights": 2,
+   "popularity": 1
+  },
+  "Chandigarh": {
+   "region": "North & Central India",
+   "nights": 1,
+   "popularity": 1
+  },
+  "Coimbatore": {
+   "region": "South India",
+   "nights": 1,
+   "popularity": 0
   }
  },
  "edges": [
@@ -316,12 +466,6 @@
    "hours": 4
   },
   {
-   "from": "Agra",
-   "to": "Jaipur Fatehpur Sikri",
-   "km": 239,
-   "hours": 4
-  },
-  {
    "from": "Jaipur",
    "to": "Pushkar",
    "km": 142,
@@ -332,12 +476,6 @@
    "to": "Jodhpur",
    "km": 189,
    "hours": 3
-  },
-  {
-   "from": "Jodhpur",
-   "to": "Udaipur Ranakpur",
-   "km": 249,
-   "hours": 4
   },
   {
    "from": "Delhi",
@@ -365,9 +503,9 @@
   },
   {
    "from": "Agra",
-   "to": "Orcha (18 Kms /",
+   "to": "Orchha",
    "km": 18,
-   "hours": 45
+   "hours": 1
   },
   {
    "from": "Orchha",
@@ -442,12 +580,6 @@
    "hours": 5
   },
   {
-   "from": "Delhi",
-   "to": "Puri",
-   "km": 70,
-   "hours": 20
-  },
-  {
    "from": "Puri",
    "to": "Bhubaneshwar",
    "km": 67,
@@ -464,12 +596,6 @@
    "to": "Jaipur",
    "km": 214,
    "hours": 3
-  },
-  {
-   "from": "Agra",
-   "to": "Orchha",
-   "km": 17,
-   "hours": 43
   },
   {
    "from": "Chennai",
@@ -580,16 +706,420 @@
    "hours": 4
   },
   {
-   "from": "09 Mar’27 |Delhi",
-   "to": "Agra",
-   "km": 232,
+   "from": "Mumbai",
+   "to": "Goa",
+   "km": 590,
+   "hours": 11
+  },
+  {
+   "from": "Goa",
+   "to": "Panjim",
+   "km": 14,
+   "hours": 1
+  },
+  {
+   "from": "Goa",
+   "to": "Gokarna",
+   "km": 145,
+   "hours": 3
+  },
+  {
+   "from": "Goa",
+   "to": "Hampi",
+   "km": 330,
+   "hours": 6
+  },
+  {
+   "from": "Bangalore",
+   "to": "Goa",
+   "km": 560,
+   "hours": 10
+  },
+  {
+   "from": "Delhi",
+   "to": "Mumbai",
+   "km": 1420,
+   "hours": 24
+  },
+  {
+   "from": "Delhi",
+   "to": "Leh",
+   "km": 1010,
+   "hours": 20
+  },
+  {
+   "from": "Leh",
+   "to": "Nubra Valley",
+   "km": 120,
+   "hours": 5
+  },
+  {
+   "from": "Nubra Valley",
+   "to": "Pangong Lake",
+   "km": 270,
+   "hours": 7
+  },
+  {
+   "from": "Leh",
+   "to": "Pangong Lake",
+   "km": 220,
+   "hours": 5
+  },
+  {
+   "from": "Srinagar",
+   "to": "Leh",
+   "km": 420,
+   "hours": 10
+  },
+  {
+   "from": "Manali",
+   "to": "Leh",
+   "km": 430,
+   "hours": 12
+  },
+  {
+   "from": "Delhi",
+   "to": "Srinagar",
+   "km": 800,
+   "hours": 16
+  },
+  {
+   "from": "Delhi",
+   "to": "Manali",
+   "km": 540,
+   "hours": 11
+  },
+  {
+   "from": "Shimla",
+   "to": "Manali",
+   "km": 250,
+   "hours": 7
+  },
+  {
+   "from": "Guwahati",
+   "to": "Shillong",
+   "km": 100,
+   "hours": 3
+  },
+  {
+   "from": "Shillong",
+   "to": "Cherrapunji",
+   "km": 54,
+   "hours": 2
+  },
+  {
+   "from": "Shillong",
+   "to": "Bhalukpong",
+   "km": 330,
+   "hours": 8
+  },
+  {
+   "from": "Bhalukpong",
+   "to": "Kaziranga",
+   "km": 230,
+   "hours": 6
+  },
+  {
+   "from": "Guwahati",
+   "to": "Kaziranga",
+   "km": 195,
+   "hours": 5
+  },
+  {
+   "from": "Kaziranga",
+   "to": "Dimapur",
+   "km": 220,
+   "hours": 5
+  },
+  {
+   "from": "Dimapur",
+   "to": "Khonoma",
+   "km": 95,
+   "hours": 3
+  },
+  {
+   "from": "Khonoma",
+   "to": "Kohima",
+   "km": 20,
+   "hours": 1
+  },
+  {
+   "from": "Dimapur",
+   "to": "Kohima",
+   "km": 74,
+   "hours": 2
+  },
+  {
+   "from": "Kohima",
+   "to": "Imphal",
+   "km": 135,
    "hours": 4
   },
   {
-   "from": "11 Mar’27 | Agra",
-   "to": "Kolkata",
-   "km": 232,
+   "from": "Imphal",
+   "to": "Aizawl",
+   "km": 380,
+   "hours": 9
+  },
+  {
+   "from": "Aizawl",
+   "to": "Agartala",
+   "km": 450,
+   "hours": 11
+  },
+  {
+   "from": "Dibrugarh",
+   "to": "Jorhat",
+   "km": 135,
+   "hours": 3
+  },
+  {
+   "from": "Jorhat",
+   "to": "Majuli",
+   "km": 20,
+   "hours": 1
+  },
+  {
+   "from": "Dibrugarh",
+   "to": "Sivasagar",
+   "km": 80,
+   "hours": 2
+  },
+  {
+   "from": "Dibrugarh",
+   "to": "Majuli",
+   "km": 150,
    "hours": 4
+  },
+  {
+   "from": "Guwahati",
+   "to": "Dibrugarh",
+   "km": 440,
+   "hours": 9
+  },
+  {
+   "from": "Kolkata",
+   "to": "Darjeeling",
+   "km": 620,
+   "hours": 12
+  },
+  {
+   "from": "Darjeeling",
+   "to": "Gangtok",
+   "km": 100,
+   "hours": 4
+  },
+  {
+   "from": "Kolkata",
+   "to": "Guwahati",
+   "km": 1000,
+   "hours": 18
+  },
+  {
+   "from": "Bangalore",
+   "to": "Hampi",
+   "km": 340,
+   "hours": 6
+  },
+  {
+   "from": "Hyderabad",
+   "to": "Bangalore",
+   "km": 570,
+   "hours": 9
+  },
+  {
+   "from": "Mumbai",
+   "to": "Udaipur",
+   "km": 660,
+   "hours": 12
+  },
+  {
+   "from": "Delhi",
+   "to": "Haridwar",
+   "km": 220,
+   "hours": 5
+  },
+  {
+   "from": "Haridwar",
+   "to": "Rishikesh",
+   "km": 25,
+   "hours": 1
+  },
+  {
+   "from": "Delhi",
+   "to": "Rishikesh",
+   "km": 240,
+   "hours": 6
+  },
+  {
+   "from": "Delhi",
+   "to": "Neemrana",
+   "km": 130,
+   "hours": 3
+  },
+  {
+   "from": "Neemrana",
+   "to": "Jaipur",
+   "km": 150,
+   "hours": 3
+  },
+  {
+   "from": "Agra",
+   "to": "Fatehpur Sikri",
+   "km": 40,
+   "hours": 1
+  },
+  {
+   "from": "Fatehpur Sikri",
+   "to": "Jaipur",
+   "km": 205,
+   "hours": 4
+  },
+  {
+   "from": "Jaipur",
+   "to": "Abhaneri",
+   "km": 95,
+   "hours": 2
+  },
+  {
+   "from": "Jaipur",
+   "to": "Chowki Dhani",
+   "km": 20,
+   "hours": 1
+  },
+  {
+   "from": "Jaisalmer",
+   "to": "Pokharan",
+   "km": 110,
+   "hours": 2
+  },
+  {
+   "from": "Udaipur",
+   "to": "Ranakpur",
+   "km": 90,
+   "hours": 2
+  },
+  {
+   "from": "Delhi",
+   "to": "Shimla",
+   "km": 345,
+   "hours": 8
+  },
+  {
+   "from": "Delhi",
+   "to": "Dharamshala",
+   "km": 475,
+   "hours": 10
+  },
+  {
+   "from": "Delhi",
+   "to": "Varanasi",
+   "km": 820,
+   "hours": 13
+  },
+  {
+   "from": "Varanasi",
+   "to": "Ayodhya",
+   "km": 200,
+   "hours": 5
+  },
+  {
+   "from": "Varanasi",
+   "to": "Patna",
+   "km": 250,
+   "hours": 6
+  },
+  {
+   "from": "Patna",
+   "to": "Kolkata",
+   "km": 580,
+   "hours": 10
+  },
+  {
+   "from": "Delhi",
+   "to": "Kathmandu",
+   "km": 1150,
+   "hours": 24
+  },
+  {
+   "from": "Varanasi",
+   "to": "Kathmandu",
+   "km": 600,
+   "hours": 12
+  },
+  {
+   "from": "Kolkata",
+   "to": "Bhubaneshwar",
+   "km": 440,
+   "hours": 8
+  },
+  {
+   "from": "Bhubaneshwar",
+   "to": "Konark",
+   "km": 65,
+   "hours": 2
+  },
+  {
+   "from": "Puri",
+   "to": "Konark",
+   "km": 35,
+   "hours": 1
+  },
+  {
+   "from": "Chennai",
+   "to": "Kanchipuram",
+   "km": 72,
+   "hours": 2
+  },
+  {
+   "from": "Tanjore",
+   "to": "Darasuram",
+   "km": 35,
+   "hours": 1
+  },
+  {
+   "from": "Trivandrum",
+   "to": "Kovalam",
+   "km": 16,
+   "hours": 1
+  },
+  {
+   "from": "Cochin",
+   "to": "Trivandrum",
+   "km": 220,
+   "hours": 5
+  },
+  {
+   "from": "Hanoi",
+   "to": "Halong",
+   "km": 165,
+   "hours": 3
+  },
+  {
+   "from": "Hanoi",
+   "to": "Danang",
+   "km": 770,
+   "hours": 2,
+   "mode": "flight"
+  },
+  {
+   "from": "Danang",
+   "to": "Hoi An",
+   "km": 30,
+   "hours": 1
+  },
+  {
+   "from": "Danang",
+   "to": "Bana Hills",
+   "km": 35,
+   "hours": 1
+  },
+  {
+   "from": "Danang",
+   "to": "Saigon",
+   "km": 950,
+   "hours": 2,
+   "mode": "flight"
   }
  ]
 }

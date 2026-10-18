@@ -906,6 +906,150 @@
    "source": [
     "Taj Mahal With Kolkata By Flight"
    ]
+  },
+  {
+   "from": "Mumbai",
+   "to": "Goa",
+   "km": 590,
+   "hours": 11,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Goa",
+   "to": "Panjim",
+   "km": 14,
+   "hours": 1,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Goa",
+   "to": "Gokarna",
+   "km": 145,
+   "hours": 3,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Goa",
+   "to": "Hampi",
+   "km": 330,
+   "hours": 6,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Bangalore",
+   "to": "Goa",
+   "km": 560,
+   "hours": 10,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Delhi",
+   "to": "Mumbai",
+   "km": 1420,
+   "hours": 24,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Delhi",
+   "to": "Leh",
+   "km": 1010,
+   "hours": 20,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Leh",
+   "to": "Nubra Valley",
+   "km": 120,
+   "hours": 5,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Leh",
+   "to": "Pangong Lake",
+   "km": 220,
+   "hours": 5,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Nubra Valley",
+   "to": "Pangong Lake",
+   "km": 270,
+   "hours": 7,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Srinagar",
+   "to": "Leh",
+   "km": 420,
+   "hours": 10,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Manali",
+   "to": "Leh",
+   "km": 430,
+   "hours": 12,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Delhi",
+   "to": "Srinagar",
+   "km": 800,
+   "hours": 16,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Delhi",
+   "to": "Manali",
+   "km": 540,
+   "hours": 11,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Bangalore",
+   "to": "Hampi",
+   "km": 340,
+   "hours": 6,
+   "seen": 0,
+   "source": [],
+   "reference": true
+  },
+  {
+   "from": "Mumbai",
+   "to": "Udaipur",
+   "km": 660,
+   "hours": 12,
+   "seen": 0,
+   "source": [],
+   "reference": true
   }
  ]
 }
