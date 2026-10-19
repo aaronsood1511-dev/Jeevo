@@ -12,13 +12,19 @@
 
 ## Format
 - Trim **89 × 54 mm** (Indian / international standard, not US 3.5×2in)
-- 3 mm bleed, 3 mm crop-mark zone → page **101 × 66 mm**
+- 3 mm bleed, no crop-mark zone → page **95 × 60 mm**, artwork edge to edge
 - Safe area 6 mm inside trim; nothing live outside it
 - Two pages: front, back. Vector PDF, fonts embedded.
 
-## Front (cream `#FFFDF8`)
+## Front (deep brown `#4A2410`)
 Logo top-left, tagline beneath in letterspaced small caps, saffron hairline,
 then name bottom-left and the contact block bottom-right.
+
+Contrast measured against the brown, not eyeballed. The original cream-card
+colours fail on it: the deep-green name is **1.10:1 (invisible)** and the logo's
+own brown is 4.16:1. Recoloured — logo word and swoosh to saffron (6.35:1),
+name to white (13.32:1), tagline to saffron, contacts to cream (12.8:1),
+sub-line left in gold (5.13:1). All pass 4.5:1 for small text.
 
 ## Back (deep green `#0C3D1C`)
 Faint jaali. QR on a white tile for scan reliability, "Plan your trip with Arjun"
