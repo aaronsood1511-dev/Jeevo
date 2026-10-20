@@ -59,7 +59,7 @@
     var fab = document.createElement('button');
     fab.className='jv-chat-fab'; fab.type='button';
     fab.setAttribute('aria-label','Plan a trip with Arjun');
-    fab.innerHTML='<i class="fas fa-route" aria-hidden="true"></i><span>Plan my trip</span>';
+    fab.innerHTML='<i class="fas fa-route" aria-hidden="true"></i><span data-i18n="chat.fab">Plan my trip</span>';
 
     var panel=document.createElement('div');
     panel.className='jv-chat-panel'; panel.setAttribute('role','dialog');
@@ -72,7 +72,7 @@
       '<div class="jv-chat-log" role="log" aria-live="polite"></div>'+
       '<div class="jv-chat-foot"><div class="jv-chat-opts"></div>'+
         '<div class="jv-chat-row" hidden>'+
-          '<textarea class="jv-chat-input" rows="1" placeholder="Or just tell me what you\'re after\u2026" maxlength="1200" aria-label="Your message"></textarea>'+
+          '<textarea class="jv-chat-input" rows="1" placeholder="Or just tell me what you\'re after\u2026" data-i18n-ph="ph.chat" maxlength="1200" aria-label="Your message"></textarea>'+
           '<button class="jv-chat-send" type="button" aria-label="Send"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>'+
         '</div>'+
         '<p class="jv-chat-note">Suggestions come from trips we actually run. A consultant confirms details and pricing.</p>'+
@@ -730,7 +730,7 @@
     var t=document.createElement('div');
     t.className='jv-chat-teaser';
     t.innerHTML='<button class="jv-chat-teaser-x" type="button" aria-label="No thanks">&times;</button>'+
-                "Planning a trip to India? <b>I'll build you an itinerary</b> in about a minute — free, no obligation.";
+                '<span data-i18n="chat.teaser">Planning a trip to India? I\'ll build you an itinerary in about a minute \u2014 free, no obligation.</span>';
     t.addEventListener('click', function(e){
       if(e.target.classList.contains('jv-chat-teaser-x')){ markTeased(); t.remove(); return; }
       markTeased(); t.remove(); open();

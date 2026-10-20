@@ -23,6 +23,11 @@
 
   /* translate one subtree - used for anything injected after first paint */
   function paint(root, lang) {
+    var phs = root.querySelectorAll ? root.querySelectorAll('[data-i18n-ph]') : [];
+    for (var p = 0; p < phs.length; p++) {
+      var pk = phs[p].getAttribute('data-i18n-ph'), prow = S[pk];
+      if (prow) phs[p].setAttribute('placeholder', prow[lang] || prow.en);
+    }
     var nodes = root.querySelectorAll ? root.querySelectorAll('[data-i18n]') : [];
     for (var i = 0; i < nodes.length; i++) {
       var k = nodes[i].getAttribute('data-i18n'), row = S[k];
@@ -48,6 +53,13 @@
       var row = S[k];
       if (!row) continue;
       nodes[i].textContent = row[lang] || row.en;
+    }
+    /* placeholders and aria-labels are attributes, so textContent never reaches
+       them - a form would stay English in every language without this */
+    var phs = doc.querySelectorAll('[data-i18n-ph]');
+    for (var p = 0; p < phs.length; p++) {
+      var pk = phs[p].getAttribute('data-i18n-ph'), prow = S[pk];
+      if (prow) phs[p].setAttribute('placeholder', prow[lang] || prow.en);
     }
     doc.documentElement.setAttribute('lang', lang);
     doc.documentElement.setAttribute('dir', LANGS[lang].dir);

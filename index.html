@@ -185,7 +185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <span class="text-gradient">Many ways to explore.</span>
 </h2>
 </div>
-<p>Begin with a region. Find the journey that brings its stories to life.</p>
+<p data-i18n="blk.region">Begin with a region. Find the journey that brings its stories to life.</p>
 </div>
 <div class="destination-stories">
 <a class="destination-story" href="#interactive-tours" data-region="gujarat">
@@ -768,9 +768,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="jv-arjun-inner">
                 <div class="jv-arjun-copy">
                     <span class="section-tag" data-i18n="tag.arjun">Plan with Arjun</span>
-                    <h2>Tell him where you want to go.<br>He will draft the trip.</h2>
+                    <h2><span data-i18n="arjun.h.a">Tell him where you want to go.</span><br><span data-i18n="arjun.h.b">He will draft the trip.</span></h2>
                     <p data-i18n="arjun.p1">Arjun is our planning assistant. Tell him the places, the dates and roughly who is travelling, and he will put together a day-by-day itinerary built from the routes we actually run &mdash; the drives, the sensible number of nights, the things worth getting up early for.</p>
-                    <p class="jv-arjun-note">He is an AI, not one of our consultants, and he will not quote you a price. When the shape of the trip is right, one of our team picks it up from there.</p>
+                    <p class="jv-arjun-note" data-i18n="arjun.note">He is an AI, not one of our consultants, and he will not quote you a price. When the shape of the trip is right, one of our team picks it up from there.</p>
                     <ul class="jv-arjun-points">
                         <li><i class="fas fa-bolt" aria-hidden="true"></i> About a minute</li>
                         <li><i class="fas fa-indian-rupee-sign" aria-hidden="true"></i> Free, no obligation</li>
@@ -788,7 +788,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cta-overlay"></div>
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Experience the <span class="text-gradient-light">Magic of India</span>?</h2>
+                <h2><span data-i18n="cta2.a">Ready to Experience the</span> <span class="text-gradient-light" data-i18n="cta2.b">Magic of India</span>?</h2>
                 <p data-i18n="cta2.sub">Let us craft your perfect Indian adventure. Your journey begins with a single message.</p>
                 <div class="cta-btns">
                     <a href="#contact" class="jv-origin-btn btn-primary btn-lg"><i class="fas fa-envelope"></i> <span data-i18n="cta.touch">Get in Touch</span></a>
@@ -849,98 +849,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <form class="contact-form" id="contactForm" novalidate>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> Your name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required>
+                            <label for="name"><i class="fas fa-user"></i> <span data-i18n="lbl.name">Your name</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" data-i18n-ph="ph.name" autocomplete="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                            <label for="phone"><i class="fas fa-phone"></i> <span data-i18n="lbl.phone">Phone</span></label>
                             <input type="tel" id="phone" name="phone" placeholder="04.. or +61 / +91" autocomplete="tel" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <label for="email"><i class="fas fa-envelope"></i> <span data-i18n="lbl.email">Email</span></label>
                         <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="travel_month"><i class="fas fa-calendar"></i> When roughly? <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="travel_month"><i class="fas fa-calendar"></i> <span data-i18n="lbl.when">When roughly?</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <select id="travel_month" name="travel_month">
-                                <option value="">Not sure yet</option>
-                                <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+                                <option value="" data-i18n="opt.notsure">Not sure yet</option>
+                                <option value="January" data-i18n="m.1">January</option><option value="February" data-i18n="m.2">February</option><option value="March" data-i18n="m.3">March</option><option value="April" data-i18n="m.4">April</option><option value="May" data-i18n="m.5">May</option><option value="June" data-i18n="m.6">June</option><option value="July" data-i18n="m.7">July</option><option value="August" data-i18n="m.8">August</option><option value="September" data-i18n="m.9">September</option><option value="October" data-i18n="m.10">October</option><option value="November" data-i18n="m.11">November</option><option value="December" data-i18n="m.12">December</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="nights"><i class="fas fa-moon"></i> How many nights? <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="nights"><i class="fas fa-moon"></i> <span data-i18n="lbl.nights">How many nights?</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <input type="number" id="nights" name="nights" min="1" max="60" placeholder="e.g. 12">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="adults"><i class="fas fa-user-group"></i> Adults <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="adults"><i class="fas fa-user-group"></i> <span data-i18n="lbl.adults">Adults</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <input type="number" id="adults" name="adults" min="1" max="60" placeholder="e.g. 2">
                         </div>
                         <div class="form-group">
-                            <label for="children"><i class="fas fa-child"></i> Children <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="children"><i class="fas fa-child"></i> <span data-i18n="lbl.children">Children</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <input type="number" id="children" name="children" min="0" max="30" placeholder="e.g. 1">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="hotel_standard"><i class="fas fa-bed"></i> Hotel standard <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="hotel_standard"><i class="fas fa-bed"></i> <span data-i18n="lbl.hotel">Hotel standard</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <select id="hotel_standard" name="hotel_standard">
-                                <option value="">Not sure yet</option>
-                                <option>3-star &ndash; comfortable</option>
-                                <option>4-star &ndash; premium</option>
-                                <option>5-star &ndash; luxury</option>
-                                <option>Heritage / palace stays</option>
-                                <option>Mix of standards</option>
+                                <option value="" data-i18n="opt.notsure">Not sure yet</option>
+                                <option value="3-star &ndash; comfortable" data-i18n="opt.h3">3-star &ndash; comfortable</option>
+                                <option value="4-star &ndash; premium" data-i18n="opt.h4">4-star &ndash; premium</option>
+                                <option value="5-star &ndash; luxury" data-i18n="opt.h5">5-star &ndash; luxury</option>
+                                <option value="Heritage / palace stays" data-i18n="opt.hher">Heritage / palace stays</option>
+                                <option value="Mix of standards" data-i18n="opt.hmix">Mix of standards</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="budget"><i class="fas fa-wallet"></i> Budget per person <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                            <label for="budget"><i class="fas fa-wallet"></i> <span data-i18n="lbl.budget">Budget per person</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                             <select id="budget" name="budget">
-                                <option value="">Rather not say</option>
-                                <option>Under $2,000</option>
+                                <option value="" data-i18n="opt.rathernot">Rather not say</option>
+                                <option value="Under $2,000" data-i18n="opt.b1">Under $2,000</option>
                                 <option>$2,000 &ndash; $3,500</option>
                                 <option>$3,500 &ndash; $5,000</option>
                                 <option>$5,000 &ndash; $8,000</option>
-                                <option>$8,000+</option>
+                                <option value="$8,000+" data-i18n="opt.b5">$8,000+</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="currency"><i class="fas fa-coins"></i> Currency <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                        <label for="currency"><i class="fas fa-coins"></i> <span data-i18n="lbl.currency">Currency</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                         <select id="currency" name="currency">
-                            <option value="">Not sure</option>
+                            <option value="" data-i18n="opt.notsure2">Not sure</option>
                             <option>AUD</option><option>USD</option><option>GBP</option>
                             <option>EUR</option><option>INR</option><option>NZD</option><option>CAD</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="flights"><i class="fas fa-plane"></i> Flights <span style="opacity:.6;font-weight:400">(optional)</span></label>
+                        <label for="flights"><i class="fas fa-plane"></i> <span data-i18n="lbl.flights">Flights</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
                         <select id="flights" name="flights">
-                            <option value="">Not sure yet</option>
-                            <option>Land only &ndash; we&rsquo;ll book our own flights</option>
-                            <option>Please include flights</option>
+                            <option value="" data-i18n="opt.notsure">Not sure yet</option>
+                            <option value="Land only &ndash; we&rsquo;ll book our own flights" data-i18n="opt.fland">Land only &ndash; we&rsquo;ll book our own flights</option>
+                            <option value="Please include flights" data-i18n="opt.finc">Please include flights</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="reason"><i class="fas fa-map-pin"></i> Reason for contact</label>
+                        <label for="reason"><i class="fas fa-map-pin"></i> <span data-i18n="lbl.reason">Reason for contact</span></label>
                         <select id="reason" name="reason">
-                            <option>Enquiring about a tour</option>
-                            <option>Planning a custom trip</option>
-                            <option>Pilgrimage / yatra enquiry</option>
-                            <option>Group or family booking</option>
-                            <option>Flights and ground arrangements</option>
-                            <option>Something else</option>
+                            <option value="Enquiring about a tour" data-i18n="opt.r1">Enquiring about a tour</option>
+                            <option value="Planning a custom trip" data-i18n="opt.r2">Planning a custom trip</option>
+                            <option value="Pilgrimage / yatra enquiry" data-i18n="opt.r3">Pilgrimage / yatra enquiry</option>
+                            <option value="Group or family booking" data-i18n="opt.r4">Group or family booking</option>
+                            <option value="Flights and ground arrangements" data-i18n="opt.r5">Flights and ground arrangements</option>
+                            <option value="Something else" data-i18n="opt.r6">Something else</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message"><i class="fas fa-comment"></i> Anything else? <span style="opacity:.6;font-weight:400">(optional)</span></label>
-                        <textarea id="message" name="message" rows="4" placeholder="Rough dates, how many of you, what you are hoping for..."></textarea>
+                        <label for="message"><i class="fas fa-comment"></i> <span data-i18n="lbl.anything">Anything else?</span> <span style="opacity:.6;font-weight:400" data-i18n="lbl.optional">(optional)</span></label>
+                        <textarea id="message" name="message" rows="4" placeholder="Rough dates, how many of you, what you are hoping for..." data-i18n-ph="ph.msg"></textarea>
                     </div>
                     <button type="submit" class="jv-origin-btn btn-primary btn-lg btn-full" id="contactSubmit">
-                        <i class="fas fa-paper-plane"></i> Send Enquiry
+                        <i class="fas fa-paper-plane"></i data-i18n="btn.send"> Send Enquiry
                     </button>
                     <p class="form-note" data-i18n="form.note">Your details come straight to us and nowhere else. No mailing list, no sharing.</p>
                 </form>
@@ -991,7 +991,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 data-i18n="footer.news">Travel Newsletter</h4>
                         <p data-i18n="footer.newssub">Subscribe for exclusive deals, travel tips & hidden gems of India.</p>
                         <form class="newsletter-form">
-                            <input type="email" name="email" placeholder="Your email address" required>
+                            <input type="email" name="email" placeholder="Your email address" data-i18n-ph="ph.email2" required>
                             <button type="submit"><i class="fas fa-arrow-right"></i></button>
                         </form>
                     </div>
@@ -1000,7 +1000,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Jeevo. All Rights Reserved. Made with ❤️ in India.</p>
+                <p data-i18n="footer.copy">&copy; 2026 Jeevo. All Rights Reserved. Made with ❤️ in India.</p>
 <p class="footer-legal"><a href="disclaimer.html">Disclaimer</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Booking Terms</a></p>
             </div>
         </div>
@@ -1019,11 +1019,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/jeevo-origin-button.js"></script>
 
     <script src="script.js?v=1791989577"></script>
-    <script src="assets/jeevo-chat.js?v=20261018-goa"></script>
+    <script src="assets/jeevo-chat.js?v=20261020-es2"></script>
     <script src="assets/jeevo-navigation.js?v=20261015-menu2"></script>
     <script src="assets/jeevo-rail.js?v=20261015-menu" defer></script>
     <script src="assets/jeevo-ripple.js?v=20261015-polish" defer></script>
-    <script src="assets/jeevo-i18n-data.js?v=20261019-events"></script>
-    <script src="assets/jeevo-i18n.js?v=20261015-i18n" defer></script>
+    <script src="assets/jeevo-i18n-data.js?v=20261020-es2"></script>
+    <script src="assets/jeevo-i18n.js?v=20261020-es2" defer></script>
 </body>
 </html>
