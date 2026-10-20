@@ -56,6 +56,21 @@ window.JV_STRINGS = {
   "es": "Viajes que se vuelven parte de su historia",
   "hi": "\u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u091c\u094b \u0906\u092a\u0915\u0940 \u0915\u0939\u093e\u0928\u0940 \u092c\u0928 \u091c\u093e\u090f"
  },
+ "aj.f1": {
+  "en": "About a minute",
+  "es": "Un minuto, m\u00e1s o menos",
+  "hi": "\u0932\u0917\u092d\u0917 \u090f\u0915 \u092e\u093f\u0928\u091f"
+ },
+ "aj.f2": {
+  "en": "Free, no obligation",
+  "es": "Gratis y sin compromiso",
+  "hi": "\u0928\u093f\u0903\u0936\u0941\u0932\u094d\u0915, \u0915\u094b\u0908 \u092c\u093e\u0927\u094d\u092f\u0924\u093e \u0928\u0939\u0940\u0902"
+ },
+ "aj.f3": {
+  "en": "A person takes over after",
+  "es": "Despu\u00e9s toma el relevo una persona",
+  "hi": "\u0909\u0938\u0915\u0947 \u092c\u093e\u0926 \u090f\u0915 \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0938\u0902\u092d\u093e\u0932\u0924\u093e \u0939\u0948"
+ },
  "arjun.cta": {
   "en": "Start planning with Arjun",
   "es": "Empiece a planificar con Arjun",
@@ -85,6 +100,46 @@ window.JV_STRINGS = {
   "en": "Tell him where you want to go. He will draft the trip.",
   "es": "D\u00edgale ad\u00f3nde quiere ir. \u00c9l redactar\u00e1 el viaje.",
   "hi": "\u0909\u0938\u0947 \u092c\u0924\u093e\u0907\u090f \u0915\u0939\u093e\u0901 \u091c\u093e\u0928\u093e \u0939\u0948\u0964 \u0935\u0939 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0916\u093c\u093e\u0915\u093e \u092c\u0928\u093e \u0926\u0947\u0917\u093e\u0964"
+ },
+ "badge.1": {
+  "en": "A grand southern journey",
+  "es": "Un gran viaje por el sur",
+  "hi": "\u0926\u0915\u094d\u0937\u093f\u0923 \u0915\u0940 \u090f\u0915 \u092d\u0935\u094d\u092f \u092f\u093e\u0924\u094d\u0930\u093e"
+ },
+ "badge.2": {
+  "en": "Art, communities & coast",
+  "es": "Arte, comunidades y costa",
+  "hi": "\u0915\u0932\u093e, \u0938\u092e\u0941\u0926\u093e\u092f \u0914\u0930 \u0924\u091f"
+ },
+ "badge.3": {
+  "en": "Culture & sacred landscapes",
+  "es": "Cultura y paisajes sagrados",
+  "hi": "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u093f \u0914\u0930 \u092a\u0935\u093f\u0924\u094d\u0930 \u092d\u0942\u0926\u0943\u0936\u094d\u092f"
+ },
+ "badge.4": {
+  "en": "Deserts & royal heritage",
+  "es": "Desiertos y herencia real",
+  "hi": "\u0930\u0947\u0917\u093f\u0938\u094d\u0924\u093e\u0928 \u0914\u0930 \u0930\u093e\u091c\u0938\u0940 \u0935\u093f\u0930\u093e\u0938\u0924"
+ },
+ "badge.5": {
+  "en": "Heritage & hill retreats",
+  "es": "Patrimonio y retiros de monta\u00f1a",
+  "hi": "\u0935\u093f\u0930\u093e\u0938\u0924 \u0914\u0930 \u092a\u0939\u093e\u0921\u093c\u0940 \u0935\u093f\u0936\u094d\u0930\u093e\u092e"
+ },
+ "badge.6": {
+  "en": "Jeevo journeys",
+  "es": "Viajes Jeevo",
+  "hi": "\u091c\u0940\u0935\u094b \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
+ },
+ "badge.7": {
+  "en": "Palaces, craft & stepwells",
+  "es": "Palacios, artesan\u00eda y pozos escalonados",
+  "hi": "\u092e\u0939\u0932, \u0936\u093f\u0932\u094d\u092a \u0914\u0930 \u092c\u093e\u0935\u0921\u093c\u093f\u092f\u093e\u0901"
+ },
+ "badge.8": {
+  "en": "Spirituality & mountain towns",
+  "es": "Espiritualidad y pueblos de monta\u00f1a",
+  "hi": "\u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e \u0914\u0930 \u092a\u0939\u093e\u0921\u093c\u0940 \u0915\u0938\u094d\u092c\u0947"
  },
  "blk.region": {
   "en": "Begin with a region. Find the journey that brings its stories to life.",
@@ -246,10 +301,25 @@ window.JV_STRINGS = {
   "es": "Ghats milenarios, rituales sagrados y espiritualidad sin tiempo",
   "hi": "\u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u0918\u093e\u091f, \u092a\u0935\u093f\u0924\u094d\u0930 \u0905\u0928\u0941\u0937\u094d\u0920\u093e\u0928 \u0914\u0930 \u0915\u093e\u0932\u093e\u0924\u0940\u0924 \u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e\u093f\u0915\u0924\u093e"
  },
+ "dest.h.a": {
+  "en": "One place.",
+  "es": "Un solo lugar.",
+  "hi": "\u090f\u0915 \u0939\u0940 \u091c\u0917\u0939\u0964"
+ },
+ "dest.h.b": {
+  "en": "Many ways to explore.",
+  "es": "Muchas formas de explorarlo.",
+  "hi": "\u0918\u0942\u092e\u0928\u0947 \u0915\u0947 \u0915\u0908 \u0924\u0930\u0940\u0915\u0947\u0964"
+ },
  "dest.mind": {
   "en": "A place in mind? We\u2019ll help you make it your own.",
   "es": "\u00bfTiene un lugar en mente? Le ayudamos a hacerlo suyo.",
   "hi": "\u0915\u094b\u0908 \u091c\u0917\u0939 \u092e\u0928 \u092e\u0947\u0902 \u0939\u0948? \u0939\u092e \u0909\u0938\u0947 \u0906\u092a\u0915\u0940 \u0905\u092a\u0928\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092c\u0928\u093e \u0926\u0947\u0902\u0917\u0947\u0964"
+ },
+ "dest.more": {
+  "en": "Explore more destinations",
+  "es": "Ver m\u00e1s destinos",
+  "hi": "\u0914\u0930 \u0917\u0902\u0924\u0935\u094d\u092f \u0926\u0947\u0916\u0947\u0902"
  },
  "dest.plan": {
   "en": "Plan your journey",
@@ -361,6 +431,46 @@ window.JV_STRINGS = {
   "es": "Eventos de boda",
   "hi": "\u0935\u093f\u0935\u093e\u0939 \u0906\u092f\u094b\u091c\u0928"
  },
+ "f.about": {
+  "en": "About Us",
+  "es": "Sobre nosotros",
+  "hi": "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902"
+ },
+ "f.contact": {
+  "en": "Contact",
+  "es": "Contacto",
+  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915"
+ },
+ "f.dest": {
+  "en": "Destinations",
+  "es": "Destinos",
+  "hi": "\u0917\u0902\u0924\u0935\u094d\u092f"
+ },
+ "f.disc": {
+  "en": "Disclaimer",
+  "es": "Aviso legal",
+  "hi": "\u0905\u0938\u094d\u0935\u0940\u0915\u0930\u0923"
+ },
+ "f.gal": {
+  "en": "Gallery",
+  "es": "Galer\u00eda",
+  "hi": "\u0917\u0948\u0932\u0930\u0940"
+ },
+ "f.pkg": {
+  "en": "Tour Packages",
+  "es": "Paquetes de viaje",
+  "hi": "\u091f\u0942\u0930 \u092a\u0948\u0915\u0947\u091c"
+ },
+ "f.priv": {
+  "en": "Privacy Policy",
+  "es": "Pol\u00edtica de privacidad",
+  "hi": "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0928\u0940\u0924\u093f"
+ },
+ "f.terms": {
+  "en": "Booking Terms",
+  "es": "Condiciones de reserva",
+  "hi": "\u092c\u0941\u0915\u093f\u0902\u0917 \u0936\u0930\u094d\u0924\u0947\u0902"
+ },
  "feat.sub": {
   "en": "Nine thoughtfully planned routes. Swipe through and find your starting point.",
   "es": "Nueve rutas pensadas con cuidado. Deslice y encuentre su punto de partida.",
@@ -391,6 +501,11 @@ window.JV_STRINGS = {
   "es": "Suscr\u00edbase para recibir ofertas exclusivas, consejos de viaje y rincones secretos de la India.",
   "hi": "\u0916\u093c\u093e\u0938 \u0911\u092b\u093c\u0930, \u092f\u093e\u0924\u094d\u0930\u093e \u0938\u0941\u091d\u093e\u0935 \u0914\u0930 \u092d\u093e\u0930\u0924 \u0915\u0940 \u091b\u093f\u092a\u0940 \u0939\u0941\u0908 \u091c\u0917\u0939\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0938\u092c\u094d\u0938\u0915\u094d\u0930\u093e\u0907\u092c \u0915\u0940\u091c\u093f\u090f\u0964"
  },
+ "footer.quick": {
+  "en": "Quick Links",
+  "es": "Enlaces r\u00e1pidos",
+  "hi": "\u0924\u094d\u0935\u0930\u093f\u0924 \u0932\u093f\u0902\u0915"
+ },
  "footer.topdest": {
   "en": "Top Destinations",
   "es": "Destinos destacados",
@@ -400,6 +515,16 @@ window.JV_STRINGS = {
   "en": "Your details come straight to us and nowhere else. No mailing list, no sharing.",
   "es": "Sus datos llegan directamente a nosotros y a nadie m\u00e1s. Sin listas de correo, sin cederlos a terceros.",
   "hi": "\u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0938\u0940\u0927\u0947 \u0939\u092e \u0924\u0915 \u0906\u0924\u0940 \u0939\u0948, \u0914\u0930 \u0915\u0939\u0940\u0902 \u0928\u0939\u0940\u0902\u0964 \u0928 \u0915\u094b\u0908 \u092e\u0947\u0932\u093f\u0902\u0917 \u0932\u093f\u0938\u094d\u091f, \u0928 \u0915\u093f\u0938\u0940 \u0915\u0947 \u0938\u093e\u0925 \u0938\u093e\u091d\u093e\u0964"
+ },
+ "gal.c1": {
+  "en": "Festival of Colors",
+  "es": "Festival de los colores",
+  "hi": "\u0930\u0902\u0917\u094b\u0902 \u0915\u093e \u0924\u094d\u092f\u094b\u0939\u093e\u0930"
+ },
+ "gal.c2": {
+  "en": "Colors of India",
+  "es": "Los colores de la India",
+  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u0930\u0902\u0917"
  },
  "gal.title": {
   "en": "Glimpses of India's Magic",
@@ -435,6 +560,21 @@ window.JV_STRINGS = {
   "en": "Experience India like never before: from Himalayan peaks to Goa's beaches, ancient temples to vibrant bazaars.",
   "es": "Viva la India como nunca antes: de las cumbres del Himalaya a las playas de Goa, de los templos antiguos a los bazares llenos de vida.",
   "hi": "\u092d\u093e\u0930\u0924 \u0915\u094b \u090f\u0915 \u0928\u090f \u0905\u0902\u0926\u093e\u091c\u093c \u092e\u0947\u0902 \u0926\u0947\u0916\u093f\u090f \u2014 \u0939\u093f\u092e\u093e\u0932\u092f \u0915\u0940 \u091a\u094b\u091f\u093f\u092f\u094b\u0902 \u0938\u0947 \u0917\u094b\u0935\u093e \u0915\u0947 \u0938\u092e\u0941\u0926\u094d\u0930 \u0924\u091f\u094b\u0902 \u0924\u0915, \u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u092e\u0902\u0926\u093f\u0930\u094b\u0902 \u0938\u0947 \u091c\u0940\u0935\u0902\u0924 \u092c\u093e\u091c\u093c\u093e\u0930\u094b\u0902 \u0924\u0915\u0964"
+ },
+ "hours.sun": {
+  "en": "Sun: 10:00 AM - 4:00 PM IST",
+  "es": "Dom: 10:00 - 16:00 IST",
+  "hi": "\u0930\u0935\u093f: \u0938\u0941\u092c\u0939 10:00 - \u0936\u093e\u092e 4:00 IST"
+ },
+ "hours.wk": {
+  "en": "Mon - Sat: 9:00 AM - 7:00 PM IST",
+  "es": "Lun - S\u00e1b: 9:00 - 19:00 IST",
+  "hi": "\u0938\u094b\u092e - \u0936\u0928\u093f: \u0938\u0941\u092c\u0939 9:00 - \u0936\u093e\u092e 7:00 IST"
+ },
+ "i18n.label": {
+  "en": "Language",
+  "es": "Idioma",
+  "hi": "\u092d\u093e\u0937\u093e"
  },
  "lbl.adults": {
   "en": "Adults",
@@ -501,10 +641,30 @@ window.JV_STRINGS = {
   "es": "Motivo de contacto",
   "hi": "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u093e \u0915\u093e\u0930\u0923"
  },
+ "lbl.region": {
+  "en": "Explore by region",
+  "es": "Explorar por regi\u00f3n",
+  "hi": "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u0926\u0947\u0916\u0947\u0902"
+ },
  "lbl.when": {
   "en": "When roughly?",
   "es": "\u00bfPara cu\u00e1ndo, m\u00e1s o menos?",
   "hi": "\u0932\u0917\u092d\u0917 \u0915\u092c?"
+ },
+ "link.credits": {
+  "en": "Photograph credits",
+  "es": "Cr\u00e9ditos fotogr\u00e1ficos",
+  "hi": "\u092b\u093c\u094b\u091f\u094b \u0915\u094d\u0930\u0947\u0921\u093f\u091f"
+ },
+ "link.explorej": {
+  "en": "Explore journey",
+  "es": "Ver el viaje",
+  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e \u0926\u0947\u0916\u0947\u0902"
+ },
+ "link.viewj": {
+  "en": "View journeys",
+  "es": "Ver viajes",
+  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0926\u0947\u0916\u0947\u0902"
  },
  "m.1": {
   "en": "January",
@@ -736,10 +896,90 @@ window.JV_STRINGS = {
   "es": "Su nombre completo",
   "hi": "\u0906\u092a\u0915\u093e \u092a\u0942\u0930\u093e \u0928\u093e\u092e"
  },
+ "region.1": {
+  "en": "Northeast India",
+  "es": "Noreste de la India",
+  "hi": "\u092a\u0942\u0930\u094d\u0935\u094b\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924"
+ },
+ "region.2": {
+  "en": "Southern India",
+  "es": "Sur de la India",
+  "hi": "\u0926\u0915\u094d\u0937\u093f\u0923 \u092d\u093e\u0930\u0924"
+ },
+ "region.3": {
+  "en": "Himalayan Foothills",
+  "es": "Estribaciones del Himalaya",
+  "hi": "\u0939\u093f\u092e\u093e\u0932\u092f \u0915\u0940 \u0924\u0932\u0939\u091f\u0940"
+ },
+ "region.4": {
+  "en": "North India",
+  "es": "Norte de la India",
+  "hi": "\u0909\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924"
+ },
+ "region.5": {
+  "en": "Beyond India",
+  "es": "M\u00e1s all\u00e1 de la India",
+  "hi": "\u092d\u093e\u0930\u0924 \u0938\u0947 \u092a\u0930\u0947"
+ },
+ "rev.1": {
+  "en": "\u201cI had wanted to take my family to the Golden Temple for years, and Jeevo made it effortless. Everything from the airport to the langar hall was arranged before we arrived, so we could just be there and take it in. Going back felt like going home.\u201d",
+  "es": "\u00abLlevaba a\u00f1os queriendo llevar a mi familia al Templo Dorado, y Jeevo lo hizo sencill\u00edsimo. Todo, desde el aeropuerto hasta el comedor del langar, estaba organizado antes de que lleg\u00e1ramos, as\u00ed que pudimos simplemente estar all\u00ed y absorberlo. Volver se sinti\u00f3 como volver a casa.\u00bb",
+  "hi": "\u201c\u092e\u0948\u0902 \u0935\u0930\u094d\u0937\u094b\u0902 \u0938\u0947 \u0905\u092a\u0928\u0947 \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u094b \u0938\u094d\u0935\u0930\u094d\u0923 \u092e\u0902\u0926\u093f\u0930 \u0932\u0947 \u091c\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0925\u093e, \u0914\u0930 \u091c\u0940\u0935\u094b \u0928\u0947 \u0907\u0938\u0947 \u092c\u093f\u0932\u0915\u0941\u0932 \u0906\u0938\u093e\u0928 \u092c\u0928\u093e \u0926\u093f\u092f\u093e\u0964 \u0939\u0935\u093e\u0908 \u0905\u0921\u094d\u0921\u0947 \u0938\u0947 \u0932\u0902\u0917\u0930 \u0939\u0949\u0932 \u0924\u0915 \u0938\u092c \u0915\u0941\u091b \u0939\u092e\u093e\u0930\u0947 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093f\u0924 \u0925\u093e, \u0907\u0938\u0932\u093f\u090f \u0939\u092e \u092c\u0938 \u0935\u0939\u093e\u0901 \u0930\u0939 \u0938\u0915\u0947 \u0914\u0930 \u0938\u092c \u0915\u0941\u091b \u092e\u0939\u0938\u0942\u0938 \u0915\u0930 \u0938\u0915\u0947\u0964 \u0935\u093e\u092a\u0938 \u091c\u093e\u0928\u093e \u0918\u0930 \u0932\u094c\u091f\u0928\u0947 \u091c\u0948\u0938\u093e \u0932\u0917\u093e\u0964\u201d"
+ },
+ "rev.2": {
+  "en": "\u201cI went to Rishikesh to switch off and that is exactly what I got. Jeevo picked a place right by the river, sorted the yoga sessions, then left me alone to enjoy it. The evening aarti on the ghats was the highlight of my year.\u201d",
+  "es": "\u00abFui a Rishikesh para desconectar y es exactamente lo que consegu\u00ed. Jeevo eligi\u00f3 un lugar justo a la orilla del r\u00edo, organiz\u00f3 las sesiones de yoga y despu\u00e9s me dej\u00f3 tranquila para disfrutarlo. El aarti del atardecer en los ghats fue lo mejor de mi a\u00f1o.\u00bb",
+  "hi": "\u201c\u092e\u0948\u0902 \u0938\u092c \u0915\u0941\u091b \u092d\u0942\u0932\u0915\u0930 \u0936\u093e\u0902\u0924\u093f \u092a\u093e\u0928\u0947 \u090b\u0937\u093f\u0915\u0947\u0936 \u0917\u0908 \u0925\u0940, \u0914\u0930 \u092e\u0941\u091d\u0947 \u0920\u0940\u0915 \u0935\u0939\u0940 \u092e\u093f\u0932\u093e\u0964 \u091c\u0940\u0935\u094b \u0928\u0947 \u0928\u0926\u0940 \u0915\u0947 \u092c\u093f\u0932\u0915\u0941\u0932 \u0915\u093f\u0928\u093e\u0930\u0947 \u091c\u0917\u0939 \u091a\u0941\u0928\u0940, \u092f\u094b\u0917 \u0938\u0924\u094d\u0930 \u0924\u092f \u0915\u093f\u090f, \u0914\u0930 \u092b\u093f\u0930 \u092e\u0941\u091d\u0947 \u0936\u093e\u0902\u0924\u093f \u0938\u0947 \u0909\u0938\u0915\u093e \u0906\u0928\u0902\u0926 \u0932\u0947\u0928\u0947 \u0926\u093f\u092f\u093e\u0964 \u0918\u093e\u091f\u094b\u0902 \u092a\u0930 \u0936\u093e\u092e \u0915\u0940 \u0906\u0930\u0924\u0940 \u092e\u0947\u0930\u0947 \u092a\u0942\u0930\u0947 \u0938\u093e\u0932 \u0915\u0940 \u0938\u092c\u0938\u0947 \u0938\u0941\u0902\u0926\u0930 \u092f\u093e\u0926 \u0939\u0948\u0964\u201d"
+ },
+ "rev.3": {
+  "en": "\u201cVaranasi is a lot to take in and I am glad I did not try to do it alone. Our guide knew when to explain something and when to let us just watch. The sunrise boat ride along the ghats was the most moving thing I have done.\u201d",
+  "es": "\u00abVaranasi es mucho que asimilar y me alegro de no haber intentado hacerlo sola. Nuestro gu\u00eda sab\u00eda cu\u00e1ndo explicar algo y cu\u00e1ndo dejarnos simplemente mirar. El paseo en barca al amanecer por los ghats fue lo m\u00e1s conmovedor que he hecho.\u00bb",
+  "hi": "\u201c\u0935\u093e\u0930\u093e\u0923\u0938\u0940 \u0915\u094b \u0938\u092e\u091d \u092a\u093e\u0928\u093e \u0906\u0938\u093e\u0928 \u0928\u0939\u0940\u0902 \u0939\u0948, \u0914\u0930 \u092e\u0941\u091d\u0947 \u0916\u0941\u0936\u0940 \u0939\u0948 \u0915\u093f \u092e\u0948\u0902\u0928\u0947 \u0907\u0938\u0947 \u0905\u0915\u0947\u0932\u0947 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094b\u0936\u093f\u0936 \u0928\u0939\u0940\u0902 \u0915\u0940\u0964 \u0939\u092e\u093e\u0930\u0947 \u0917\u093e\u0907\u0921 \u0915\u094b \u092a\u0924\u093e \u0925\u093e \u0915\u093f \u0915\u092c \u0915\u0941\u091b \u0938\u092e\u091d\u093e\u0928\u093e \u0939\u0948 \u0914\u0930 \u0915\u092c \u0939\u092e\u0947\u0902 \u092c\u0938 \u0926\u0947\u0916\u0928\u0947 \u0926\u0947\u0928\u093e \u0939\u0948\u0964 \u0938\u0942\u0930\u094d\u092f\u094b\u0926\u092f \u0915\u0947 \u0938\u092e\u092f \u0918\u093e\u091f\u094b\u0902 \u0915\u0947 \u0915\u093f\u0928\u093e\u0930\u0947 \u0928\u093e\u0935 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940 \u092e\u0947\u0930\u0947 \u091c\u0940\u0935\u0928 \u0915\u093e \u0938\u092c\u0938\u0947 \u092d\u093e\u0935\u0941\u0915 \u0905\u0928\u0941\u092d\u0935 \u0925\u093e\u0964\u201d"
+ },
+ "rev.4": {
+  "en": "\u201cDelhi, Agra and Jaipur in one trip could have been exhausting, but it never was. The drives were planned so we always arrived with time to spare, and seeing the Taj at sunrise before the crowds was worth the early start.\u201d",
+  "es": "\u00abDelhi, Agra y Jaipur en un solo viaje podr\u00eda haber sido agotador, pero no lo fue en ning\u00fan momento. Los trayectos estaban planificados para llegar siempre con tiempo de sobra, y ver el Taj al amanecer antes de las multitudes compens\u00f3 madrugar.\u00bb",
+  "hi": "\u201c\u0926\u093f\u0932\u094d\u0932\u0940, \u0906\u0917\u0930\u093e \u0914\u0930 \u091c\u092f\u092a\u0941\u0930 \u090f\u0915 \u0939\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902 \u2014 \u092f\u0939 \u0925\u0915\u093e\u090a \u0939\u094b \u0938\u0915\u0924\u093e \u0925\u093e, \u092a\u0930 \u0915\u092d\u0940 \u0928\u0939\u0940\u0902 \u0939\u0941\u0906\u0964 \u0938\u092b\u093c\u0930 \u0907\u0938 \u0924\u0930\u0939 \u0924\u092f \u0915\u093f\u090f \u0917\u090f \u0925\u0947 \u0915\u093f \u0939\u092e \u0939\u092e\u0947\u0936\u093e \u0938\u092e\u092f \u0938\u0947 \u092a\u0939\u0932\u0947 \u092a\u0939\u0941\u0901\u091a\u0924\u0947 \u0925\u0947, \u0914\u0930 \u092d\u0940\u0921\u093c \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0942\u0930\u094d\u092f\u094b\u0926\u092f \u092e\u0947\u0902 \u0924\u093e\u091c\u092e\u0939\u0932 \u0926\u0947\u0916\u0928\u093e \u091c\u0932\u094d\u0926\u0940 \u0909\u0920\u0928\u0947 \u0915\u0947 \u0932\u093e\u092f\u0915 \u0925\u093e\u0964\u201d"
+ },
+ "rev.t1": {
+  "en": "Amritsar",
+  "es": "Amritsar",
+  "hi": "\u0905\u092e\u0943\u0924\u0938\u0930"
+ },
+ "rev.t2": {
+  "en": "Rishikesh",
+  "es": "Rishikesh",
+  "hi": "\u090b\u0937\u093f\u0915\u0947\u0936"
+ },
+ "rev.t3": {
+  "en": "Varanasi \u00b7 Spiritual journey",
+  "es": "Varanasi \u00b7 Viaje espiritual",
+  "hi": "\u0935\u093e\u0930\u093e\u0923\u0938\u0940 \u00b7 \u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e\u093f\u0915 \u092f\u093e\u0924\u094d\u0930\u093e"
+ },
+ "rev.t4": {
+  "en": "The Golden Triangle",
+  "es": "El Tri\u00e1ngulo de Oro",
+  "hi": "\u0917\u094b\u0932\u094d\u0921\u0928 \u091f\u094d\u0930\u093e\u092f\u0902\u0917\u0932"
+ },
+ "sel.desc": {
+  "en": "Sixteen thoughtfully planned routes. A different perspective in every journey.",
+  "es": "Diecis\u00e9is rutas pensadas con cuidado. Una perspectiva distinta en cada viaje.",
+  "hi": "\u0938\u094b\u0932\u0939 \u0938\u093e\u0935\u0927\u093e\u0928\u0940 \u0938\u0947 \u092c\u0928\u093e\u0908 \u0917\u0908 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901\u0964 \u0939\u0930 \u092f\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902 \u090f\u0915 \u0905\u0932\u0917 \u0926\u0943\u0937\u094d\u091f\u093f\u0915\u094b\u0923\u0964"
+ },
  "sel.find": {
   "en": "Find your",
   "es": "Encuentre su",
   "hi": "\u0916\u094b\u091c\u093f\u090f \u0905\u092a\u0928\u0940"
+ },
+ "sel.hint.desk": {
+  "en": "Select a photograph to discover more.",
+  "es": "Seleccione una fotograf\u00eda para descubrir m\u00e1s.",
+  "hi": "\u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094b\u0908 \u0924\u0938\u094d\u0935\u0940\u0930 \u091a\u0941\u0928\u0947\u0902\u0964"
+ },
+ "sel.hint.swipe": {
+  "en": "Swipe to explore. Arrows show more journeys.",
+  "es": "Deslice para explorar. Las flechas muestran m\u00e1s viajes.",
+  "hi": "\u0926\u0947\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u094d\u0935\u093e\u0907\u092a \u0915\u0930\u0947\u0902\u0964 \u0924\u0940\u0930 \u0914\u0930 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0926\u093f\u0916\u093e\u0924\u0947 \u0939\u0948\u0902\u0964"
  },
  "sel.journey": {
   "en": "next journey.",
@@ -805,5 +1045,20 @@ window.JV_STRINGS = {
   "en": "Planned",
   "es": "organizado",
   "hi": "\u092c\u0928\u093e\u0908 \u0939\u0948\u0902"
+ },
+ "w.days": {
+  "en": "Days",
+  "es": "d\u00edas",
+  "hi": "\u0926\u093f\u0928"
+ },
+ "w.journey": {
+  "en": "journey",
+  "es": "viaje",
+  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e"
+ },
+ "w.journeys": {
+  "en": "journeys",
+  "es": "viajes",
+  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
  }
 };

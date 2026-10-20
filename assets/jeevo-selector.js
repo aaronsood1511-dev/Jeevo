@@ -51,6 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
     region.focus({preventScroll:true});
     history.replaceState(null, '', '#interactive-tours');
   }));
-  function hint(){controls.querySelector('.jv-slider-hint').textContent = desktop.matches ? 'Select a photograph to discover more.' : 'Swipe to explore. Arrows show more journeys.';}
-  desktop.addEventListener('change', hint); hint(); render();
+  function hint(){
+    var T = window.jvT || function(k,f){return f;};
+    controls.querySelector('.jv-slider-hint').textContent = desktop.matches
+      ? T('sel.hint.desk', 'Select a photograph to discover more.')
+      : T('sel.hint.swipe', 'Swipe to explore. Arrows show more journeys.');
+  }
+  desktop.addEventListener('change', hint);
+  document.addEventListener('jv:lang', hint);
+  hint(); render();
 });

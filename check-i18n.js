@@ -11,7 +11,8 @@ const PAGES = ['index.html'];
 const JS_SOURCES = fs.readdirSync('assets').filter(f => f.endsWith('.js')).map(f => 'assets/' + f);
 
 // keys that are legitimately the same in another language (proper nouns, etc.)
-const SAME_OK = new Set(['about.title.a']);
+// place names that genuinely do not change between these languages
+const SAME_OK = new Set(['about.title.a', 'rev.t1', 'rev.t2']);
 
 const used = new Set();
 for (const f of [...PAGES, ...JS_SOURCES]) {

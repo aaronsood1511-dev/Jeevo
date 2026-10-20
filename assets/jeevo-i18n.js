@@ -70,7 +70,16 @@
     if (note && S['i18n.note']) note.textContent = lang === 'en' ? '' : (S['i18n.note'][lang] || '');
     var cur = doc.querySelector('.jv-lang-current');
     if (cur) cur.textContent = LANGS[lang].name;
+    /* scripts that write textContent themselves cannot use data-i18n, so they
+       look strings up with jvT() and re-run on this event */
+    try { doc.dispatchEvent(new CustomEvent('jv:lang', { detail: lang })); } catch (e) {}
   }
+
+  /* string lookup for scripts that build their own text */
+  win.jvT = function (key, fallback) {
+    var row = S[key];
+    return row ? (row[active] || row.en) : (fallback || '');
+  };
 
   function build() {
     var host = doc.querySelector('.nav-container');
@@ -83,8 +92,8 @@
       opts += '<option value="' + code + '">' + LANGS[code].name + '</option>';
     }
     wrap.innerHTML =
-      '<label class="jv-sr-only" for="jv-lang-select">' +
-        ((S['i18n.label'] && S['i18n.label'].en) || 'Language') + '</label>' +
+      '<label class="jv-sr-only" for="jv-lang-select" data-i18n="i18n.label">' +
+        'Language</label>' +
       '<span class="jv-lang-globe" aria-hidden="true">&#127760;</span>' +
       '<select id="jv-lang-select" class="jv-lang-select">' + opts + '</select>' +
       '<span class="jv-lang-current" aria-hidden="true"></span>';
