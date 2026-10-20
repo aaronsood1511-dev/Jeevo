@@ -11,8 +11,16 @@ const PAGES = ['index.html'];
 const JS_SOURCES = fs.readdirSync('assets').filter(f => f.endsWith('.js')).map(f => 'assets/' + f);
 
 // keys that are legitimately the same in another language (proper nouns, etc.)
-// place names that genuinely do not change between these languages
-const SAME_OK = new Set(['about.title.a', 'rev.t1', 'rev.t2']);
+// Entries that are legitimately identical to the English, as "key:lang".
+// Scoped per language so a genuine oversight in another one still fails.
+const SAME_OK = new Set([
+  'about.title.a:fr', 'about.title.a:it', 'about.title.a:es',   // "Jeevo — "
+  'rev.t1:fr', 'rev.t1:it', 'rev.t1:es',                        // Amritsar
+  'rev.t2:fr', 'rev.t2:it', 'rev.t2:es',                        // Rishikesh
+  'nav.contact:fr', 'f.contact:fr',                             // "Contact" is French
+  'nav.dest:fr', 'f.dest:fr',                                   // "Destinations" is French
+  'nav.menu:fr',                                                // "Menu" is French
+]);
 
 const used = new Set();
 for (const f of [...PAGES, ...JS_SOURCES]) {
@@ -32,7 +40,7 @@ for (const k of Object.keys(S).sort()) {
   for (const lang of Object.keys(LANGS)) {
     const v = S[k][lang];
     if (typeof v !== 'string' || !v.trim()) fail(`"${k}" has no ${lang} value`);
-    else if (lang !== 'en' && v === S[k].en && !SAME_OK.has(k))
+    else if (lang !== 'en' && v === S[k].en && !SAME_OK.has(k + ':' + lang))
       fail(`"${k}" ${lang} is identical to English - untranslated?`);
   }
 }

@@ -1,12 +1,13 @@
-/* Interface translations - English, Hindi and Spanish.
-   Nine other languages used to sit in this switcher with almost nothing behind
-   them: the headings changed and every sentence stayed English, which reads as
-   a broken site rather than a multilingual one. Languages are only added here
-   with 100% key coverage, and check-i18n.js enforces that. The six tour pages
-   are still English only. */
+/* Interface translations - English, French, Italian and Spanish.
+   Nine languages once sat in this switcher with almost nothing behind them:
+   the headings changed and every sentence stayed English, which reads as a
+   broken site rather than a multilingual one. A language only goes in here
+   with 100% key coverage, and check-i18n.js enforces that.
+   The sixteen tour pages are still English only. */
 window.JV_I18N = {
-  en:{name:"English", dir:"ltr"},
-  hi:{name:"\u0939\u093f\u0928\u094d\u0926\u0940", dir:"ltr"},
+  en:{name:"English",  dir:"ltr"},
+  fr:{name:"Fran\u00e7ais", dir:"ltr"},
+  it:{name:"Italiano", dir:"ltr"},
   es:{name:"Espa\u00f1ol", dir:"ltr"}
 };
 
@@ -14,1051 +15,1261 @@ window.JV_STRINGS = {
  "about.lead": {
   "en": "Carrying forward the legacy of Mike Chatterjee, his wife, Mrs. Promila Chatterjee, continues the journey he so passionately began: creating travel experiences that go far beyond sightseeing and the simple logistics of getting from one place to another.",
   "es": "Continuando el legado de Mike Chatterjee, su esposa, la Sra. Promila Chatterjee, prosigue el camino que \u00e9l emprendi\u00f3 con tanta pasi\u00f3n: crear experiencias de viaje que van mucho m\u00e1s all\u00e1 del turismo y de la simple log\u00edstica de ir de un lugar a otro.",
-  "hi": "\u092e\u093e\u0907\u0915 \u091a\u091f\u0930\u094d\u091c\u0940 \u0915\u0940 \u0935\u093f\u0930\u093e\u0938\u0924 \u0915\u094b \u0906\u0917\u0947 \u092c\u0922\u093c\u093e\u0924\u0947 \u0939\u0941\u090f, \u0909\u0928\u0915\u0940 \u092a\u0924\u094d\u0928\u0940 \u0936\u094d\u0930\u0940\u092e\u0924\u0940 \u092a\u094d\u0930\u094b\u092e\u093f\u0932\u093e \u091a\u091f\u0930\u094d\u091c\u0940 \u0909\u0938 \u0938\u092b\u093c\u0930 \u0915\u094b \u091c\u093e\u0930\u0940 \u0930\u0916\u0947 \u0939\u0941\u090f \u0939\u0948\u0902 \u091c\u093f\u0938\u0947 \u0909\u0928\u094d\u0939\u094b\u0902\u0928\u0947 \u0907\u0924\u0928\u0947 \u091c\u0941\u0928\u0942\u0928 \u0938\u0947 \u0936\u0941\u0930\u0942 \u0915\u093f\u092f\u093e \u0925\u093e \u2014 \u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0930\u091a\u0928\u093e \u091c\u094b \u0915\u0947\u0935\u0932 \u0918\u0942\u092e\u0928\u0947-\u092b\u093f\u0930\u0928\u0947 \u0914\u0930 \u090f\u0915 \u091c\u0917\u0939 \u0938\u0947 \u0926\u0942\u0938\u0930\u0940 \u091c\u0917\u0939 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0915\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e \u0938\u0947 \u0915\u0939\u0940\u0902 \u0906\u0917\u0947 \u091c\u093e\u0924\u0940 \u0939\u0948\u0902\u0964"
+  "fr": "Poursuivant l'h\u00e9ritage de Mike Chatterjee, son \u00e9pouse, Mme Promila Chatterjee, continue le chemin qu'il avait entrepris avec tant de passion : cr\u00e9er des exp\u00e9riences de voyage qui vont bien au-del\u00e0 du tourisme et de la simple logistique d'un d\u00e9placement.",
+  "it": "Portando avanti l'eredit\u00e0 di Mike Chatterjee, sua moglie, la signora Promila Chatterjee, prosegue il cammino che lui aveva iniziato con tanta passione: creare esperienze di viaggio che vanno ben oltre il turismo e la semplice logistica degli spostamenti."
  },
  "about.p1": {
   "en": "Mike believed that every journey should be more than a visit to a destination. It should be a story worth telling, a memory worth cherishing, and an opportunity to form meaningful connections with the people, cultures, and places encountered along the way.",
   "es": "Mike cre\u00eda que todo viaje deb\u00eda ser m\u00e1s que la visita a un destino. Deb\u00eda ser una historia que merezca contarse, un recuerdo que merezca guardarse y una oportunidad de crear v\u00ednculos aut\u00e9nticos con las personas, las culturas y los lugares que se encuentran por el camino.",
-  "hi": "\u092e\u093e\u0907\u0915 \u0915\u093e \u092e\u093e\u0928\u0928\u093e \u0925\u093e \u0915\u093f \u0939\u0930 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093f\u0938\u0940 \u091c\u0917\u0939 \u092a\u0930 \u092a\u0939\u0941\u0901\u091a \u091c\u093e\u0928\u0947 \u092d\u0930 \u0938\u0947 \u092c\u0922\u093c\u0915\u0930 \u0939\u094b\u0928\u0940 \u091a\u093e\u0939\u093f\u090f\u0964 \u0935\u0939 \u090f\u0915 \u0910\u0938\u0940 \u0915\u0939\u093e\u0928\u0940 \u0939\u094b \u091c\u093f\u0938\u0947 \u0938\u0941\u0928\u093e\u092f\u093e \u091c\u093e\u090f, \u090f\u0915 \u0910\u0938\u0940 \u092f\u093e\u0926 \u0939\u094b \u091c\u093f\u0938\u0947 \u0938\u0901\u091c\u094b\u092f\u093e \u091c\u093e\u090f, \u0914\u0930 \u0930\u093e\u0938\u094d\u0924\u0947 \u092e\u0947\u0902 \u092e\u093f\u0932\u0928\u0947 \u0935\u093e\u0932\u0947 \u0932\u094b\u0917\u094b\u0902, \u0938\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u092f\u094b\u0902 \u0914\u0930 \u091c\u0917\u0939\u094b\u0902 \u0938\u0947 \u0917\u0939\u0930\u093e \u0930\u093f\u0936\u094d\u0924\u093e \u092c\u0928\u093e\u0928\u0947 \u0915\u093e \u0905\u0935\u0938\u0930 \u0939\u094b\u0964"
+  "fr": "Mike pensait que chaque voyage devait \u00eatre plus qu'une simple visite. Il devait \u00eatre une histoire qui m\u00e9rite d'\u00eatre racont\u00e9e, un souvenir que l'on garde, et l'occasion de nouer de vrais liens avec les personnes, les cultures et les lieux rencontr\u00e9s en chemin.",
+  "it": "Mike credeva che ogni viaggio dovesse essere pi\u00f9 di una semplice visita. Doveva essere una storia che vale la pena raccontare, un ricordo da custodire e l'occasione di creare legami autentici con le persone, le culture e i luoghi incontrati lungo la strada."
  },
  "about.p2": {
   "en": "That philosophy remains at the heart of everything we do. We thoughtfully curate immersive travel experiences that bring you closer to the soul of a destination, whether through exploring ancient temples, discovering authentic local cuisine, or sharing moments with the communities that give each place its unique character.",
   "es": "Esa filosof\u00eda sigue siendo el centro de todo lo que hacemos. Dise\u00f1amos con cuidado experiencias que le acercan al alma de cada destino, ya sea explorando templos antiguos, descubriendo la cocina local aut\u00e9ntica o compartiendo momentos con las comunidades que dan a cada lugar su car\u00e1cter \u00fanico.",
-  "hi": "\u092f\u0939\u0940 \u0938\u094b\u091a \u0906\u091c \u092d\u0940 \u0939\u092e\u093e\u0930\u0947 \u0939\u0930 \u0915\u093e\u092e \u0915\u0947 \u0915\u0947\u0902\u0926\u094d\u0930 \u092e\u0947\u0902 \u0939\u0948\u0964 \u0939\u092e \u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0938\u093e\u0935\u0927\u093e\u0928\u0940 \u0938\u0947 \u0924\u0948\u092f\u093e\u0930 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902 \u091c\u094b \u0906\u092a\u0915\u094b \u0915\u093f\u0938\u0940 \u091c\u0917\u0939 \u0915\u0940 \u0906\u0924\u094d\u092e\u093e \u0915\u0947 \u0915\u093c\u0930\u0940\u092c \u0932\u0947 \u091c\u093e\u090f\u0901 \u2014 \u091a\u093e\u0939\u0947 \u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u092e\u0902\u0926\u093f\u0930\u094b\u0902 \u0915\u094b \u0926\u0947\u0916\u0915\u0930, \u0905\u0938\u0932\u0940 \u0938\u094d\u0925\u093e\u0928\u0940\u092f \u0916\u093e\u0928\u0947 \u0915\u093e \u0938\u094d\u0935\u093e\u0926 \u0932\u0947\u0915\u0930, \u092f\u093e \u0909\u0928 \u0932\u094b\u0917\u094b\u0902 \u0915\u0947 \u0938\u093e\u0925 \u0915\u0941\u091b \u092a\u0932 \u092c\u093f\u0924\u093e\u0915\u0930 \u091c\u093f\u0928\u0938\u0947 \u0939\u0930 \u091c\u0917\u0939 \u0915\u0940 \u0905\u092a\u0928\u0940 \u092a\u0939\u091a\u093e\u0928 \u092c\u0928\u0924\u0940 \u0939\u0948\u0964"
+  "fr": "Cette philosophie reste au c\u0153ur de tout ce que nous faisons. Nous concevons avec soin des exp\u00e9riences qui vous rapprochent de l'\u00e2me de chaque destination, que ce soit en explorant des temples anciens, en d\u00e9couvrant la cuisine locale authentique ou en partageant des moments avec les communaut\u00e9s qui donnent \u00e0 chaque lieu son caract\u00e8re.",
+  "it": "Questa filosofia resta al centro di tutto ci\u00f2 che facciamo. Progettiamo con cura esperienze che vi avvicinano all'anima di ogni destinazione, esplorando templi antichi, scoprendo la cucina locale autentica o condividendo momenti con le comunit\u00e0 che danno a ogni luogo il suo carattere."
  },
  "about.p3": {
   "en": "Those journeys run from the deeply spiritual to the unmistakably historical. A morning at the Harmandir Sahib as the first prayers carry across the water, where anyone who walks in is fed and nobody is asked who they are. An afternoon in the marble shade of the Taj Mahal, built by an emperor for one woman. India holds both without the slightest contradiction, and we build around whichever one you came for \u2014 as a pilgrim, as a student of history, or simply as someone curious enough to look.",
   "es": "Esos viajes van de lo profundamente espiritual a lo inconfundiblemente hist\u00f3rico. Una ma\u00f1ana en el Harmandir Sahib, cuando los primeros rezos cruzan el agua y se da de comer a todo el que entra sin preguntarle qui\u00e9n es. Una tarde a la sombra de m\u00e1rmol del Taj Mahal, levantado por un emperador para una sola mujer. La India contiene ambas cosas sin la menor contradicci\u00f3n, y construimos el viaje en torno a aquella por la que usted viene: como peregrino, como estudioso de la historia o simplemente como alguien con la curiosidad suficiente para mirar.",
-  "hi": "\u092f\u0947 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0917\u0939\u0930\u0947 \u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e\u093f\u0915 \u0905\u0928\u0941\u092d\u0935 \u0938\u0947 \u0932\u0947\u0915\u0930 \u0938\u093e\u092b\u093c-\u0938\u093e\u092b\u093c \u0910\u0924\u093f\u0939\u093e\u0938\u093f\u0915 \u0905\u0928\u0941\u092d\u0935 \u0924\u0915 \u092b\u0948\u0932\u0940 \u0939\u0948\u0902\u0964 \u0939\u0930\u092e\u0902\u0926\u093f\u0930 \u0938\u093e\u0939\u093f\u092c \u0915\u0940 \u090f\u0915 \u0938\u0941\u092c\u0939, \u091c\u092c \u092a\u0939\u0932\u0940 \u0905\u0930\u0926\u093e\u0938 \u092a\u093e\u0928\u0940 \u0915\u0947 \u090a\u092a\u0930 \u0938\u0947 \u0917\u0942\u0901\u091c\u0924\u0940 \u0939\u0948, \u091c\u0939\u093e\u0901 \u092d\u0940\u0924\u0930 \u0906\u0928\u0947 \u0935\u093e\u0932\u0947 \u0939\u0930 \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0915\u094b \u0932\u0902\u0917\u0930 \u092e\u093f\u0932\u0924\u093e \u0939\u0948 \u0914\u0930 \u0915\u093f\u0938\u0940 \u0938\u0947 \u092f\u0939 \u0928\u0939\u0940\u0902 \u092a\u0942\u091b\u093e \u091c\u093e\u0924\u093e \u0915\u093f \u0935\u0939 \u0915\u094c\u0928 \u0939\u0948\u0964 \u0914\u0930 \u0924\u093e\u091c\u092e\u0939\u0932 \u0915\u0947 \u0938\u0902\u0917\u092e\u0930\u092e\u0930 \u0915\u0940 \u091b\u093e\u0901\u0935 \u092e\u0947\u0902 \u092c\u0940\u0924\u0940 \u090f\u0915 \u0926\u094b\u092a\u0939\u0930, \u091c\u093f\u0938\u0947 \u090f\u0915 \u092c\u093e\u0926\u0936\u093e\u0939 \u0928\u0947 \u0938\u093f\u0930\u094d\u092b\u093c \u090f\u0915 \u0938\u094d\u0924\u094d\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u092c\u0928\u0935\u093e\u092f\u093e \u0925\u093e\u0964 \u092d\u093e\u0930\u0924 \u0907\u0928 \u0926\u094b\u0928\u094b\u0902 \u0915\u094b \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u0935\u093f\u0930\u094b\u0927\u093e\u092d\u093e\u0938 \u0915\u0947 \u0905\u092a\u0928\u0947 \u092d\u0940\u0924\u0930 \u0938\u092e\u0947\u091f\u0947 \u0939\u0941\u090f \u0939\u0948, \u0914\u0930 \u0906\u092a \u091c\u093f\u0938\u0915\u0947 \u0932\u093f\u090f \u0906\u090f \u0939\u094b\u0902 \u2014 \u0924\u0940\u0930\u094d\u0925\u092f\u093e\u0924\u094d\u0930\u0940 \u092c\u0928\u0915\u0930, \u0907\u0924\u093f\u0939\u093e\u0938 \u0915\u0947 \u0935\u093f\u0926\u094d\u092f\u093e\u0930\u094d\u0925\u0940 \u092c\u0928\u0915\u0930, \u092f\u093e \u092c\u0938 \u090f\u0915 \u091c\u093f\u091c\u094d\u091e\u093e\u0938\u0941 \u092f\u093e\u0924\u094d\u0930\u0940 \u092c\u0928\u0915\u0930 \u2014 \u0939\u092e \u092f\u093e\u0924\u094d\u0930\u093e \u0909\u0938\u0940 \u0915\u0947 \u0907\u0930\u094d\u0926-\u0917\u093f\u0930\u094d\u0926 \u092c\u0941\u0928\u0924\u0947 \u0939\u0948\u0902\u0964"
+  "fr": "Ces voyages vont du profond\u00e9ment spirituel au r\u00e9solument historique. Un matin au Harmandir Sahib, quand les premi\u00e8res pri\u00e8res traversent l'eau et que l'on nourrit quiconque entre sans lui demander qui il est. Un apr\u00e8s-midi \u00e0 l'ombre de marbre du Taj Mahal, \u00e9lev\u00e9 par un empereur pour une seule femme. L'Inde contient les deux sans la moindre contradiction, et nous construisons le voyage autour de celle qui vous am\u00e8ne : en p\u00e8lerin, en passionn\u00e9 d'histoire, ou simplement en curieux.",
+  "it": "Questi viaggi vanno dal profondamente spirituale all'inconfondibilmente storico. Una mattina all'Harmandir Sahib, quando le prime preghiere attraversano l'acqua e si d\u00e0 da mangiare a chiunque entri senza chiedergli chi sia. Un pomeriggio all'ombra di marmo del Taj Mahal, costruito da un imperatore per una sola donna. L'India contiene entrambe le cose senza la minima contraddizione, e noi costruiamo il viaggio attorno a quella per cui siete venuti: da pellegrini, da appassionati di storia o semplicemente da curiosi."
  },
  "about.p4": {
   "en": "What truly sets our journeys apart is the care behind every detail. With warmth, personal attention, and genuine hospitality, we ensure that every traveller feels welcomed, valued, and connected, not merely as a visitor, but as a cherished member of our extended family.",
   "es": "Lo que de verdad distingue nuestros viajes es el cuidado detr\u00e1s de cada detalle. Con cercan\u00eda, atenci\u00f3n personal y hospitalidad genuina, procuramos que cada viajero se sienta acogido, valorado y conectado; no como un visitante, sino como un miembro querido de nuestra familia.",
-  "hi": "\u0939\u092e\u093e\u0930\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u0913\u0902 \u0915\u094b \u0938\u092c\u0938\u0947 \u0905\u0932\u0917 \u092c\u0928\u093e\u0924\u0940 \u0939\u0948 \u0939\u0930 \u091b\u094b\u091f\u0940 \u092c\u093e\u0924 \u092a\u0930 \u0926\u0940 \u0917\u0908 \u0924\u0935\u091c\u094d\u091c\u094b\u0964 \u0905\u092a\u0928\u0947\u092a\u0928, \u0928\u093f\u091c\u0940 \u0927\u094d\u092f\u093e\u0928 \u0914\u0930 \u0938\u091a\u094d\u091a\u0940 \u092e\u0947\u0939\u092e\u093e\u0928\u0928\u0935\u093e\u091c\u093c\u0940 \u0915\u0947 \u0938\u093e\u0925 \u0939\u092e \u092f\u0939 \u0938\u0941\u0928\u093f\u0936\u094d\u091a\u093f\u0924 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902 \u0915\u093f \u0939\u0930 \u092f\u093e\u0924\u094d\u0930\u0940 \u0916\u093c\u0941\u0926 \u0915\u094b \u0938\u094d\u0935\u093e\u0917\u0924-\u092f\u094b\u0917\u094d\u092f, \u092e\u0939\u0924\u094d\u0935\u092a\u0942\u0930\u094d\u0923 \u0914\u0930 \u091c\u0941\u0921\u093c\u093e \u0939\u0941\u0906 \u092e\u0939\u0938\u0942\u0938 \u0915\u0930\u0947 \u2014 \u092e\u0939\u091c\u093c \u090f\u0915 \u092e\u0947\u0939\u092e\u093e\u0928 \u0915\u0940 \u0924\u0930\u0939 \u0928\u0939\u0940\u0902, \u092c\u0932\u094d\u0915\u093f \u0939\u092e\u093e\u0930\u0947 \u0905\u092a\u0928\u0947 \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u0947 \u090f\u0915 \u0938\u0926\u0938\u094d\u092f \u0915\u0940 \u0924\u0930\u0939\u0964"
+  "fr": "Ce qui distingue vraiment nos voyages, c'est le soin apport\u00e9 \u00e0 chaque d\u00e9tail. Avec chaleur, attention personnelle et une hospitalit\u00e9 sinc\u00e8re, nous veillons \u00e0 ce que chaque voyageur se sente accueilli, consid\u00e9r\u00e9 et proche de nous ; non comme un visiteur, mais comme un membre de la famille.",
+  "it": "Ci\u00f2 che distingue davvero i nostri viaggi \u00e8 la cura dietro ogni dettaglio. Con calore, attenzione personale e ospitalit\u00e0 sincera, facciamo in modo che ogni viaggiatore si senta accolto, apprezzato e vicino a noi: non come un visitatore, ma come un membro della famiglia."
  },
  "about.p5": {
   "en": "This is more than a travel company. It is a heartfelt continuation of Mike's vision. In every thoughtfully crafted itinerary, every shared smile, and every unexpected moment of discovery, his spirit lives on, inspiring us to create journeys that enrich, connect, and remain with you long after you return home.",
   "es": "Esto es m\u00e1s que una agencia de viajes. Es la continuaci\u00f3n sincera de la visi\u00f3n de Mike. En cada itinerario pensado con cuidado, en cada sonrisa compartida y en cada descubrimiento inesperado, su esp\u00edritu sigue vivo y nos inspira a crear viajes que enriquecen, conectan y permanecen con usted mucho despu\u00e9s de volver a casa.",
-  "hi": "\u092f\u0939 \u0938\u093f\u0930\u094d\u092b\u093c \u090f\u0915 \u091f\u094d\u0930\u0948\u0935\u0932 \u0915\u0902\u092a\u0928\u0940 \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u092f\u0939 \u092e\u093e\u0907\u0915 \u0915\u0947 \u0938\u092a\u0928\u0947 \u0915\u094b \u0926\u093f\u0932 \u0938\u0947 \u0906\u0917\u0947 \u092c\u0922\u093c\u093e\u0928\u093e \u0939\u0948\u0964 \u0939\u0930 \u0938\u094b\u091a-\u0938\u092e\u091d\u0915\u0930 \u092c\u0928\u093e\u0908 \u0917\u0908 \u092f\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902, \u0939\u0930 \u0938\u093e\u091d\u093e \u092e\u0941\u0938\u094d\u0915\u093e\u0928 \u092e\u0947\u0902, \u0914\u0930 \u0916\u094b\u091c \u0915\u0947 \u0939\u0930 \u0905\u0928\u091a\u093e\u0939\u0947 \u092a\u0932 \u092e\u0947\u0902 \u0909\u0928\u0915\u0940 \u092d\u093e\u0935\u0928\u093e \u091c\u093c\u093f\u0902\u0926\u093e \u0939\u0948 \u2014 \u091c\u094b \u0939\u092e\u0947\u0902 \u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0930\u091a\u0928\u0947 \u0915\u0940 \u092a\u094d\u0930\u0947\u0930\u0923\u093e \u0926\u0947\u0924\u0940 \u0939\u0948 \u091c\u094b \u0906\u092a\u0915\u0947 \u0918\u0930 \u0932\u094c\u091f\u0928\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092d\u0940 \u0932\u0902\u092c\u0947 \u0938\u092e\u092f \u0924\u0915 \u0906\u092a\u0915\u0947 \u0938\u093e\u0925 \u0930\u0939\u0947\u0902\u0964"
+  "fr": "C'est plus qu'une agence de voyages. C'est la continuation sinc\u00e8re de la vision de Mike. Dans chaque itin\u00e9raire pens\u00e9 avec soin, chaque sourire partag\u00e9 et chaque d\u00e9couverte inattendue, son esprit demeure et nous pousse \u00e0 cr\u00e9er des voyages qui enrichissent, rapprochent et restent avec vous longtemps apr\u00e8s le retour.",
+  "it": "Questa \u00e8 pi\u00f9 di un'agenzia di viaggi. \u00c8 la continuazione sincera della visione di Mike. In ogni itinerario pensato con cura, in ogni sorriso condiviso e in ogni scoperta inattesa, il suo spirito resta vivo e ci spinge a creare viaggi che arricchiscono, uniscono e restano con voi molto dopo il ritorno."
  },
  "about.title": {
   "en": "Jeevo \u2014 Travel That Becomes Part of Your Story",
   "es": "Jeevo \u2014 Viajes que se vuelven parte de su historia",
-  "hi": "\u091c\u0940\u0935\u094b \u2014 \u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u091c\u094b \u0906\u092a\u0915\u0940 \u0915\u0939\u093e\u0928\u0940 \u092c\u0928 \u091c\u093e\u090f"
+  "fr": "Jeevo \u2014 Des voyages qui deviennent votre histoire",
+  "it": "Jeevo \u2014 Viaggi che diventano parte della vostra storia"
  },
  "about.title.a": {
   "en": "Jeevo \u2014 ",
   "es": "Jeevo \u2014 ",
-  "hi": "\u091c\u0940\u0935\u094b \u2014 "
+  "fr": "Jeevo \u2014 ",
+  "it": "Jeevo \u2014 "
  },
  "about.title.b": {
   "en": "Travel That Becomes Part of Your Story",
   "es": "Viajes que se vuelven parte de su historia",
-  "hi": "\u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u091c\u094b \u0906\u092a\u0915\u0940 \u0915\u0939\u093e\u0928\u0940 \u092c\u0928 \u091c\u093e\u090f"
+  "fr": "Des voyages qui deviennent votre histoire",
+  "it": "Viaggi che diventano parte della vostra storia"
  },
  "aj.f1": {
   "en": "About a minute",
   "es": "Un minuto, m\u00e1s o menos",
-  "hi": "\u0932\u0917\u092d\u0917 \u090f\u0915 \u092e\u093f\u0928\u091f"
+  "fr": "Environ une minute",
+  "it": "Circa un minuto"
  },
  "aj.f2": {
   "en": "Free, no obligation",
   "es": "Gratis y sin compromiso",
-  "hi": "\u0928\u093f\u0903\u0936\u0941\u0932\u094d\u0915, \u0915\u094b\u0908 \u092c\u093e\u0927\u094d\u092f\u0924\u093e \u0928\u0939\u0940\u0902"
+  "fr": "Gratuit, sans engagement",
+  "it": "Gratis, senza impegno"
  },
  "aj.f3": {
   "en": "A person takes over after",
   "es": "Despu\u00e9s toma el relevo una persona",
-  "hi": "\u0909\u0938\u0915\u0947 \u092c\u093e\u0926 \u090f\u0915 \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u0938\u0902\u092d\u093e\u0932\u0924\u093e \u0939\u0948"
+  "fr": "Ensuite, une personne prend le relais",
+  "it": "Poi subentra una persona"
  },
  "arjun.cta": {
   "en": "Start planning with Arjun",
   "es": "Empiece a planificar con Arjun",
-  "hi": "\u0905\u0930\u094d\u091c\u0941\u0928 \u0915\u0947 \u0938\u093e\u0925 \u092f\u094b\u091c\u0928\u093e \u0936\u0941\u0930\u0942 \u0915\u0940\u091c\u093f\u090f"
+  "fr": "Commencer avec Arjun",
+  "it": "Inizia a pianificare con Arjun"
  },
  "arjun.h.a": {
   "en": "Tell him where you want to go.",
   "es": "D\u00edgale ad\u00f3nde quiere ir.",
-  "hi": "\u0909\u0938\u0947 \u092c\u0924\u093e\u0907\u090f \u0906\u092a \u0915\u0939\u093e\u0901 \u091c\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902\u0964"
+  "fr": "Dites-lui o\u00f9 vous voulez aller.",
+  "it": "Ditegli dove volete andare."
  },
  "arjun.h.b": {
   "en": "He will draft the trip.",
   "es": "\u00c9l redactar\u00e1 el viaje.",
-  "hi": "\u0935\u0939 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0916\u093e\u0915\u093e \u0924\u0948\u092f\u093e\u0930 \u0915\u0930 \u0926\u0947\u0917\u093e\u0964"
+  "fr": "Il r\u00e9digera le voyage.",
+  "it": "Preparer\u00e0 lui il viaggio."
  },
  "arjun.note": {
   "en": "He is an AI, not one of our consultants, and he will not quote you a price. When the shape of the trip is right, one of our team picks it up from there.",
   "es": "Es una IA, no uno de nuestros asesores, y no le dar\u00e1 un precio. Cuando el viaje tiene la forma adecuada, alguien de nuestro equipo toma el relevo.",
-  "hi": "\u0935\u0939 \u090f\u0915 AI \u0939\u0948, \u0939\u092e\u093e\u0930\u093e \u0938\u0932\u093e\u0939\u0915\u093e\u0930 \u0928\u0939\u0940\u0902, \u0914\u0930 \u0935\u0939 \u0906\u092a\u0915\u094b \u0915\u0940\u092e\u0924 \u0928\u0939\u0940\u0902 \u092c\u0924\u093e\u090f\u0917\u093e\u0964 \u091c\u092c \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0938\u094d\u0935\u0930\u0942\u092a \u0938\u0939\u0940 \u0939\u094b \u091c\u093e\u0924\u093e \u0939\u0948, \u0924\u094b \u0939\u092e\u093e\u0930\u0940 \u091f\u0940\u092e \u0915\u093e \u0915\u094b\u0908 \u0938\u0926\u0938\u094d\u092f \u0906\u0917\u0947 \u0938\u0902\u092d\u093e\u0932 \u0932\u0947\u0924\u093e \u0939\u0948\u0964"
+  "fr": "C'est une IA, pas l'un de nos conseillers, et il ne vous donnera pas de prix. Quand le voyage a la bonne forme, quelqu'un de notre \u00e9quipe prend le relais.",
+  "it": "\u00c8 un'IA, non uno dei nostri consulenti, e non vi dar\u00e0 un prezzo. Quando il viaggio ha la forma giusta, qualcuno del nostro team prende in mano la cosa."
  },
  "arjun.p1": {
   "en": "Arjun is our planning assistant. Tell him the places, the dates and roughly who is travelling, and he will put together a day-by-day itinerary built from the routes we actually run \u2014 the drives, the sensible number of nights, the things worth getting up early for.",
   "es": "Arjun es nuestro asistente de planificaci\u00f3n. D\u00edgale los lugares, las fechas y m\u00e1s o menos qui\u00e9n viaja, y preparar\u00e1 un itinerario d\u00eda a d\u00eda construido a partir de las rutas que de verdad operamos: los trayectos, el n\u00famero sensato de noches y aquello por lo que merece la pena madrugar.",
-  "hi": "\u0905\u0930\u094d\u091c\u0941\u0928 \u0939\u092e\u093e\u0930\u093e \u092a\u094d\u0932\u093e\u0928\u093f\u0902\u0917 \u0905\u0938\u093f\u0938\u094d\u091f\u0947\u0902\u091f \u0939\u0948\u0964 \u0909\u0938\u0947 \u091c\u0917\u0939\u0947\u0902, \u0924\u093e\u0930\u0940\u0916\u093c\u0947\u0902 \u0914\u0930 \u092e\u094b\u091f\u0947 \u0924\u094c\u0930 \u092a\u0930 \u092f\u0939 \u092c\u0924\u093e \u0926\u0940\u091c\u093f\u090f \u0915\u093f \u0915\u094c\u0928-\u0915\u094c\u0928 \u091c\u093e \u0930\u0939\u093e \u0939\u0948 \u2014 \u0935\u0939 \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u0926\u093f\u0928-\u092a\u094d\u0930\u0924\u093f\u0926\u093f\u0928 \u0915\u093e \u092a\u0942\u0930\u093e \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e \u0924\u0948\u092f\u093e\u0930 \u0915\u0930 \u0926\u0947\u0917\u093e\u0964"
+  "fr": "Arjun est notre assistant de planification. Indiquez-lui les lieux, les dates et \u00e0 peu pr\u00e8s qui voyage, et il composera un itin\u00e9raire jour par jour \u00e0 partir des routes que nous op\u00e9rons r\u00e9ellement : les trajets, le nombre de nuits raisonnable et ce pour quoi il vaut la peine de se lever t\u00f4t.",
+  "it": "Arjun \u00e8 il nostro assistente di pianificazione. Ditegli i luoghi, le date e pi\u00f9 o meno chi viaggia, e metter\u00e0 insieme un itinerario giorno per giorno costruito sulle rotte che operiamo davvero: i trasferimenti, il numero sensato di notti e ci\u00f2 per cui vale la pena alzarsi presto."
  },
  "arjun.title": {
   "en": "Tell him where you want to go. He will draft the trip.",
   "es": "D\u00edgale ad\u00f3nde quiere ir. \u00c9l redactar\u00e1 el viaje.",
-  "hi": "\u0909\u0938\u0947 \u092c\u0924\u093e\u0907\u090f \u0915\u0939\u093e\u0901 \u091c\u093e\u0928\u093e \u0939\u0948\u0964 \u0935\u0939 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u093e \u0916\u093c\u093e\u0915\u093e \u092c\u0928\u093e \u0926\u0947\u0917\u093e\u0964"
+  "fr": "Dites-lui o\u00f9 vous voulez aller. Il r\u00e9digera le voyage.",
+  "it": "Ditegli dove volete andare. Preparer\u00e0 lui il viaggio."
  },
  "badge.1": {
   "en": "A grand southern journey",
   "es": "Un gran viaje por el sur",
-  "hi": "\u0926\u0915\u094d\u0937\u093f\u0923 \u0915\u0940 \u090f\u0915 \u092d\u0935\u094d\u092f \u092f\u093e\u0924\u094d\u0930\u093e"
+  "fr": "Un grand voyage dans le Sud",
+  "it": "Un grande viaggio nel Sud"
  },
  "badge.2": {
   "en": "Art, communities & coast",
   "es": "Arte, comunidades y costa",
-  "hi": "\u0915\u0932\u093e, \u0938\u092e\u0941\u0926\u093e\u092f \u0914\u0930 \u0924\u091f"
+  "fr": "Art, communaut\u00e9s et c\u00f4te",
+  "it": "Arte, comunit\u00e0 e costa"
  },
  "badge.3": {
   "en": "Culture & sacred landscapes",
   "es": "Cultura y paisajes sagrados",
-  "hi": "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u093f \u0914\u0930 \u092a\u0935\u093f\u0924\u094d\u0930 \u092d\u0942\u0926\u0943\u0936\u094d\u092f"
+  "fr": "Culture et paysages sacr\u00e9s",
+  "it": "Cultura e paesaggi sacri"
  },
  "badge.4": {
   "en": "Deserts & royal heritage",
   "es": "Desiertos y herencia real",
-  "hi": "\u0930\u0947\u0917\u093f\u0938\u094d\u0924\u093e\u0928 \u0914\u0930 \u0930\u093e\u091c\u0938\u0940 \u0935\u093f\u0930\u093e\u0938\u0924"
+  "fr": "D\u00e9serts et h\u00e9ritage royal",
+  "it": "Deserti e patrimonio reale"
  },
  "badge.5": {
   "en": "Heritage & hill retreats",
   "es": "Patrimonio y retiros de monta\u00f1a",
-  "hi": "\u0935\u093f\u0930\u093e\u0938\u0924 \u0914\u0930 \u092a\u0939\u093e\u0921\u093c\u0940 \u0935\u093f\u0936\u094d\u0930\u093e\u092e"
+  "fr": "Patrimoine et retraites de montagne",
+  "it": "Patrimonio e rifugi collinari"
  },
  "badge.6": {
   "en": "Jeevo journeys",
   "es": "Viajes Jeevo",
-  "hi": "\u091c\u0940\u0935\u094b \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
+  "fr": "Voyages Jeevo",
+  "it": "Viaggi Jeevo"
  },
  "badge.7": {
   "en": "Palaces, craft & stepwells",
   "es": "Palacios, artesan\u00eda y pozos escalonados",
-  "hi": "\u092e\u0939\u0932, \u0936\u093f\u0932\u094d\u092a \u0914\u0930 \u092c\u093e\u0935\u0921\u093c\u093f\u092f\u093e\u0901"
+  "fr": "Palais, artisanat et puits \u00e0 degr\u00e9s",
+  "it": "Palazzi, artigianato e pozzi a gradini"
  },
  "badge.8": {
   "en": "Spirituality & mountain towns",
   "es": "Espiritualidad y pueblos de monta\u00f1a",
-  "hi": "\u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e \u0914\u0930 \u092a\u0939\u093e\u0921\u093c\u0940 \u0915\u0938\u094d\u092c\u0947"
+  "fr": "Spiritualit\u00e9 et villes de montagne",
+  "it": "Spiritualit\u00e0 e borghi di montagna"
  },
  "blk.region": {
   "en": "Begin with a region. Find the journey that brings its stories to life.",
   "es": "Empiece por una regi\u00f3n. Encuentre el viaje que da vida a sus historias.",
-  "hi": "\u0915\u093f\u0938\u0940 \u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0938\u0947 \u0936\u0941\u0930\u0942 \u0915\u0940\u091c\u093f\u090f\u0964 \u0935\u0939 \u092f\u093e\u0924\u094d\u0930\u093e \u091a\u0941\u0928\u093f\u090f \u091c\u094b \u0909\u0938\u0915\u0940 \u0915\u0939\u093e\u0928\u093f\u092f\u094b\u0902 \u0915\u094b \u091c\u0940\u0935\u0902\u0924 \u0915\u0930 \u0926\u0947\u0964"
+  "fr": "Commencez par une r\u00e9gion. Trouvez le voyage qui fait vivre ses histoires.",
+  "it": "Iniziate da una regione. Trovate il viaggio che ne fa rivivere le storie."
  },
  "brand.tagline": {
   "en": "Experiential Tours With a Personal Touch",
   "es": "Viajes vivenciales con un trato personal",
-  "hi": "\u0905\u092a\u0928\u0947\u092a\u0928 \u0915\u0947 \u0938\u093e\u0925 \u0905\u0928\u0941\u092d\u0935-\u092d\u0930\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
+  "fr": "Des voyages d'exp\u00e9rience, avec une attention personnelle",
+  "it": "Viaggi esperienziali con un tocco personale"
  },
  "btn.send": {
   "en": "Send Enquiry",
   "es": "Enviar consulta",
-  "hi": "\u092a\u0942\u091b\u0924\u093e\u091b \u092d\u0947\u091c\u0947\u0902"
+  "fr": "Envoyer la demande",
+  "it": "Invia richiesta"
  },
  "card.dibru": {
   "en": "Tea gardens, river islands & the quiet rhythms of Assam.",
   "es": "Jardines de t\u00e9, islas fluviales y el ritmo tranquilo de Assam.",
-  "hi": "\u091a\u093e\u092f \u092c\u093e\u0917\u093e\u0928, \u0928\u0926\u0940-\u0926\u094d\u0935\u0940\u092a \u0914\u0930 \u0905\u0938\u092e \u0915\u0940 \u0936\u093e\u0902\u0924 \u0932\u092f\u0964"
+  "fr": "Jardins de th\u00e9, \u00eeles fluviales et le rythme paisible de l'Assam.",
+  "it": "Giardini di t\u00e8, isole fluviali e i ritmi tranquilli dell'Assam."
  },
  "card.palaces": {
   "en": "Royal Rajasthan, wild Ranthambore & sacred Varanasi.",
   "es": "El Rajast\u00e1n real, el Ranthambore salvaje y la sagrada Varanasi.",
-  "hi": "\u0936\u093e\u0939\u0940 \u0930\u093e\u091c\u0938\u094d\u0925\u093e\u0928, \u091c\u0902\u0917\u0932\u0940 \u0930\u0923\u0925\u0902\u092d\u094c\u0930 \u0914\u0930 \u092a\u0935\u093f\u0924\u094d\u0930 \u0935\u093e\u0930\u093e\u0923\u0938\u0940\u0964"
+  "fr": "Le Rajasthan royal, Ranthambore sauvage et Varanasi la sacr\u00e9e.",
+  "it": "Il Rajasthan reale, Ranthambore selvaggia e la sacra Varanasi."
  },
  "card.palaces.h": {
   "en": "Palaces, Tigers & the Ganges",
   "es": "Palacios, tigres y el Ganges",
-  "hi": "\u092e\u0939\u0932, \u092c\u093e\u0918 \u0914\u0930 \u0917\u0902\u0917\u093e"
+  "fr": "Palais, tigres et le Gange",
+  "it": "Palazzi, tigri e il Gange"
  },
  "card.seven": {
   "en": "Rivers, rainforests & living traditions across Northeast India.",
   "es": "R\u00edos, selvas y tradiciones vivas en el noreste de la India.",
-  "hi": "\u092a\u0942\u0930\u094d\u0935\u094b\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924 \u0915\u0940 \u0928\u0926\u093f\u092f\u093e\u0901, \u0935\u0930\u094d\u0937\u093e\u0935\u0928 \u0914\u0930 \u091c\u0940\u0935\u0902\u0924 \u092a\u0930\u0902\u092a\u0930\u093e\u090f\u0901\u0964"
+  "fr": "Fleuves, for\u00eats tropicales et traditions vivantes du Nord-Est indien.",
+  "it": "Fiumi, foreste pluviali e tradizioni vive nel Nord-Est dell'India."
  },
  "chat.fab": {
   "en": "Plan my trip",
   "es": "Planificar mi viaje",
-  "hi": "\u092e\u0947\u0930\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u092f\u094b\u091c\u0928\u093e \u092c\u0928\u093e\u090f\u0901"
+  "fr": "Planifier mon voyage",
+  "it": "Pianifica il mio viaggio"
  },
  "chat.teaser": {
   "en": "Planning a trip to India? I'll build you an itinerary in about a minute \u2014 free, no obligation.",
   "es": "\u00bfEst\u00e1 planeando un viaje a la India? Le preparo un itinerario en un minuto: gratis y sin compromiso.",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u092f\u094b\u091c\u0928\u093e \u092c\u0928\u093e \u0930\u0939\u0947 \u0939\u0948\u0902? \u092e\u0948\u0902 \u0932\u0917\u092d\u0917 \u090f\u0915 \u092e\u093f\u0928\u091f \u092e\u0947\u0902 \u0906\u092a\u0915\u0947 \u0932\u093f\u090f \u092f\u093e\u0924\u094d\u0930\u093e-\u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e \u092c\u0928\u093e \u0926\u0942\u0901\u0917\u093e \u2014 \u0928\u093f\u0903\u0936\u0941\u0932\u094d\u0915, \u092c\u093f\u0928\u093e \u0915\u093f\u0938\u0940 \u092c\u093e\u0927\u094d\u092f\u0924\u093e \u0915\u0947\u0964"
+  "fr": "Vous pr\u00e9parez un voyage en Inde ? Je vous compose un itin\u00e9raire en une minute environ \u2014 gratuit, sans engagement.",
+  "it": "State progettando un viaggio in India? Vi preparo un itinerario in circa un minuto: gratis e senza impegno."
  },
  "contact.email": {
   "en": "Email",
   "es": "Correo electr\u00f3nico",
-  "hi": "\u0908\u092e\u0947\u0932"
+  "fr": "E-mail",
+  "it": "E-mail"
  },
  "contact.h3": {
   "en": "Let's Plan Your Dream Trip",
   "es": "Planifiquemos el viaje de sus sue\u00f1os",
-  "hi": "\u0906\u0907\u090f \u0906\u092a\u0915\u0940 \u0938\u092a\u0928\u094b\u0902 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092c\u0928\u093e\u090f\u0901"
+  "fr": "Pr\u00e9parons le voyage de vos r\u00eaves",
+  "it": "Progettiamo il viaggio dei vostri sogni"
  },
  "contact.hours": {
   "en": "Working Hours",
   "es": "Horario de atenci\u00f3n",
-  "hi": "\u0915\u093e\u0930\u094d\u092f \u0938\u092e\u092f"
+  "fr": "Horaires",
+  "it": "Orari"
  },
  "contact.office": {
   "en": "Our Office",
   "es": "Nuestra oficina",
-  "hi": "\u0939\u092e\u093e\u0930\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f"
+  "fr": "Notre bureau",
+  "it": "Il nostro ufficio"
  },
  "contact.phone": {
   "en": "Phone",
   "es": "Tel\u00e9fono",
-  "hi": "\u092b\u093c\u094b\u0928"
+  "fr": "T\u00e9l\u00e9phone",
+  "it": "Telefono"
  },
  "contact.sub": {
   "en": "Have a question or ready to book? Reach out and our travel experts will get back to you within 24 hours.",
   "es": "\u00bfTiene alguna duda o quiere reservar? Escr\u00edbanos y nuestro equipo le responder\u00e1 en un plazo de 24 horas.",
-  "hi": "\u0915\u094b\u0908 \u0938\u0935\u093e\u0932 \u0939\u0948 \u092f\u093e \u092c\u0941\u0915\u093f\u0902\u0917 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0948\u0902? \u0939\u092e\u0947\u0902 \u0932\u093f\u0916\u093f\u090f \u2014 \u0939\u092e\u093e\u0930\u0947 \u091f\u094d\u0930\u0948\u0935\u0932 \u0935\u093f\u0936\u0947\u0937\u091c\u094d\u091e 24 \u0918\u0902\u091f\u0947 \u0915\u0947 \u092d\u0940\u0924\u0930 \u0906\u092a\u0938\u0947 \u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902\u0917\u0947\u0964"
+  "fr": "Une question ou envie de r\u00e9server ? \u00c9crivez-nous et notre \u00e9quipe vous r\u00e9pondra sous 24 heures.",
+  "it": "Avete una domanda o volete prenotare? Scriveteci e il nostro team vi risponder\u00e0 entro 24 ore."
  },
  "contact.title": {
   "en": "Start Your Indian Adventure",
   "es": "Comience su aventura india",
-  "hi": "\u0905\u092a\u0928\u0940 \u092d\u093e\u0930\u0924 \u092f\u093e\u0924\u094d\u0930\u093e \u0936\u0941\u0930\u0942 \u0915\u0940\u091c\u093f\u090f"
+  "fr": "Commencez votre aventure indienne",
+  "it": "Inizia la tua avventura indiana"
  },
  "contact.title.a": {
   "en": "Start Your ",
   "es": "Comience su ",
-  "hi": "\u0936\u0941\u0930\u0942 \u0915\u0940\u091c\u093f\u090f \u0905\u092a\u0928\u0940 "
+  "fr": "Commencez votre ",
+  "it": "Inizia la tua "
  },
  "contact.title.b": {
   "en": "Indian Adventure",
   "es": "aventura india",
-  "hi": "\u092d\u093e\u0930\u0924 \u092f\u093e\u0924\u094d\u0930\u093e"
+  "fr": "aventure indienne",
+  "it": "avventura indiana"
  },
  "cta.arjun": {
   "en": "Start planning with Arjun",
   "es": "Empiece a planificar con Arjun",
-  "hi": "\u0905\u0930\u094d\u091c\u0941\u0928 \u0915\u0947 \u0938\u093e\u0925 \u092f\u094b\u091c\u0928\u093e \u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902"
+  "fr": "Commencer avec Arjun",
+  "it": "Inizia a pianificare con Arjun"
  },
  "cta.explore": {
   "en": "Explore Packages",
   "es": "Ver paquetes",
-  "hi": "\u092a\u0948\u0915\u0947\u091c \u0926\u0947\u0916\u0947\u0902"
+  "fr": "Voir les circuits",
+  "it": "Scopri i pacchetti"
  },
  "cta.plan": {
   "en": "Plan My Trip",
   "es": "Planificar mi viaje",
-  "hi": "\u092e\u0947\u0930\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092c\u0928\u093e\u0907\u090f"
+  "fr": "Planifier mon voyage",
+  "it": "Pianifica il mio viaggio"
  },
  "cta.story": {
   "en": "Our Story",
   "es": "Nuestra historia",
-  "hi": "\u0939\u092e\u093e\u0930\u0940 \u0915\u0939\u093e\u0928\u0940"
+  "fr": "Notre histoire",
+  "it": "La nostra storia"
  },
  "cta.touch": {
   "en": "Get in Touch",
   "es": "Cont\u00e1ctenos",
-  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902"
+  "fr": "Nous contacter",
+  "it": "Contattaci"
  },
  "cta2.a": {
   "en": "Ready to Experience the",
   "es": "\u00bfListo para vivir",
-  "hi": "\u0915\u094d\u092f\u093e \u0906\u092a \u0924\u0948\u092f\u093e\u0930 \u0939\u0948\u0902"
+  "fr": "Pr\u00eat \u00e0 vivre",
+  "it": "Pronti a vivere"
  },
  "cta2.b": {
   "en": "Magic of India",
   "es": "la magia de la India",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u091c\u093e\u0926\u0942 \u0915\u0947 \u0932\u093f\u090f"
+  "fr": "la magie de l'Inde",
+  "it": "la magia dell'India"
  },
  "cta2.sub": {
   "en": "Let us craft your perfect Indian adventure. Your journey begins with a single message.",
   "es": "D\u00e9jenos crear su aventura india perfecta. Su viaje empieza con un solo mensaje.",
-  "hi": "\u0906\u092a\u0915\u0940 \u092a\u0930\u092b\u093c\u0947\u0915\u094d\u091f \u092d\u093e\u0930\u0924 \u092f\u093e\u0924\u094d\u0930\u093e \u0939\u092e \u092c\u0928\u093e\u090f\u0901\u0917\u0947\u0964 \u0906\u092a\u0915\u093e \u0938\u092b\u093c\u0930 \u092c\u0938 \u090f\u0915 \u0938\u0902\u0926\u0947\u0936 \u0938\u0947 \u0936\u0941\u0930\u0942 \u0939\u094b\u0924\u093e \u0939\u0948\u0964"
+  "fr": "Laissez-nous cr\u00e9er votre aventure indienne. Votre voyage commence par un simple message.",
+  "it": "Lasciate che creiamo la vostra avventura indiana. Il viaggio inizia con un solo messaggio."
  },
  "d.agra": {
   "en": "Home of the Taj Mahal, a monument to eternal love",
   "es": "Cuna del Taj Mahal, un monumento al amor eterno",
-  "hi": "\u0924\u093e\u091c\u092e\u0939\u0932 \u0915\u093e \u0936\u0939\u0930 \u2014 \u0936\u093e\u0936\u094d\u0935\u0924 \u092a\u094d\u0930\u0947\u092e \u0915\u093e \u0938\u094d\u092e\u093e\u0930\u0915"
+  "fr": "Terre du Taj Mahal, monument \u00e0 l'amour \u00e9ternel",
+  "it": "Patria del Taj Mahal, monumento all'amore eterno"
  },
  "d.goa": {
   "en": "Golden beaches, vibrant nightlife & Portuguese charm",
   "es": "Playas doradas, vida nocturna y encanto portugu\u00e9s",
-  "hi": "\u0938\u0941\u0928\u0939\u0930\u0947 \u0938\u092e\u0941\u0926\u094d\u0930 \u0924\u091f, \u091c\u0940\u0935\u0902\u0924 \u0930\u093e\u0924\u0947\u0902 \u0914\u0930 \u092a\u0941\u0930\u094d\u0924\u0917\u093e\u0932\u0940 \u0930\u0902\u0917\u0924"
+  "fr": "Plages dor\u00e9es, vie nocturne et charme portugais",
+  "it": "Spiagge dorate, vita notturna e fascino portoghese"
  },
  "d.kerala": {
   "en": "Serene backwaters, Ayurveda & spice plantations",
   "es": "Canales serenos, ayurveda y plantaciones de especias",
-  "hi": "\u0936\u093e\u0902\u0924 \u092c\u0948\u0915\u0935\u0949\u091f\u0930, \u0906\u092f\u0941\u0930\u094d\u0935\u0947\u0926 \u0914\u0930 \u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u0947 \u092c\u093e\u0917\u093c"
+  "fr": "Backwaters paisibles, ayurv\u00e9da et plantations d'\u00e9pices",
+  "it": "Backwaters tranquille, ayurveda e piantagioni di spezie"
  },
  "d.ladakh": {
   "en": "Breathtaking passes, monasteries & raw Himalayan beauty",
   "es": "Puertos de monta\u00f1a impresionantes, monasterios y la belleza pura del Himalaya",
-  "hi": "\u0905\u0926\u094d\u092d\u0941\u0924 \u0926\u0930\u094d\u0930\u0947, \u092e\u0920 \u0914\u0930 \u0939\u093f\u092e\u093e\u0932\u092f \u0915\u093e \u0915\u091a\u094d\u091a\u093e \u0938\u094c\u0902\u0926\u0930\u094d\u092f"
+  "fr": "Cols \u00e0 couper le souffle, monast\u00e8res et beaut\u00e9 brute de l'Himalaya",
+  "it": "Passi mozzafiato, monasteri e la bellezza pura dell'Himalaya"
  },
  "d.raj": {
   "en": "Majestic forts, golden deserts & royal palaces",
   "es": "Fuertes majestuosos, desiertos dorados y palacios reales",
-  "hi": "\u092d\u0935\u094d\u092f \u0915\u093c\u093f\u0932\u0947, \u0938\u0941\u0928\u0939\u0930\u0947 \u0930\u0947\u0917\u093f\u0938\u094d\u0924\u093e\u0928 \u0914\u0930 \u0936\u093e\u0939\u0940 \u092e\u0939\u0932"
+  "fr": "Forts majestueux, d\u00e9serts dor\u00e9s et palais royaux",
+  "it": "Forti maestosi, deserti dorati e palazzi reali"
  },
  "d.varanasi": {
   "en": "Ancient ghats, sacred rituals & timeless spirituality",
   "es": "Ghats milenarios, rituales sagrados y espiritualidad sin tiempo",
-  "hi": "\u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u0918\u093e\u091f, \u092a\u0935\u093f\u0924\u094d\u0930 \u0905\u0928\u0941\u0937\u094d\u0920\u093e\u0928 \u0914\u0930 \u0915\u093e\u0932\u093e\u0924\u0940\u0924 \u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e\u093f\u0915\u0924\u093e"
+  "fr": "Ghats mill\u00e9naires, rites sacr\u00e9s et spiritualit\u00e9 intemporelle",
+  "it": "Ghat millenari, riti sacri e spiritualit\u00e0 senza tempo"
  },
  "dest.h.a": {
   "en": "One place.",
   "es": "Un solo lugar.",
-  "hi": "\u090f\u0915 \u0939\u0940 \u091c\u0917\u0939\u0964"
+  "fr": "Un seul lieu.",
+  "it": "Un solo luogo."
  },
  "dest.h.b": {
   "en": "Many ways to explore.",
   "es": "Muchas formas de explorarlo.",
-  "hi": "\u0918\u0942\u092e\u0928\u0947 \u0915\u0947 \u0915\u0908 \u0924\u0930\u0940\u0915\u0947\u0964"
+  "fr": "Mille fa\u00e7ons de l'explorer.",
+  "it": "Tanti modi per esplorarlo."
  },
  "dest.mind": {
   "en": "A place in mind? We\u2019ll help you make it your own.",
   "es": "\u00bfTiene un lugar en mente? Le ayudamos a hacerlo suyo.",
-  "hi": "\u0915\u094b\u0908 \u091c\u0917\u0939 \u092e\u0928 \u092e\u0947\u0902 \u0939\u0948? \u0939\u092e \u0909\u0938\u0947 \u0906\u092a\u0915\u0940 \u0905\u092a\u0928\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092c\u0928\u093e \u0926\u0947\u0902\u0917\u0947\u0964"
+  "fr": "Un lieu en t\u00eate ? Nous vous aidons \u00e0 en faire le v\u00f4tre.",
+  "it": "Avete un luogo in mente? Vi aiutiamo a renderlo vostro."
  },
  "dest.more": {
   "en": "Explore more destinations",
   "es": "Ver m\u00e1s destinos",
-  "hi": "\u0914\u0930 \u0917\u0902\u0924\u0935\u094d\u092f \u0926\u0947\u0916\u0947\u0902"
+  "fr": "Voir plus de destinations",
+  "it": "Scopri altre destinazioni"
  },
  "dest.plan": {
   "en": "Plan your journey",
   "es": "Planifique su viaje",
-  "hi": "\u0905\u092a\u0928\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092c\u0928\u093e\u0907\u090f"
+  "fr": "Planifiez votre voyage",
+  "it": "Pianifica il tuo viaggio"
  },
  "dest.sub": {
   "en": "From Assam\u2019s tea gardens to Rajasthan\u2019s royal cities, find a place that stays with you. Start with our newest journeys.",
   "es": "De los jardines de t\u00e9 de Assam a las ciudades reales de Rajast\u00e1n, encuentre un lugar que se le quede dentro. Empiece por nuestros viajes m\u00e1s recientes.",
-  "hi": "\u0905\u0938\u092e \u0915\u0947 \u091a\u093e\u092f \u092c\u093e\u0917\u093e\u0928\u094b\u0902 \u0938\u0947 \u0932\u0947\u0915\u0930 \u0930\u093e\u091c\u0938\u094d\u0925\u093e\u0928 \u0915\u0947 \u0936\u093e\u0939\u0940 \u0936\u0939\u0930\u094b\u0902 \u0924\u0915 \u2014 \u0910\u0938\u0940 \u091c\u0917\u0939 \u091a\u0941\u0928\u093f\u090f \u091c\u094b \u0906\u092a\u0915\u0947 \u0938\u093e\u0925 \u0930\u0939 \u091c\u093e\u090f\u0964 \u0939\u092e\u093e\u0930\u0940 \u0928\u0908 \u092f\u093e\u0924\u094d\u0930\u093e\u0913\u0902 \u0938\u0947 \u0936\u0941\u0930\u0941\u0906\u0924 \u0915\u0940\u091c\u093f\u090f\u0964"
+  "fr": "Des jardins de th\u00e9 de l'Assam aux cit\u00e9s royales du Rajasthan, trouvez un lieu qui vous marque. Commencez par nos derniers voyages.",
+  "it": "Dai giardini di t\u00e8 dell'Assam alle citt\u00e0 reali del Rajasthan, trovate un luogo che vi resti dentro. Iniziate dai nostri viaggi pi\u00f9 recenti."
  },
  "dest.title": {
   "en": "Somewhere new. Something unforgettable.",
   "es": "Un lugar nuevo. Algo inolvidable.",
-  "hi": "\u0915\u094b\u0908 \u0928\u0908 \u091c\u0917\u0939\u0964 \u0915\u0941\u091b \u0905\u0935\u093f\u0938\u094d\u092e\u0930\u0923\u0940\u092f\u0964"
+  "fr": "Un ailleurs. Un souvenir inoubliable.",
+  "it": "Un posto nuovo. Qualcosa di indimenticabile."
  },
  "ev.c.1": {
-  "en": "Venue and hotel sourcing, with a site visit before you commit",
-  "es": "B\u00fasqueda de sede y hotel, con visita previa antes de decidir",
-  "hi": "\u0938\u094d\u0925\u0932 \u0914\u0930 \u0939\u094b\u091f\u0932 \u0915\u0940 \u0916\u094b\u091c, \u0924\u092f \u0915\u0930\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0928\u093f\u0930\u0940\u0915\u094d\u0937\u0923 \u0915\u0947 \u0938\u093e\u0925"
+  "en": "Team lunches, dinners and get-togethers",
+  "es": "Comidas, cenas y encuentros de equipo",
+  "fr": "D\u00e9jeuners, d\u00eeners et retrouvailles d'\u00e9quipe",
+  "it": "Pranzi, cene e ritrovi di squadra"
  },
  "ev.c.2": {
-  "en": "Meeting space, group transfers and airport handling",
-  "es": "Salas de reuni\u00f3n, traslados de grupo y asistencia en el aeropuerto",
-  "hi": "\u092c\u0948\u0920\u0915 \u0915\u0915\u094d\u0937, \u0938\u092e\u0942\u0939 \u092a\u0930\u093f\u0935\u0939\u0928 \u0914\u0930 \u0939\u0935\u093e\u0908 \u0905\u0921\u094d\u0921\u0947 \u092a\u0930 \u0938\u0939\u093e\u092f\u0924\u093e"
+  "en": "Diwali, Holi and festival evenings",
+  "es": "Veladas de Diwali, Holi y otras fiestas",
+  "fr": "Soir\u00e9es de Diwali, Holi et autres f\u00eates",
+  "it": "Serate di Diwali, Holi e altre feste"
  },
  "ev.c.3": {
-  "en": "Team days, excursions and cultural evenings",
-  "es": "Jornadas de equipo, excursiones y veladas culturales",
-  "hi": "\u091f\u0940\u092e \u0926\u093f\u0935\u0938, \u0938\u0948\u0930 \u0914\u0930 \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0938\u0902\u0927\u094d\u092f\u093e\u090f\u0901"
+  "en": "Annual days, award nights and launches",
+  "es": "Aniversarios de empresa, galas de premios y lanzamientos",
+  "fr": "Anniversaires d'entreprise, remises de prix et lancements",
+  "it": "Anniversari aziendali, premiazioni e lanci"
  },
  "ev.c.4": {
-  "en": "One coordinator with the group for the whole programme",
-  "es": "Un coordinador con el grupo durante todo el programa",
-  "hi": "\u092a\u0942\u0930\u0947 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0938\u092e\u0942\u0939 \u0915\u0947 \u0938\u093e\u0925 \u090f\u0915 \u0938\u092e\u0928\u094d\u0935\u092f\u0915"
+  "en": "Conferences, seminars and team meets",
+  "es": "Conferencias, seminarios y reuniones de equipo",
+  "fr": "Conf\u00e9rences, s\u00e9minaires et r\u00e9unions d'\u00e9quipe",
+  "it": "Conferenze, seminari e incontri di squadra"
  },
  "ev.c.kick": {
   "en": "Corporate",
   "es": "Corporativo",
-  "hi": "\u0915\u0949\u0930\u094d\u092a\u094b\u0930\u0947\u091f"
+  "fr": "Entreprises",
+  "it": "Aziende"
  },
  "ev.c.lead": {
-  "en": "From a three-day offsite in Jaipur to an incentive trip across Rajasthan, run end to end so nobody in your team has to project-manage it.",
-  "es": "Desde un encuentro de tres d\u00edas en Jaipur hasta un viaje de incentivos por Rajast\u00e1n, gestionado de principio a fin para que nadie de su equipo tenga que coordinarlo.",
-  "hi": "\u091c\u092f\u092a\u0941\u0930 \u092e\u0947\u0902 \u0924\u0940\u0928 \u0926\u093f\u0928 \u0915\u0947 \u0911\u092b\u093c\u0938\u093e\u0907\u091f \u0938\u0947 \u0932\u0947\u0915\u0930 \u0930\u093e\u091c\u0938\u094d\u0925\u093e\u0928 \u092d\u0930 \u0915\u0940 \u0907\u0902\u0938\u0947\u0902\u091f\u093f\u0935 \u092f\u093e\u0924\u094d\u0930\u093e \u0924\u0915 \u2014 \u0936\u0941\u0930\u0942 \u0938\u0947 \u0905\u0902\u0924 \u0924\u0915 \u0939\u092e \u0938\u0902\u092d\u093e\u0932\u0924\u0947 \u0939\u0948\u0902, \u0924\u093e\u0915\u093f \u0906\u092a\u0915\u0940 \u091f\u0940\u092e \u0915\u094b \u0915\u0941\u091b \u092d\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093f\u0924 \u0928 \u0915\u0930\u0928\u093e \u092a\u0921\u093c\u0947\u0964"
+  "en": "Team lunches, annual days, Diwali evenings and conferences, organised from the first call to the last guest leaving.",
+  "es": "Comidas de equipo, aniversarios de empresa, celebraciones de Diwali y conferencias, organizados desde la primera llamada hasta que se marcha el \u00faltimo invitado.",
+  "fr": "D\u00e9jeuners d'\u00e9quipe, anniversaires d'entreprise, soir\u00e9es de Diwali et conf\u00e9rences, organis\u00e9s du premier appel au d\u00e9part du dernier invit\u00e9.",
+  "it": "Pranzi aziendali, anniversari, serate di Diwali e conferenze, organizzati dalla prima telefonata fino all'uscita dell'ultimo ospite."
  },
  "ev.c.title": {
   "en": "Corporate events",
   "es": "Eventos corporativos",
-  "hi": "\u0915\u0949\u0930\u094d\u092a\u094b\u0930\u0947\u091f \u0906\u092f\u094b\u091c\u0928"
+  "fr": "\u00c9v\u00e9nements d'entreprise",
+  "it": "Eventi aziendali"
  },
  "ev.cta": {
   "en": "Tell us the dates and the headcount and we will come back with options.",
   "es": "D\u00edganos las fechas y el n\u00famero de personas y le enviaremos opciones.",
-  "hi": "\u0939\u092e\u0947\u0902 \u0924\u093f\u0925\u093f\u092f\u093e\u0901 \u0914\u0930 \u092e\u0947\u0939\u092e\u093e\u0928\u094b\u0902 \u0915\u0940 \u0938\u0902\u0916\u094d\u092f\u093e \u092c\u0924\u093e\u0907\u090f, \u0939\u092e \u0935\u093f\u0915\u0932\u094d\u092a \u092d\u0947\u091c \u0926\u0947\u0902\u0917\u0947\u0964"
+  "fr": "Dites-nous les dates et le nombre de personnes, nous reviendrons vers vous avec des options.",
+  "it": "Diteci le date e il numero di persone e vi proporremo delle opzioni."
  },
  "ev.desc": {
-  "en": "Alongside our touring work we handle corporate and wedding events across India \u2014 with the same ground team, drivers and hotels we use for our own journeys.",
-  "es": "Adem\u00e1s de nuestros viajes, organizamos eventos corporativos y bodas por toda la India, con el mismo equipo local, los mismos conductores y los mismos hoteles que usamos en nuestras propias rutas.",
-  "hi": "\u0905\u092a\u0928\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u0913\u0902 \u0915\u0947 \u0938\u093e\u0925-\u0938\u093e\u0925 \u0939\u092e \u092a\u0942\u0930\u0947 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0915\u0949\u0930\u094d\u092a\u094b\u0930\u0947\u091f \u0914\u0930 \u0935\u093f\u0935\u093e\u0939 \u0906\u092f\u094b\u091c\u0928 \u092d\u0940 \u0938\u0902\u092d\u093e\u0932\u0924\u0947 \u0939\u0948\u0902\u0964"
+  "en": "Corporate and wedding events, planned and run end to end. Tell us what you have in mind and we will arrange it.",
+  "es": "Eventos corporativos y bodas, organizados de principio a fin. D\u00edganos qu\u00e9 tiene en mente y nos encargamos.",
+  "fr": "\u00c9v\u00e9nements d'entreprise et mariages, organis\u00e9s de bout en bout. Dites-nous ce que vous avez en t\u00eate et nous nous en chargeons.",
+  "it": "Eventi aziendali e matrimoni, organizzati dall'inizio alla fine. Diteci cosa avete in mente e ce ne occupiamo noi."
  },
  "ev.tag": {
   "en": "Corporate & Weddings",
   "es": "Corporativo y bodas",
-  "hi": "\u0915\u0949\u0930\u094d\u092a\u094b\u0930\u0947\u091f \u0914\u0930 \u0935\u093f\u0935\u093e\u0939"
+  "fr": "Entreprises et mariages",
+  "it": "Aziende e matrimoni"
  },
  "ev.title.a": {
   "en": "We also run the ",
   "es": "Tambi\u00e9n organizamos los ",
-  "hi": "\u0939\u092e \u092c\u0921\u093c\u0947 "
+  "fr": "Nous organisons aussi les ",
+  "it": "Organizziamo anche le "
  },
  "ev.title.b": {
   "en": "big occasions",
   "es": "grandes eventos",
-  "hi": "\u0906\u092f\u094b\u091c\u0928 \u092d\u0940 \u0915\u0930\u0924\u0947 \u0939\u0948\u0902"
+  "fr": "grands \u00e9v\u00e9nements",
+  "it": "grandi occasioni"
  },
  "ev.w.1": {
-  "en": "Venue options across Rajasthan, Kerala, Goa and the hills",
-  "es": "Opciones de sede en Rajast\u00e1n, Kerala, Goa y la monta\u00f1a",
-  "hi": "\u0930\u093e\u091c\u0938\u094d\u0925\u093e\u0928, \u0915\u0947\u0930\u0932, \u0917\u094b\u0935\u093e \u0914\u0930 \u092a\u0939\u093e\u0921\u093c\u094b\u0902 \u092e\u0947\u0902 \u0938\u094d\u0925\u0932 \u0935\u093f\u0915\u0932\u094d\u092a"
+  "en": "Weddings and receptions",
+  "es": "Bodas y banquetes",
+  "fr": "Mariages et r\u00e9ceptions",
+  "it": "Matrimoni e ricevimenti"
  },
  "ev.w.2": {
-  "en": "Guest travel, transfers and room blocks",
-  "es": "Viajes de los invitados, traslados y bloqueo de habitaciones",
-  "hi": "\u092e\u0947\u0939\u092e\u093e\u0928\u094b\u0902 \u0915\u0940 \u092f\u093e\u0924\u094d\u0930\u093e, \u092a\u0930\u093f\u0935\u0939\u0928 \u0914\u0930 \u0915\u092e\u0930\u094b\u0902 \u0915\u0940 \u092c\u0941\u0915\u093f\u0902\u0917"
+  "en": "Engagements, roka and sagan",
+  "es": "Pedidas de mano, roka y sagan",
+  "fr": "Fian\u00e7ailles, roka et sagan",
+  "it": "Fidanzamenti, roka e sagan"
  },
  "ev.w.3": {
-  "en": "A day-by-day schedule across every function",
-  "es": "Un programa d\u00eda a d\u00eda para cada ceremonia",
-  "hi": "\u0939\u0930 \u0938\u092e\u093e\u0930\u094b\u0939 \u0915\u0947 \u0932\u093f\u090f \u0926\u093f\u0928-\u092a\u094d\u0930\u0924\u093f\u0926\u093f\u0928 \u0915\u093e \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e"
+  "en": "Mehndi, haldi and sangeet",
+  "es": "Mehndi, haldi y sangeet",
+  "fr": "Mehndi, haldi et sangeet",
+  "it": "Mehndi, haldi e sangeet"
  },
  "ev.w.4": {
-  "en": "A guest desk running for the length of the event",
-  "es": "Un mostrador de atenci\u00f3n a invitados durante todo el evento",
-  "hi": "\u092a\u0942\u0930\u0947 \u0906\u092f\u094b\u091c\u0928 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u092e\u0947\u0939\u092e\u093e\u0928\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u090f\u0915 \u0938\u0939\u093e\u092f\u0924\u093e \u0921\u0947\u0938\u094d\u0915"
+  "en": "Anniversaries and family celebrations",
+  "es": "Aniversarios y celebraciones familiares",
+  "fr": "Anniversaires et f\u00eates de famille",
+  "it": "Anniversari e feste di famiglia"
  },
  "ev.w.kick": {
   "en": "Weddings",
   "es": "Bodas",
-  "hi": "\u0935\u093f\u0935\u093e\u0939"
+  "fr": "Mariages",
+  "it": "Matrimoni"
  },
  "ev.w.lead": {
-  "en": "Palaces, forts, havelis and resorts, and the part most couples underestimate \u2014 moving a hundred guests who have never been to India before.",
-  "es": "Palacios, fuertes, havelis y resorts; y la parte que casi todas las parejas subestiman: mover a cien invitados que nunca han estado en la India.",
-  "hi": "\u092e\u0939\u0932, \u0915\u093f\u0932\u0947, \u0939\u0935\u0947\u0932\u093f\u092f\u093e\u0901 \u0914\u0930 \u0930\u093f\u091c\u093c\u0949\u0930\u094d\u091f \u2014 \u0914\u0930 \u0935\u0939 \u0939\u093f\u0938\u094d\u0938\u093e \u091c\u093f\u0938\u0947 \u0905\u0927\u093f\u0915\u093e\u0902\u0936 \u091c\u094b\u0921\u093c\u0947 \u0915\u092e \u0906\u0901\u0915\u0924\u0947 \u0939\u0948\u0902: \u0938\u094c \u092e\u0947\u0939\u092e\u093e\u0928\u094b\u0902 \u0915\u094b \u0938\u0902\u092d\u093e\u0932\u0928\u093e \u091c\u094b \u092a\u0939\u0932\u0947 \u0915\u092d\u0940 \u092d\u093e\u0930\u0924 \u0928\u0939\u0940\u0902 \u0906\u090f\u0964"
+  "en": "Weddings, engagements and every function around them. Tell us what you want and we will put it together.",
+  "es": "Bodas, pedidas y todas las ceremonias que las rodean. D\u00edganos qu\u00e9 quiere y lo preparamos.",
+  "fr": "Mariages, fian\u00e7ailles et toutes les c\u00e9r\u00e9monies qui les entourent. Dites-nous ce que vous voulez et nous l'organisons.",
+  "it": "Matrimoni, fidanzamenti e tutte le cerimonie che li accompagnano. Diteci cosa desiderate e lo organizziamo."
  },
  "ev.w.title": {
   "en": "Wedding events",
   "es": "Eventos de boda",
-  "hi": "\u0935\u093f\u0935\u093e\u0939 \u0906\u092f\u094b\u091c\u0928"
+  "fr": "\u00c9v\u00e9nements de mariage",
+  "it": "Eventi di matrimonio"
  },
  "f.about": {
   "en": "About Us",
   "es": "Sobre nosotros",
-  "hi": "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902"
+  "fr": "\u00c0 propos",
+  "it": "Chi siamo"
  },
  "f.contact": {
   "en": "Contact",
   "es": "Contacto",
-  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915"
+  "fr": "Contact",
+  "it": "Contatti"
  },
  "f.dest": {
   "en": "Destinations",
   "es": "Destinos",
-  "hi": "\u0917\u0902\u0924\u0935\u094d\u092f"
+  "fr": "Destinations",
+  "it": "Destinazioni"
  },
  "f.disc": {
   "en": "Disclaimer",
   "es": "Aviso legal",
-  "hi": "\u0905\u0938\u094d\u0935\u0940\u0915\u0930\u0923"
+  "fr": "Mentions l\u00e9gales",
+  "it": "Note legali"
  },
  "f.gal": {
   "en": "Gallery",
   "es": "Galer\u00eda",
-  "hi": "\u0917\u0948\u0932\u0930\u0940"
+  "fr": "Galerie",
+  "it": "Galleria"
  },
  "f.pkg": {
   "en": "Tour Packages",
   "es": "Paquetes de viaje",
-  "hi": "\u091f\u0942\u0930 \u092a\u0948\u0915\u0947\u091c"
+  "fr": "Circuits",
+  "it": "Pacchetti viaggio"
  },
  "f.priv": {
   "en": "Privacy Policy",
   "es": "Pol\u00edtica de privacidad",
-  "hi": "\u0917\u094b\u092a\u0928\u0940\u092f\u0924\u093e \u0928\u0940\u0924\u093f"
+  "fr": "Politique de confidentialit\u00e9",
+  "it": "Informativa sulla privacy"
  },
  "f.terms": {
   "en": "Booking Terms",
   "es": "Condiciones de reserva",
-  "hi": "\u092c\u0941\u0915\u093f\u0902\u0917 \u0936\u0930\u094d\u0924\u0947\u0902"
+  "fr": "Conditions de r\u00e9servation",
+  "it": "Condizioni di prenotazione"
  },
  "feat.sub": {
   "en": "Nine thoughtfully planned routes. Swipe through and find your starting point.",
   "es": "Nueve rutas pensadas con cuidado. Deslice y encuentre su punto de partida.",
-  "hi": "\u0928\u094c \u0938\u094b\u091a-\u0938\u092e\u091d\u0915\u0930 \u092c\u0928\u093e\u090f \u0917\u090f \u0930\u093e\u0938\u094d\u0924\u0947\u0964 \u0907\u0928\u094d\u0939\u0947\u0902 \u0926\u0947\u0916\u093f\u090f \u0914\u0930 \u0905\u092a\u0928\u0940 \u0936\u0941\u0930\u0941\u0906\u0924 \u091a\u0941\u0928\u093f\u090f\u0964"
+  "fr": "Neuf itin\u00e9raires pens\u00e9s avec soin. Faites d\u00e9filer et trouvez votre point de d\u00e9part.",
+  "it": "Nove itinerari pensati con cura. Scorrete e trovate il vostro punto di partenza."
  },
  "feat.title": {
   "en": "Find your next journey.",
   "es": "Encuentre su pr\u00f3ximo viaje.",
-  "hi": "\u0905\u092a\u0928\u0940 \u0905\u0917\u0932\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u091a\u0941\u0928\u093f\u090f\u0964"
+  "fr": "Trouvez votre prochain voyage.",
+  "it": "Trova il tuo prossimo viaggio."
  },
  "footer.blurb": {
   "en": "Your trusted companion for discovering the wonders of India. We craft journeys that touch the soul and create memories that last forever.",
   "es": "Su compa\u00f1ero de confianza para descubrir las maravillas de la India. Creamos viajes que llegan al alma y dejan recuerdos para siempre.",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u0905\u091c\u0942\u092c\u094b\u0902 \u0915\u094b \u0926\u0947\u0916\u0928\u0947 \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u092d\u0930\u094b\u0938\u0947\u092e\u0902\u0926 \u0938\u093e\u0925\u0940\u0964 \u0939\u092e \u0910\u0938\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u092c\u0928\u093e\u0924\u0947 \u0939\u0948\u0902 \u091c\u094b \u092e\u0928 \u0915\u094b \u091b\u0942 \u091c\u093e\u090f\u0901 \u0914\u0930 \u0939\u092e\u0947\u0936\u093e \u092f\u093e\u0926 \u0930\u0939\u0947\u0902\u0964"
+  "fr": "Votre compagnon de confiance pour d\u00e9couvrir les merveilles de l'Inde. Nous cr\u00e9ons des voyages qui touchent l'\u00e2me et laissent des souvenirs durables.",
+  "it": "Il vostro compagno di fiducia per scoprire le meraviglie dell'India. Creiamo viaggi che toccano l'anima e lasciano ricordi duraturi."
  },
  "footer.copy": {
   "en": "\u00a9 2026 Jeevo. All Rights Reserved. Made with \u2764\ufe0f in India.",
   "es": "\u00a9 2026 Jeevo. Todos los derechos reservados. Hecho con \u2764\ufe0f en la India.",
-  "hi": "\u00a9 2026 \u091c\u0940\u0935\u094b\u0964 \u0938\u0930\u094d\u0935\u093e\u0927\u093f\u0915\u093e\u0930 \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924\u0964 \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u2764\ufe0f \u0915\u0947 \u0938\u093e\u0925 \u092c\u0928\u093e\u092f\u093e \u0917\u092f\u093e\u0964"
+  "fr": "\u00a9 2026 Jeevo. Tous droits r\u00e9serv\u00e9s. Con\u00e7u avec \u2764\ufe0f en Inde.",
+  "it": "\u00a9 2026 Jeevo. Tutti i diritti riservati. Fatto con \u2764\ufe0f in India."
  },
  "footer.news": {
   "en": "Travel Newsletter",
   "es": "Bolet\u00edn de viajes",
-  "hi": "\u091f\u094d\u0930\u0948\u0935\u0932 \u0928\u094d\u092f\u0942\u091c\u093c\u0932\u0947\u091f\u0930"
+  "fr": "Lettre de voyage",
+  "it": "Newsletter di viaggio"
  },
  "footer.newssub": {
   "en": "Subscribe for exclusive deals, travel tips & hidden gems of India.",
   "es": "Suscr\u00edbase para recibir ofertas exclusivas, consejos de viaje y rincones secretos de la India.",
-  "hi": "\u0916\u093c\u093e\u0938 \u0911\u092b\u093c\u0930, \u092f\u093e\u0924\u094d\u0930\u093e \u0938\u0941\u091d\u093e\u0935 \u0914\u0930 \u092d\u093e\u0930\u0924 \u0915\u0940 \u091b\u093f\u092a\u0940 \u0939\u0941\u0908 \u091c\u0917\u0939\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0938\u092c\u094d\u0938\u0915\u094d\u0930\u093e\u0907\u092c \u0915\u0940\u091c\u093f\u090f\u0964"
+  "fr": "Abonnez-vous pour des offres exclusives, des conseils et les tr\u00e9sors cach\u00e9s de l'Inde.",
+  "it": "Iscrivetevi per offerte esclusive, consigli di viaggio e angoli nascosti dell'India."
  },
  "footer.quick": {
   "en": "Quick Links",
   "es": "Enlaces r\u00e1pidos",
-  "hi": "\u0924\u094d\u0935\u0930\u093f\u0924 \u0932\u093f\u0902\u0915"
+  "fr": "Liens rapides",
+  "it": "Link rapidi"
  },
  "footer.topdest": {
   "en": "Top Destinations",
   "es": "Destinos destacados",
-  "hi": "\u092a\u094d\u0930\u092e\u0941\u0916 \u0917\u0902\u0924\u0935\u094d\u092f"
+  "fr": "Destinations phares",
+  "it": "Destinazioni principali"
  },
  "form.note": {
   "en": "Your details come straight to us and nowhere else. No mailing list, no sharing.",
   "es": "Sus datos llegan directamente a nosotros y a nadie m\u00e1s. Sin listas de correo, sin cederlos a terceros.",
-  "hi": "\u0906\u092a\u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0938\u0940\u0927\u0947 \u0939\u092e \u0924\u0915 \u0906\u0924\u0940 \u0939\u0948, \u0914\u0930 \u0915\u0939\u0940\u0902 \u0928\u0939\u0940\u0902\u0964 \u0928 \u0915\u094b\u0908 \u092e\u0947\u0932\u093f\u0902\u0917 \u0932\u093f\u0938\u094d\u091f, \u0928 \u0915\u093f\u0938\u0940 \u0915\u0947 \u0938\u093e\u0925 \u0938\u093e\u091d\u093e\u0964"
+  "fr": "Vos informations nous parviennent directement et \u00e0 personne d'autre. Pas de liste de diffusion, aucun partage.",
+  "it": "I vostri dati arrivano direttamente a noi e a nessun altro. Nessuna mailing list, nessuna condivisione."
  },
  "gal.c1": {
   "en": "Festival of Colors",
   "es": "Festival de los colores",
-  "hi": "\u0930\u0902\u0917\u094b\u0902 \u0915\u093e \u0924\u094d\u092f\u094b\u0939\u093e\u0930"
+  "fr": "F\u00eate des couleurs",
+  "it": "Festa dei colori"
  },
  "gal.c2": {
   "en": "Colors of India",
   "es": "Los colores de la India",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u0930\u0902\u0917"
+  "fr": "Les couleurs de l'Inde",
+  "it": "I colori dell'India"
  },
  "gal.title": {
   "en": "Glimpses of India's Magic",
   "es": "Destellos de la magia de la India",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u091c\u093e\u0926\u0942 \u0915\u0940 \u0915\u0941\u091b \u091d\u0932\u0915\u093f\u092f\u093e\u0901"
+  "fr": "Aper\u00e7us de la magie de l'Inde",
+  "it": "Scorci della magia dell'India"
  },
  "gal.title.a": {
   "en": "Glimpses of ",
   "es": "Destellos de ",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u091c\u093e\u0926\u0942 \u0915\u0940 "
+  "fr": "Aper\u00e7us de ",
+  "it": "Scorci della "
  },
  "gal.title.b": {
   "en": "India's Magic",
   "es": "la magia de la India",
-  "hi": "\u091d\u0932\u0915\u093f\u092f\u093e\u0901"
+  "fr": "la magie de l'Inde",
+  "it": "magia dell'India"
  },
  "hero.discover": {
   "en": "Discover the",
   "es": "Descubra el",
-  "hi": "\u0916\u094b\u091c\u093f\u090f"
+  "fr": "D\u00e9couvrez",
+  "it": "Scopri"
  },
  "hero.namaste": {
   "en": "Namaste, Traveler",
   "es": "Namast\u00e9, viajero",
-  "hi": "\u0928\u092e\u0938\u094d\u0924\u0947, \u092f\u093e\u0924\u094d\u0930\u0940"
+  "fr": "Namast\u00e9, voyageur",
+  "it": "Namast\u00e9, viaggiatore"
  },
  "hero.soul": {
   "en": "Soul of India",
   "es": "alma de la India",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u0940 \u0906\u0924\u094d\u092e\u093e"
+  "fr": "l'\u00e2me de l'Inde",
+  "it": "l'anima dell'India"
  },
  "hero.sub": {
   "en": "Experience India like never before: from Himalayan peaks to Goa's beaches, ancient temples to vibrant bazaars.",
   "es": "Viva la India como nunca antes: de las cumbres del Himalaya a las playas de Goa, de los templos antiguos a los bazares llenos de vida.",
-  "hi": "\u092d\u093e\u0930\u0924 \u0915\u094b \u090f\u0915 \u0928\u090f \u0905\u0902\u0926\u093e\u091c\u093c \u092e\u0947\u0902 \u0926\u0947\u0916\u093f\u090f \u2014 \u0939\u093f\u092e\u093e\u0932\u092f \u0915\u0940 \u091a\u094b\u091f\u093f\u092f\u094b\u0902 \u0938\u0947 \u0917\u094b\u0935\u093e \u0915\u0947 \u0938\u092e\u0941\u0926\u094d\u0930 \u0924\u091f\u094b\u0902 \u0924\u0915, \u092a\u094d\u0930\u093e\u091a\u0940\u0928 \u092e\u0902\u0926\u093f\u0930\u094b\u0902 \u0938\u0947 \u091c\u0940\u0935\u0902\u0924 \u092c\u093e\u091c\u093c\u093e\u0930\u094b\u0902 \u0924\u0915\u0964"
+  "fr": "Vivez l'Inde comme jamais : des sommets de l'Himalaya aux plages de Goa, des temples anciens aux bazars anim\u00e9s.",
+  "it": "Vivete l'India come mai prima: dalle vette dell'Himalaya alle spiagge di Goa, dai templi antichi ai bazar brulicanti."
  },
  "hours.sun": {
   "en": "Sun: 10:00 AM - 4:00 PM IST",
   "es": "Dom: 10:00 - 16:00 IST",
-  "hi": "\u0930\u0935\u093f: \u0938\u0941\u092c\u0939 10:00 - \u0936\u093e\u092e 4:00 IST"
+  "fr": "Dim : 10h00 - 16h00 IST",
+  "it": "Dom: 10:00 - 16:00 IST"
  },
  "hours.wk": {
   "en": "Mon - Sat: 9:00 AM - 7:00 PM IST",
   "es": "Lun - S\u00e1b: 9:00 - 19:00 IST",
-  "hi": "\u0938\u094b\u092e - \u0936\u0928\u093f: \u0938\u0941\u092c\u0939 9:00 - \u0936\u093e\u092e 7:00 IST"
+  "fr": "Lun - Sam : 9h00 - 19h00 IST",
+  "it": "Lun - Sab: 9:00 - 19:00 IST"
  },
  "i18n.label": {
   "en": "Language",
   "es": "Idioma",
-  "hi": "\u092d\u093e\u0937\u093e"
+  "fr": "Langue",
+  "it": "Lingua"
  },
  "lbl.adults": {
   "en": "Adults",
   "es": "Adultos",
-  "hi": "\u0935\u092f\u0938\u094d\u0915"
+  "fr": "Adultes",
+  "it": "Adulti"
  },
  "lbl.anything": {
   "en": "Anything else?",
   "es": "\u00bfAlgo m\u00e1s?",
-  "hi": "\u0914\u0930 \u0915\u0941\u091b?"
+  "fr": "Autre chose ?",
+  "it": "Altro?"
  },
  "lbl.budget": {
   "en": "Budget per person",
   "es": "Presupuesto por persona",
-  "hi": "\u092a\u094d\u0930\u0924\u093f \u0935\u094d\u092f\u0915\u094d\u0924\u093f \u092c\u091c\u091f"
+  "fr": "Budget par personne",
+  "it": "Budget a persona"
  },
  "lbl.children": {
   "en": "Children",
   "es": "Ni\u00f1os",
-  "hi": "\u092c\u091a\u094d\u091a\u0947"
+  "fr": "Enfants",
+  "it": "Bambini"
  },
  "lbl.currency": {
   "en": "Currency",
   "es": "Moneda",
-  "hi": "\u092e\u0941\u0926\u094d\u0930\u093e"
+  "fr": "Devise",
+  "it": "Valuta"
  },
  "lbl.email": {
   "en": "Email",
   "es": "Correo electr\u00f3nico",
-  "hi": "\u0908\u092e\u0947\u0932"
+  "fr": "E-mail",
+  "it": "E-mail"
  },
  "lbl.flights": {
   "en": "Flights",
   "es": "Vuelos",
-  "hi": "\u0909\u0921\u093c\u093e\u0928\u0947\u0902"
+  "fr": "Vols",
+  "it": "Voli"
  },
  "lbl.hotel": {
   "en": "Hotel standard",
   "es": "Categor\u00eda de hotel",
-  "hi": "\u0939\u094b\u091f\u0932 \u0936\u094d\u0930\u0947\u0923\u0940"
+  "fr": "Cat\u00e9gorie d'h\u00f4tel",
+  "it": "Categoria di hotel"
  },
  "lbl.name": {
   "en": "Your name",
   "es": "Su nombre",
-  "hi": "\u0906\u092a\u0915\u093e \u0928\u093e\u092e"
+  "fr": "Votre nom",
+  "it": "Il vostro nome"
  },
  "lbl.nights": {
   "en": "How many nights?",
   "es": "\u00bfCu\u00e1ntas noches?",
-  "hi": "\u0915\u093f\u0924\u0928\u0940 \u0930\u093e\u0924\u0947\u0902?"
+  "fr": "Combien de nuits ?",
+  "it": "Quante notti?"
  },
  "lbl.optional": {
   "en": "(optional)",
   "es": "(opcional)",
-  "hi": "(\u0935\u0948\u0915\u0932\u094d\u092a\u093f\u0915)"
+  "fr": "(facultatif)",
+  "it": "(facoltativo)"
  },
  "lbl.phone": {
   "en": "Phone",
   "es": "Tel\u00e9fono",
-  "hi": "\u092b\u093c\u094b\u0928"
+  "fr": "T\u00e9l\u00e9phone",
+  "it": "Telefono"
  },
  "lbl.reason": {
   "en": "Reason for contact",
   "es": "Motivo de contacto",
-  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u093e \u0915\u093e\u0930\u0923"
+  "fr": "Motif du contact",
+  "it": "Motivo del contatto"
  },
  "lbl.region": {
   "en": "Explore by region",
   "es": "Explorar por regi\u00f3n",
-  "hi": "\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u0926\u0947\u0916\u0947\u0902"
+  "fr": "Explorer par r\u00e9gion",
+  "it": "Esplora per regione"
  },
  "lbl.when": {
   "en": "When roughly?",
   "es": "\u00bfPara cu\u00e1ndo, m\u00e1s o menos?",
-  "hi": "\u0932\u0917\u092d\u0917 \u0915\u092c?"
+  "fr": "\u00c0 peu pr\u00e8s quand ?",
+  "it": "Pi\u00f9 o meno quando?"
  },
  "link.credits": {
   "en": "Photograph credits",
   "es": "Cr\u00e9ditos fotogr\u00e1ficos",
-  "hi": "\u092b\u093c\u094b\u091f\u094b \u0915\u094d\u0930\u0947\u0921\u093f\u091f"
+  "fr": "Cr\u00e9dits photo",
+  "it": "Crediti fotografici"
  },
  "link.explorej": {
   "en": "Explore journey",
   "es": "Ver el viaje",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e \u0926\u0947\u0916\u0947\u0902"
+  "fr": "Voir le voyage",
+  "it": "Scopri il viaggio"
  },
  "link.viewj": {
   "en": "View journeys",
   "es": "Ver viajes",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0926\u0947\u0916\u0947\u0902"
+  "fr": "Voir les voyages",
+  "it": "Scopri i viaggi"
  },
  "m.1": {
   "en": "January",
   "es": "Enero",
-  "hi": "\u091c\u0928\u0935\u0930\u0940"
+  "fr": "Janvier",
+  "it": "Gennaio"
  },
  "m.10": {
   "en": "October",
   "es": "Octubre",
-  "hi": "\u0905\u0915\u094d\u0924\u0942\u092c\u0930"
+  "fr": "Octobre",
+  "it": "Ottobre"
  },
  "m.11": {
   "en": "November",
   "es": "Noviembre",
-  "hi": "\u0928\u0935\u0902\u092c\u0930"
+  "fr": "Novembre",
+  "it": "Novembre"
  },
  "m.12": {
   "en": "December",
   "es": "Diciembre",
-  "hi": "\u0926\u093f\u0938\u0902\u092c\u0930"
+  "fr": "D\u00e9cembre",
+  "it": "Dicembre"
  },
  "m.2": {
   "en": "February",
   "es": "Febrero",
-  "hi": "\u092b\u093c\u0930\u0935\u0930\u0940"
+  "fr": "F\u00e9vrier",
+  "it": "Febbraio"
  },
  "m.3": {
   "en": "March",
   "es": "Marzo",
-  "hi": "\u092e\u093e\u0930\u094d\u091a"
+  "fr": "Mars",
+  "it": "Marzo"
  },
  "m.4": {
   "en": "April",
   "es": "Abril",
-  "hi": "\u0905\u092a\u094d\u0930\u0948\u0932"
+  "fr": "Avril",
+  "it": "Aprile"
  },
  "m.5": {
   "en": "May",
   "es": "Mayo",
-  "hi": "\u092e\u0908"
+  "fr": "Mai",
+  "it": "Maggio"
  },
  "m.6": {
   "en": "June",
   "es": "Junio",
-  "hi": "\u091c\u0942\u0928"
+  "fr": "Juin",
+  "it": "Giugno"
  },
  "m.7": {
   "en": "July",
   "es": "Julio",
-  "hi": "\u091c\u0941\u0932\u093e\u0908"
+  "fr": "Juillet",
+  "it": "Luglio"
  },
  "m.8": {
   "en": "August",
   "es": "Agosto",
-  "hi": "\u0905\u0917\u0938\u094d\u0924"
+  "fr": "Ao\u00fbt",
+  "it": "Agosto"
  },
  "m.9": {
   "en": "September",
   "es": "Septiembre",
-  "hi": "\u0938\u093f\u0924\u0902\u092c\u0930"
+  "fr": "Septembre",
+  "it": "Settembre"
  },
  "nav.about": {
   "en": "About",
   "es": "Nosotros",
-  "hi": "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902"
+  "fr": "\u00c0 propos",
+  "it": "Chi siamo"
  },
  "nav.arjun": {
   "en": "Plan with Arjun",
   "es": "Planificar con Arjun",
-  "hi": "\u0905\u0930\u094d\u091c\u0941\u0928 \u0915\u0947 \u0938\u093e\u0925 \u092f\u094b\u091c\u0928\u093e"
+  "fr": "Planifier avec Arjun",
+  "it": "Pianifica con Arjun"
  },
  "nav.close": {
   "en": "Close",
   "es": "Cerrar",
-  "hi": "\u092c\u0902\u0926 \u0915\u0930\u0947\u0902"
+  "fr": "Fermer",
+  "it": "Chiudi"
  },
  "nav.contact": {
   "en": "Contact",
   "es": "Contacto",
-  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915"
+  "fr": "Contact",
+  "it": "Contatti"
  },
  "nav.dest": {
   "en": "Destinations",
   "es": "Destinos",
-  "hi": "\u0917\u0902\u0924\u0935\u094d\u092f"
+  "fr": "Destinations",
+  "it": "Destinazioni"
  },
  "nav.events": {
   "en": "Events",
   "es": "Eventos",
-  "hi": "\u0906\u092f\u094b\u091c\u0928"
+  "fr": "\u00c9v\u00e9nements",
+  "it": "Eventi"
  },
  "nav.gallery": {
   "en": "Gallery",
   "es": "Galer\u00eda",
-  "hi": "\u0917\u0948\u0932\u0930\u0940"
+  "fr": "Galerie",
+  "it": "Galleria"
  },
  "nav.home": {
   "en": "Home",
   "es": "Inicio",
-  "hi": "\u0939\u094b\u092e"
+  "fr": "Accueil",
+  "it": "Inizio"
  },
  "nav.menu": {
   "en": "Menu",
   "es": "Men\u00fa",
-  "hi": "\u092e\u0947\u0928\u094d\u092f\u0942"
+  "fr": "Menu",
+  "it": "Men\u00f9"
  },
  "nav.packages": {
   "en": "Packages",
   "es": "Paquetes",
-  "hi": "\u092a\u0948\u0915\u0947\u091c"
+  "fr": "Circuits",
+  "it": "Pacchetti"
  },
  "nav.plan": {
   "en": "Plan a trip",
   "es": "Planificar un viaje",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u092f\u094b\u091c\u0928\u093e"
+  "fr": "Planifier un voyage",
+  "it": "Pianifica un viaggio"
  },
  "nav.travellers": {
   "en": "Travellers",
   "es": "Viajeros",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u0940"
+  "fr": "Voyageurs",
+  "it": "Viaggiatori"
  },
  "opt.b1": {
   "en": "Under $2,000",
   "es": "Menos de 2.000 $",
-  "hi": "$2,000 \u0938\u0947 \u0915\u092e"
+  "fr": "Moins de 2 000 $",
+  "it": "Meno di 2.000 $"
  },
  "opt.b5": {
   "en": "$8,000+",
   "es": "M\u00e1s de 8.000 $",
-  "hi": "$8,000 \u0938\u0947 \u0905\u0927\u093f\u0915"
+  "fr": "Plus de 8 000 $",
+  "it": "Oltre 8.000 $"
  },
  "opt.finc": {
   "en": "Please include flights",
   "es": "Incluir vuelos, por favor",
-  "hi": "\u0915\u0943\u092a\u092f\u093e \u0909\u0921\u093c\u093e\u0928\u0947\u0902 \u092d\u0940 \u0936\u093e\u092e\u093f\u0932 \u0915\u0930\u0947\u0902"
+  "fr": "Vols inclus, s'il vous pla\u00eet",
+  "it": "Includere i voli"
  },
  "opt.fland": {
   "en": "Land only \u2013 we\u2019ll book our own flights",
   "es": "Solo servicios en destino: reservaremos nuestros vuelos",
-  "hi": "\u0915\u0947\u0935\u0932 \u091c\u093c\u092e\u0940\u0928\u0940 \u0938\u0947\u0935\u093e\u090f\u0901 \u2013 \u0909\u0921\u093c\u093e\u0928\u0947\u0902 \u0939\u092e \u0938\u094d\u0935\u092f\u0902 \u092c\u0941\u0915 \u0915\u0930\u0947\u0902\u0917\u0947"
+  "fr": "Services sur place uniquement \u2013 nous r\u00e9servons nos vols",
+  "it": "Solo servizi a terra \u2013 prenotiamo noi i voli"
  },
  "opt.h3": {
   "en": "3-star \u2013 comfortable",
   "es": "3 estrellas \u2013 c\u00f3modo",
-  "hi": "3-\u0938\u094d\u091f\u093e\u0930 \u2013 \u0906\u0930\u093e\u092e\u0926\u0947\u0939"
+  "fr": "3 \u00e9toiles \u2013 confortable",
+  "it": "3 stelle \u2013 confortevole"
  },
  "opt.h4": {
   "en": "4-star \u2013 premium",
   "es": "4 estrellas \u2013 superior",
-  "hi": "4-\u0938\u094d\u091f\u093e\u0930 \u2013 \u092a\u094d\u0930\u0940\u092e\u093f\u092f\u092e"
+  "fr": "4 \u00e9toiles \u2013 sup\u00e9rieur",
+  "it": "4 stelle \u2013 superiore"
  },
  "opt.h5": {
   "en": "5-star \u2013 luxury",
   "es": "5 estrellas \u2013 lujo",
-  "hi": "5-\u0938\u094d\u091f\u093e\u0930 \u2013 \u0932\u0915\u094d\u091c\u093c\u0930\u0940"
+  "fr": "5 \u00e9toiles \u2013 luxe",
+  "it": "5 stelle \u2013 lusso"
  },
  "opt.hher": {
   "en": "Heritage / palace stays",
   "es": "Alojamientos hist\u00f3ricos y palacios",
-  "hi": "\u0939\u0947\u0930\u093f\u091f\u0947\u091c / \u092e\u0939\u0932 \u0906\u0935\u093e\u0938"
+  "fr": "Demeures historiques et palais",
+  "it": "Dimore storiche e palazzi"
  },
  "opt.hmix": {
   "en": "Mix of standards",
   "es": "Mezcla de categor\u00edas",
-  "hi": "\u092e\u093f\u0936\u094d\u0930\u093f\u0924 \u0936\u094d\u0930\u0947\u0923\u093f\u092f\u093e\u0901"
+  "fr": "Cat\u00e9gories m\u00e9lang\u00e9es",
+  "it": "Categorie miste"
  },
  "opt.notsure": {
   "en": "Not sure yet",
   "es": "A\u00fan no lo s\u00e9",
-  "hi": "\u0905\u092d\u0940 \u0924\u092f \u0928\u0939\u0940\u0902"
+  "fr": "Pas encore d\u00e9cid\u00e9",
+  "it": "Non ancora deciso"
  },
  "opt.notsure2": {
   "en": "Not sure",
   "es": "No estoy seguro",
-  "hi": "\u092a\u0915\u094d\u0915\u093e \u0928\u0939\u0940\u0902"
+  "fr": "Je ne sais pas",
+  "it": "Non saprei"
  },
  "opt.r1": {
   "en": "Enquiring about a tour",
   "es": "Consulta sobre un viaje",
-  "hi": "\u0915\u093f\u0938\u0940 \u091f\u0942\u0930 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u092a\u0942\u091b\u0924\u093e\u091b"
+  "fr": "Renseignement sur un circuit",
+  "it": "Informazioni su un viaggio"
  },
  "opt.r2": {
   "en": "Planning a custom trip",
   "es": "Planificar un viaje a medida",
-  "hi": "\u0905\u0928\u0941\u0915\u0942\u0932\u093f\u0924 \u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0940 \u092f\u094b\u091c\u0928\u093e"
+  "fr": "Organiser un voyage sur mesure",
+  "it": "Organizzare un viaggio su misura"
  },
  "opt.r3": {
   "en": "Pilgrimage / yatra enquiry",
   "es": "Consulta sobre peregrinaci\u00f3n (yatra)",
-  "hi": "\u0924\u0940\u0930\u094d\u0925\u092f\u093e\u0924\u094d\u0930\u093e \u0938\u0902\u092c\u0902\u0927\u0940 \u092a\u0942\u091b\u0924\u093e\u091b"
+  "fr": "P\u00e8lerinage (yatra)",
+  "it": "Pellegrinaggio (yatra)"
  },
  "opt.r4": {
   "en": "Group or family booking",
   "es": "Reserva de grupo o familia",
-  "hi": "\u0938\u092e\u0942\u0939 \u092f\u093e \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u0940 \u092c\u0941\u0915\u093f\u0902\u0917"
+  "fr": "R\u00e9servation de groupe ou de famille",
+  "it": "Prenotazione di gruppo o famiglia"
  },
  "opt.r5": {
   "en": "Flights and ground arrangements",
   "es": "Vuelos y servicios en destino",
-  "hi": "\u0909\u0921\u093c\u093e\u0928\u0947\u0902 \u0914\u0930 \u091c\u093c\u092e\u0940\u0928\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e"
+  "fr": "Vols et prestations sur place",
+  "it": "Voli e servizi a terra"
  },
  "opt.r6": {
   "en": "Something else",
   "es": "Otra cosa",
-  "hi": "\u0915\u0941\u091b \u0914\u0930"
+  "fr": "Autre chose",
+  "it": "Altro"
  },
  "opt.rathernot": {
   "en": "Rather not say",
   "es": "Prefiero no decirlo",
-  "hi": "\u092c\u0924\u093e\u0928\u093e \u0928\u0939\u0940\u0902 \u091a\u093e\u0939\u0947\u0902\u0917\u0947"
+  "fr": "Je pr\u00e9f\u00e8re ne pas le dire",
+  "it": "Preferisco non dirlo"
  },
  "ph.chat": {
   "en": "Or just tell me what you\u2019re after\u2026",
   "es": "O d\u00edgame sin m\u00e1s qu\u00e9 est\u00e1 buscando\u2026",
-  "hi": "\u092f\u093e \u092c\u0938 \u092c\u0924\u093e\u0907\u090f \u0906\u092a \u0915\u094d\u092f\u093e \u0916\u094b\u091c \u0930\u0939\u0947 \u0939\u0948\u0902\u2026"
+  "fr": "Ou dites-moi simplement ce que vous cherchez\u2026",
+  "it": "Oppure ditemi semplicemente cosa cercate\u2026"
  },
  "ph.email2": {
   "en": "Your email address",
   "es": "Su correo electr\u00f3nico",
-  "hi": "\u0906\u092a\u0915\u093e \u0908\u092e\u0947\u0932 \u092a\u0924\u093e"
+  "fr": "Votre adresse e-mail",
+  "it": "Il vostro indirizzo e-mail"
  },
  "ph.msg": {
   "en": "Rough dates, how many of you, what you are hoping for...",
   "es": "Fechas aproximadas, cu\u00e1ntos son, qu\u00e9 les gustar\u00eda...",
-  "hi": "\u0905\u0928\u0941\u092e\u093e\u0928\u093f\u0924 \u0924\u093f\u0925\u093f\u092f\u093e\u0901, \u0915\u093f\u0924\u0928\u0947 \u0932\u094b\u0917, \u0906\u092a \u0915\u094d\u092f\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902..."
+  "fr": "Dates approximatives, combien vous \u00eates, ce que vous esp\u00e9rez\u2026",
+  "it": "Date indicative, quanti siete, cosa desiderate\u2026"
  },
  "ph.name": {
   "en": "Your full name",
   "es": "Su nombre completo",
-  "hi": "\u0906\u092a\u0915\u093e \u092a\u0942\u0930\u093e \u0928\u093e\u092e"
+  "fr": "Votre nom complet",
+  "it": "Il vostro nome completo"
  },
  "region.1": {
   "en": "Northeast India",
   "es": "Noreste de la India",
-  "hi": "\u092a\u0942\u0930\u094d\u0935\u094b\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924"
+  "fr": "Nord-Est de l'Inde",
+  "it": "Nord-Est dell'India"
  },
  "region.2": {
   "en": "Southern India",
   "es": "Sur de la India",
-  "hi": "\u0926\u0915\u094d\u0937\u093f\u0923 \u092d\u093e\u0930\u0924"
+  "fr": "Sud de l'Inde",
+  "it": "Sud dell'India"
  },
  "region.3": {
   "en": "Himalayan Foothills",
   "es": "Estribaciones del Himalaya",
-  "hi": "\u0939\u093f\u092e\u093e\u0932\u092f \u0915\u0940 \u0924\u0932\u0939\u091f\u0940"
+  "fr": "Contreforts de l'Himalaya",
+  "it": "Pendici dell'Himalaya"
  },
  "region.4": {
   "en": "North India",
   "es": "Norte de la India",
-  "hi": "\u0909\u0924\u094d\u0924\u0930 \u092d\u093e\u0930\u0924"
+  "fr": "Nord de l'Inde",
+  "it": "Nord dell'India"
  },
  "region.5": {
   "en": "Beyond India",
   "es": "M\u00e1s all\u00e1 de la India",
-  "hi": "\u092d\u093e\u0930\u0924 \u0938\u0947 \u092a\u0930\u0947"
+  "fr": "Au-del\u00e0 de l'Inde",
+  "it": "Oltre l'India"
  },
  "rev.1": {
   "en": "\u201cI had wanted to take my family to the Golden Temple for years, and Jeevo made it effortless. Everything from the airport to the langar hall was arranged before we arrived, so we could just be there and take it in. Going back felt like going home.\u201d",
   "es": "\u00abLlevaba a\u00f1os queriendo llevar a mi familia al Templo Dorado, y Jeevo lo hizo sencill\u00edsimo. Todo, desde el aeropuerto hasta el comedor del langar, estaba organizado antes de que lleg\u00e1ramos, as\u00ed que pudimos simplemente estar all\u00ed y absorberlo. Volver se sinti\u00f3 como volver a casa.\u00bb",
-  "hi": "\u201c\u092e\u0948\u0902 \u0935\u0930\u094d\u0937\u094b\u0902 \u0938\u0947 \u0905\u092a\u0928\u0947 \u092a\u0930\u093f\u0935\u093e\u0930 \u0915\u094b \u0938\u094d\u0935\u0930\u094d\u0923 \u092e\u0902\u0926\u093f\u0930 \u0932\u0947 \u091c\u093e\u0928\u093e \u091a\u093e\u0939\u0924\u093e \u0925\u093e, \u0914\u0930 \u091c\u0940\u0935\u094b \u0928\u0947 \u0907\u0938\u0947 \u092c\u093f\u0932\u0915\u0941\u0932 \u0906\u0938\u093e\u0928 \u092c\u0928\u093e \u0926\u093f\u092f\u093e\u0964 \u0939\u0935\u093e\u0908 \u0905\u0921\u094d\u0921\u0947 \u0938\u0947 \u0932\u0902\u0917\u0930 \u0939\u0949\u0932 \u0924\u0915 \u0938\u092c \u0915\u0941\u091b \u0939\u092e\u093e\u0930\u0947 \u092a\u0939\u0941\u0901\u091a\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093f\u0924 \u0925\u093e, \u0907\u0938\u0932\u093f\u090f \u0939\u092e \u092c\u0938 \u0935\u0939\u093e\u0901 \u0930\u0939 \u0938\u0915\u0947 \u0914\u0930 \u0938\u092c \u0915\u0941\u091b \u092e\u0939\u0938\u0942\u0938 \u0915\u0930 \u0938\u0915\u0947\u0964 \u0935\u093e\u092a\u0938 \u091c\u093e\u0928\u093e \u0918\u0930 \u0932\u094c\u091f\u0928\u0947 \u091c\u0948\u0938\u093e \u0932\u0917\u093e\u0964\u201d"
+  "fr": "\u00ab Je voulais emmener ma famille au Temple d'Or depuis des ann\u00e9es, et Jeevo a rendu cela simple. Tout, de l'a\u00e9roport au langar, \u00e9tait organis\u00e9 avant notre arriv\u00e9e ; nous n'avions qu'\u00e0 \u00eatre l\u00e0 et \u00e0 nous laisser porter. Y retourner, c'\u00e9tait comme rentrer \u00e0 la maison. \u00bb",
+  "it": "\u00abVolevo portare la mia famiglia al Tempio d'Oro da anni, e Jeevo ha reso tutto semplicissimo. Ogni cosa, dall'aeroporto alla sala del langar, era organizzata prima del nostro arrivo, cos\u00ec abbiamo potuto semplicemente esserci e assorbire tutto. Tornare \u00e8 stato come tornare a casa.\u00bb"
  },
  "rev.2": {
   "en": "\u201cI went to Rishikesh to switch off and that is exactly what I got. Jeevo picked a place right by the river, sorted the yoga sessions, then left me alone to enjoy it. The evening aarti on the ghats was the highlight of my year.\u201d",
   "es": "\u00abFui a Rishikesh para desconectar y es exactamente lo que consegu\u00ed. Jeevo eligi\u00f3 un lugar justo a la orilla del r\u00edo, organiz\u00f3 las sesiones de yoga y despu\u00e9s me dej\u00f3 tranquila para disfrutarlo. El aarti del atardecer en los ghats fue lo mejor de mi a\u00f1o.\u00bb",
-  "hi": "\u201c\u092e\u0948\u0902 \u0938\u092c \u0915\u0941\u091b \u092d\u0942\u0932\u0915\u0930 \u0936\u093e\u0902\u0924\u093f \u092a\u093e\u0928\u0947 \u090b\u0937\u093f\u0915\u0947\u0936 \u0917\u0908 \u0925\u0940, \u0914\u0930 \u092e\u0941\u091d\u0947 \u0920\u0940\u0915 \u0935\u0939\u0940 \u092e\u093f\u0932\u093e\u0964 \u091c\u0940\u0935\u094b \u0928\u0947 \u0928\u0926\u0940 \u0915\u0947 \u092c\u093f\u0932\u0915\u0941\u0932 \u0915\u093f\u0928\u093e\u0930\u0947 \u091c\u0917\u0939 \u091a\u0941\u0928\u0940, \u092f\u094b\u0917 \u0938\u0924\u094d\u0930 \u0924\u092f \u0915\u093f\u090f, \u0914\u0930 \u092b\u093f\u0930 \u092e\u0941\u091d\u0947 \u0936\u093e\u0902\u0924\u093f \u0938\u0947 \u0909\u0938\u0915\u093e \u0906\u0928\u0902\u0926 \u0932\u0947\u0928\u0947 \u0926\u093f\u092f\u093e\u0964 \u0918\u093e\u091f\u094b\u0902 \u092a\u0930 \u0936\u093e\u092e \u0915\u0940 \u0906\u0930\u0924\u0940 \u092e\u0947\u0930\u0947 \u092a\u0942\u0930\u0947 \u0938\u093e\u0932 \u0915\u0940 \u0938\u092c\u0938\u0947 \u0938\u0941\u0902\u0926\u0930 \u092f\u093e\u0926 \u0939\u0948\u0964\u201d"
+  "fr": "\u00ab Je suis all\u00e9e \u00e0 Rishikesh pour d\u00e9connecter, et c'est exactement ce que j'ai eu. Jeevo a choisi un endroit au bord du fleuve, organis\u00e9 les s\u00e9ances de yoga, puis m'a laiss\u00e9e tranquille pour en profiter. L'aarti du soir sur les ghats a \u00e9t\u00e9 le plus beau moment de mon ann\u00e9e. \u00bb",
+  "it": "\u00abSono andata a Rishikesh per staccare ed \u00e8 esattamente quello che ho avuto. Jeevo ha scelto un posto proprio sul fiume, ha organizzato le sessioni di yoga e poi mi ha lasciata in pace a godermelo. L'aarti della sera sui ghat \u00e8 stato il momento pi\u00f9 bello del mio anno.\u00bb"
  },
  "rev.3": {
   "en": "\u201cVaranasi is a lot to take in and I am glad I did not try to do it alone. Our guide knew when to explain something and when to let us just watch. The sunrise boat ride along the ghats was the most moving thing I have done.\u201d",
   "es": "\u00abVaranasi es mucho que asimilar y me alegro de no haber intentado hacerlo sola. Nuestro gu\u00eda sab\u00eda cu\u00e1ndo explicar algo y cu\u00e1ndo dejarnos simplemente mirar. El paseo en barca al amanecer por los ghats fue lo m\u00e1s conmovedor que he hecho.\u00bb",
-  "hi": "\u201c\u0935\u093e\u0930\u093e\u0923\u0938\u0940 \u0915\u094b \u0938\u092e\u091d \u092a\u093e\u0928\u093e \u0906\u0938\u093e\u0928 \u0928\u0939\u0940\u0902 \u0939\u0948, \u0914\u0930 \u092e\u0941\u091d\u0947 \u0916\u0941\u0936\u0940 \u0939\u0948 \u0915\u093f \u092e\u0948\u0902\u0928\u0947 \u0907\u0938\u0947 \u0905\u0915\u0947\u0932\u0947 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094b\u0936\u093f\u0936 \u0928\u0939\u0940\u0902 \u0915\u0940\u0964 \u0939\u092e\u093e\u0930\u0947 \u0917\u093e\u0907\u0921 \u0915\u094b \u092a\u0924\u093e \u0925\u093e \u0915\u093f \u0915\u092c \u0915\u0941\u091b \u0938\u092e\u091d\u093e\u0928\u093e \u0939\u0948 \u0914\u0930 \u0915\u092c \u0939\u092e\u0947\u0902 \u092c\u0938 \u0926\u0947\u0916\u0928\u0947 \u0926\u0947\u0928\u093e \u0939\u0948\u0964 \u0938\u0942\u0930\u094d\u092f\u094b\u0926\u092f \u0915\u0947 \u0938\u092e\u092f \u0918\u093e\u091f\u094b\u0902 \u0915\u0947 \u0915\u093f\u0928\u093e\u0930\u0947 \u0928\u093e\u0935 \u0915\u0940 \u0938\u0935\u093e\u0930\u0940 \u092e\u0947\u0930\u0947 \u091c\u0940\u0935\u0928 \u0915\u093e \u0938\u092c\u0938\u0947 \u092d\u093e\u0935\u0941\u0915 \u0905\u0928\u0941\u092d\u0935 \u0925\u093e\u0964\u201d"
+  "fr": "\u00ab Varanasi, c'est beaucoup \u00e0 absorber, et je suis contente de ne pas avoir essay\u00e9 seule. Notre guide savait quand expliquer et quand nous laisser simplement regarder. La promenade en barque au lever du soleil le long des ghats a \u00e9t\u00e9 la chose la plus \u00e9mouvante que j'aie v\u00e9cue. \u00bb",
+  "it": "\u00abVaranasi \u00e8 tanto da assorbire e sono contenta di non aver provato a farlo da sola. La nostra guida sapeva quando spiegare e quando lasciarci semplicemente guardare. Il giro in barca all'alba lungo i ghat \u00e8 stata la cosa pi\u00f9 emozionante che abbia fatto.\u00bb"
  },
  "rev.4": {
   "en": "\u201cDelhi, Agra and Jaipur in one trip could have been exhausting, but it never was. The drives were planned so we always arrived with time to spare, and seeing the Taj at sunrise before the crowds was worth the early start.\u201d",
   "es": "\u00abDelhi, Agra y Jaipur en un solo viaje podr\u00eda haber sido agotador, pero no lo fue en ning\u00fan momento. Los trayectos estaban planificados para llegar siempre con tiempo de sobra, y ver el Taj al amanecer antes de las multitudes compens\u00f3 madrugar.\u00bb",
-  "hi": "\u201c\u0926\u093f\u0932\u094d\u0932\u0940, \u0906\u0917\u0930\u093e \u0914\u0930 \u091c\u092f\u092a\u0941\u0930 \u090f\u0915 \u0939\u0940 \u092f\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902 \u2014 \u092f\u0939 \u0925\u0915\u093e\u090a \u0939\u094b \u0938\u0915\u0924\u093e \u0925\u093e, \u092a\u0930 \u0915\u092d\u0940 \u0928\u0939\u0940\u0902 \u0939\u0941\u0906\u0964 \u0938\u092b\u093c\u0930 \u0907\u0938 \u0924\u0930\u0939 \u0924\u092f \u0915\u093f\u090f \u0917\u090f \u0925\u0947 \u0915\u093f \u0939\u092e \u0939\u092e\u0947\u0936\u093e \u0938\u092e\u092f \u0938\u0947 \u092a\u0939\u0932\u0947 \u092a\u0939\u0941\u0901\u091a\u0924\u0947 \u0925\u0947, \u0914\u0930 \u092d\u0940\u0921\u093c \u0938\u0947 \u092a\u0939\u0932\u0947 \u0938\u0942\u0930\u094d\u092f\u094b\u0926\u092f \u092e\u0947\u0902 \u0924\u093e\u091c\u092e\u0939\u0932 \u0926\u0947\u0916\u0928\u093e \u091c\u0932\u094d\u0926\u0940 \u0909\u0920\u0928\u0947 \u0915\u0947 \u0932\u093e\u092f\u0915 \u0925\u093e\u0964\u201d"
+  "fr": "\u00ab Delhi, Agra et Jaipur en un seul voyage, cela aurait pu \u00eatre \u00e9puisant, mais \u00e7a ne l'a jamais \u00e9t\u00e9. Les trajets \u00e9taient calcul\u00e9s pour que nous arrivions toujours en avance, et voir le Taj au lever du soleil avant la foule valait bien de se lever t\u00f4t. \u00bb",
+  "it": "\u00abDelhi, Agra e Jaipur in un solo viaggio avrebbero potuto essere estenuanti, ma non lo sono stati mai. I trasferimenti erano pianificati per arrivare sempre con un po' di anticipo, e vedere il Taj all'alba prima della folla valeva la sveglia presto.\u00bb"
  },
  "rev.t1": {
   "en": "Amritsar",
   "es": "Amritsar",
-  "hi": "\u0905\u092e\u0943\u0924\u0938\u0930"
+  "fr": "Amritsar",
+  "it": "Amritsar"
  },
  "rev.t2": {
   "en": "Rishikesh",
   "es": "Rishikesh",
-  "hi": "\u090b\u0937\u093f\u0915\u0947\u0936"
+  "fr": "Rishikesh",
+  "it": "Rishikesh"
  },
  "rev.t3": {
   "en": "Varanasi \u00b7 Spiritual journey",
   "es": "Varanasi \u00b7 Viaje espiritual",
-  "hi": "\u0935\u093e\u0930\u093e\u0923\u0938\u0940 \u00b7 \u0906\u0927\u094d\u092f\u093e\u0924\u094d\u092e\u093f\u0915 \u092f\u093e\u0924\u094d\u0930\u093e"
+  "fr": "Varanasi \u00b7 Voyage spirituel",
+  "it": "Varanasi \u00b7 Viaggio spirituale"
  },
  "rev.t4": {
   "en": "The Golden Triangle",
   "es": "El Tri\u00e1ngulo de Oro",
-  "hi": "\u0917\u094b\u0932\u094d\u0921\u0928 \u091f\u094d\u0930\u093e\u092f\u0902\u0917\u0932"
+  "fr": "Le Triangle d'Or",
+  "it": "Il Triangolo d'Oro"
  },
  "sel.desc": {
   "en": "Sixteen thoughtfully planned routes. A different perspective in every journey.",
   "es": "Diecis\u00e9is rutas pensadas con cuidado. Una perspectiva distinta en cada viaje.",
-  "hi": "\u0938\u094b\u0932\u0939 \u0938\u093e\u0935\u0927\u093e\u0928\u0940 \u0938\u0947 \u092c\u0928\u093e\u0908 \u0917\u0908 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901\u0964 \u0939\u0930 \u092f\u093e\u0924\u094d\u0930\u093e \u092e\u0947\u0902 \u090f\u0915 \u0905\u0932\u0917 \u0926\u0943\u0937\u094d\u091f\u093f\u0915\u094b\u0923\u0964"
+  "fr": "Seize itin\u00e9raires pens\u00e9s avec soin. Une perspective diff\u00e9rente \u00e0 chaque voyage.",
+  "it": "Sedici itinerari pensati con cura. Una prospettiva diversa in ogni viaggio."
  },
  "sel.find": {
   "en": "Find your",
   "es": "Encuentre su",
-  "hi": "\u0916\u094b\u091c\u093f\u090f \u0905\u092a\u0928\u0940"
+  "fr": "Trouvez votre",
+  "it": "Trova il tuo"
  },
  "sel.hint.desk": {
   "en": "Select a photograph to discover more.",
   "es": "Seleccione una fotograf\u00eda para descubrir m\u00e1s.",
-  "hi": "\u0905\u0927\u093f\u0915 \u091c\u093e\u0928\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0915\u094b\u0908 \u0924\u0938\u094d\u0935\u0940\u0930 \u091a\u0941\u0928\u0947\u0902\u0964"
+  "fr": "S\u00e9lectionnez une photographie pour en savoir plus.",
+  "it": "Selezionate una fotografia per scoprire di pi\u00f9."
  },
  "sel.hint.swipe": {
   "en": "Swipe to explore. Arrows show more journeys.",
   "es": "Deslice para explorar. Las flechas muestran m\u00e1s viajes.",
-  "hi": "\u0926\u0947\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0938\u094d\u0935\u093e\u0907\u092a \u0915\u0930\u0947\u0902\u0964 \u0924\u0940\u0930 \u0914\u0930 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u0926\u093f\u0916\u093e\u0924\u0947 \u0939\u0948\u0902\u0964"
+  "fr": "Faites d\u00e9filer pour explorer. Les fl\u00e8ches montrent d'autres voyages.",
+  "it": "Scorrete per esplorare. Le frecce mostrano altri viaggi."
  },
  "sel.journey": {
   "en": "next journey.",
   "es": "pr\u00f3ximo viaje.",
-  "hi": "\u0905\u0917\u0932\u0940 \u092f\u093e\u0924\u094d\u0930\u093e\u0964"
+  "fr": "prochain voyage.",
+  "it": "prossimo viaggio."
  },
  "stat.legacy": {
   "en": "Years of Legacy",
   "es": "A\u00f1os de trayectoria",
-  "hi": "\u0935\u0930\u094d\u0937\u094b\u0902 \u0915\u093e \u0905\u0928\u0941\u092d\u0935"
+  "fr": "Ans d'exp\u00e9rience",
+  "it": "Anni di esperienza"
  },
  "stat.support": {
   "en": "On-trip Support",
   "es": "Asistencia durante el viaje",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0938\u0939\u093e\u092f\u0924\u093e"
+  "fr": "Assistance sur place",
+  "it": "Assistenza durante il viaggio"
  },
  "tag.about": {
   "en": "About Us",
   "es": "Sobre nosotros",
-  "hi": "\u0939\u092e\u093e\u0930\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902"
+  "fr": "\u00c0 propos de nous",
+  "it": "Chi siamo"
  },
  "tag.arjun": {
   "en": "Plan with Arjun",
   "es": "Planificar con Arjun",
-  "hi": "\u0905\u0930\u094d\u091c\u0941\u0928 \u0915\u0947 \u0938\u093e\u0925 \u092f\u094b\u091c\u0928\u093e"
+  "fr": "Planifier avec Arjun",
+  "it": "Pianifica con Arjun"
  },
  "tag.contact": {
   "en": "Contact Us",
   "es": "Cont\u00e1ctenos",
-  "hi": "\u0938\u0902\u092a\u0930\u094d\u0915 \u0915\u0930\u0947\u0902"
+  "fr": "Nous contacter",
+  "it": "Contattaci"
  },
  "tag.destinations": {
   "en": "Popular Destinations",
   "es": "Destinos populares",
-  "hi": "\u0932\u094b\u0915\u092a\u094d\u0930\u093f\u092f \u0917\u0902\u0924\u0935\u094d\u092f"
+  "fr": "Destinations populaires",
+  "it": "Destinazioni popolari"
  },
  "tag.featured": {
   "en": "Featured Expeditions",
   "es": "Expediciones destacadas",
-  "hi": "\u091a\u0941\u0928\u093f\u0902\u0926\u093e \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
+  "fr": "Exp\u00e9ditions \u00e0 la une",
+  "it": "Spedizioni in evidenza"
  },
  "tag.gallery": {
   "en": "Gallery",
   "es": "Galer\u00eda",
-  "hi": "\u0917\u0948\u0932\u0930\u0940"
+  "fr": "Galerie",
+  "it": "Galleria"
  },
  "tag.travellers": {
   "en": "Our Travellers",
   "es": "Nuestros viajeros",
-  "hi": "\u0939\u092e\u093e\u0930\u0947 \u092f\u093e\u0924\u094d\u0930\u0940"
+  "fr": "Nos voyageurs",
+  "it": "I nostri viaggiatori"
  },
  "trav.title": {
   "en": "Journeys We Have Planned",
   "es": "Viajes que hemos organizado",
-  "hi": "\u0935\u0947 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u091c\u094b \u0939\u092e\u0928\u0947 \u092c\u0928\u093e\u0908 \u0939\u0948\u0902"
+  "fr": "Des voyages que nous avons con\u00e7us",
+  "it": "Viaggi che abbiamo organizzato"
  },
  "trav.title.a": {
   "en": "Journeys We Have ",
   "es": "Viajes que hemos ",
-  "hi": "\u0935\u0947 \u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901 \u091c\u094b \u0939\u092e\u0928\u0947 "
+  "fr": "Des voyages que nous avons ",
+  "it": "Viaggi che abbiamo "
  },
  "trav.title.b": {
   "en": "Planned",
   "es": "organizado",
-  "hi": "\u092c\u0928\u093e\u0908 \u0939\u0948\u0902"
+  "fr": "con\u00e7us",
+  "it": "organizzato"
  },
  "w.days": {
   "en": "Days",
   "es": "d\u00edas",
-  "hi": "\u0926\u093f\u0928"
+  "fr": "jours",
+  "it": "giorni"
  },
  "w.journey": {
   "en": "journey",
   "es": "viaje",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e"
+  "fr": "voyage",
+  "it": "viaggio"
  },
  "w.journeys": {
   "en": "journeys",
   "es": "viajes",
-  "hi": "\u092f\u093e\u0924\u094d\u0930\u093e\u090f\u0901"
+  "fr": "voyages",
+  "it": "viaggi"
  }
 };
