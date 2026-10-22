@@ -20,6 +20,9 @@ const SAME_OK = new Set([
   'nav.contact:fr', 'f.contact:fr',                             // "Contact" is French
   'nav.dest:fr', 'f.dest:fr',                                   // "Destinations" is French
   'nav.menu:fr',                                                // "Menu" is French
+  'chat.o.raj:fr', 'chat.o.raj:it',                             // Rajasthan
+  'chat.o.goa:fr', 'chat.o.goa:it', 'chat.o.goa:es',            // Goa
+  'chat.o.vietnam:fr', 'chat.o.vietnam:it', 'chat.o.vietnam:es',// Vietnam
 ]);
 
 const used = new Set();
@@ -27,6 +30,8 @@ for (const f of [...PAGES, ...JS_SOURCES]) {
   const src = fs.readFileSync(f, 'utf8');
   for (const m of src.matchAll(/data-i18n="([^"]+)"/g)) used.add(m[1]);
   for (const m of src.matchAll(/data-i18n-ph="([^"]+)"/g)) used.add(m[1]);
+  // strings the chat widget looks up in code rather than marking up
+  for (const m of src.matchAll(/\bT\(\s*'([a-z0-9._]+)'/g)) used.add(m[1]);
 }
 
 let errors = 0;

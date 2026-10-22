@@ -75,6 +75,9 @@
     try { doc.dispatchEvent(new CustomEvent('jv:lang', { detail: lang })); } catch (e) {}
   }
 
+  /* which language is showing - for scripts and for the chat backend */
+  win.jvLang = function () { return active; };
+
   /* string lookup for scripts that build their own text */
   win.jvT = function (key, fallback) {
     var row = S[key];

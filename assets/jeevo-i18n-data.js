@@ -216,6 +216,318 @@ window.JV_STRINGS = {
   "fr": "Planifier mon voyage",
   "it": "Pianifica il mio viaggio"
  },
+ "chat.m.budget": {
+  "en": "Before I pass this to a consultant \u2014 roughly what were you thinking per person? It only changes which hotels we suggest.",
+  "es": "Antes de pasarlo a un asesor: \u00bfqu\u00e9 presupuesto por persona ten\u00eda en mente, m\u00e1s o menos? Solo cambia los hoteles que proponemos.",
+  "fr": "Avant de passer la main \u00e0 un conseiller \u2014 vous pensiez \u00e0 quel budget par personne, en gros ? Cela ne change que les h\u00f4tels que nous proposons.",
+  "it": "Prima di passare a un consulente: pi\u00f9 o meno che budget a persona avevate in mente? Cambia solo gli hotel che proponiamo."
+ },
+ "chat.m.consultant": {
+  "en": "Let me get a consultant to put this one together properly for you.",
+  "es": "Voy a pedir a un asesor que se lo prepare como es debido.",
+  "fr": "Je vais demander \u00e0 un conseiller de vous pr\u00e9parer cela correctement.",
+  "it": "Chiedo a un consulente di prepararvelo come si deve."
+ },
+ "chat.m.details": {
+  "en": "If you'd like, pop your details in below and a consultant will pick this up \u2014 or keep asking me things.",
+  "es": "Si quiere, deje sus datos abajo y un asesor lo retomar\u00e1; o siga pregunt\u00e1ndome.",
+  "fr": "Si vous voulez, laissez vos coordonn\u00e9es ci-dessous et un conseiller reprendra la suite \u2014 ou continuez \u00e0 me poser des questions.",
+  "it": "Se volete, lasciate i vostri dati qui sotto e un consulente prender\u00e0 in mano la cosa \u2014 oppure continuate pure a farmi domande."
+ },
+ "chat.m.down": {
+  "en": "Sorry \u2014 I could not reach our planner just then. Try me again in a moment, or answer a few quick questions instead.",
+  "es": "Lo siento: no he podido contactar con nuestro planificador. Int\u00e9ntelo de nuevo en un momento, o responda a unas preguntas r\u00e1pidas.",
+  "fr": "D\u00e9sol\u00e9 \u2014 je n'ai pas pu joindre notre planificateur \u00e0 l'instant. R\u00e9essayez dans un moment, ou r\u00e9pondez \u00e0 quelques questions rapides.",
+  "it": "Scusate \u2014 non sono riuscito a raggiungere il nostro pianificatore. Riprovate tra un momento, oppure rispondete a qualche domanda veloce."
+ },
+ "chat.m.email": {
+  "en": "Email",
+  "es": "Correo electr\u00f3nico",
+  "fr": "E-mail",
+  "it": "E-mail"
+ },
+ "chat.m.finetune": {
+  "en": "A consultant will fine-tune it around your dates and confirm pricing. Shall I have someone come back to you?",
+  "es": "Un asesor lo ajustar\u00e1 a sus fechas y confirmar\u00e1 los precios. \u00bfPido que alguien se ponga en contacto?",
+  "fr": "Un conseiller l'ajustera \u00e0 vos dates et confirmera les tarifs. Je demande \u00e0 quelqu'un de vous recontacter ?",
+  "it": "Un consulente lo adatter\u00e0 alle vostre date e confermer\u00e0 i prezzi. Chiedo a qualcuno di ricontattarvi?"
+ },
+ "chat.m.guided": {
+  "en": "Let me ask you a few quick questions instead \u2014 it only takes a minute.",
+  "es": "Le hago unas preguntas r\u00e1pidas: es cuesti\u00f3n de un minuto.",
+  "fr": "Je vous pose plut\u00f4t quelques questions rapides \u2014 une minute suffit.",
+  "it": "Vi faccio invece qualche domanda veloce: basta un minuto."
+ },
+ "chat.m.hi": {
+  "en": "Hi, I'm Arjun \u2014 I help plan trips here at Jeevo. Ask me anything, or just tell me what you're thinking.",
+  "es": "Hola, soy Arjun: ayudo a planificar los viajes aqu\u00ed en Jeevo. Preg\u00fanteme lo que quiera, o d\u00edgame sin m\u00e1s qu\u00e9 tiene en mente.",
+  "fr": "Bonjour, je suis Arjun \u2014 j'aide \u00e0 pr\u00e9parer les voyages chez Jeevo. Posez-moi vos questions, ou dites-moi simplement ce que vous avez en t\u00eate.",
+  "it": "Ciao, sono Arjun: aiuto a progettare i viaggi qui da Jeevo. Chiedetemi quello che volete, o ditemi semplicemente cosa avete in mente."
+ },
+ "chat.m.hi2": {
+  "en": "Hi, I'm Arjun. Answer a few quick questions and I'll build you an itinerary.",
+  "es": "Hola, soy Arjun. Responda a unas preguntas r\u00e1pidas y le preparo un itinerario.",
+  "fr": "Bonjour, je suis Arjun. R\u00e9pondez \u00e0 quelques questions rapides et je vous compose un itin\u00e9raire.",
+  "it": "Ciao, sono Arjun. Rispondete a qualche domanda veloce e vi preparo un itinerario."
+ },
+ "chat.m.name": {
+  "en": "Your name",
+  "es": "Su nombre",
+  "fr": "Votre nom",
+  "it": "Il vostro nome"
+ },
+ "chat.m.phone": {
+  "en": "Phone (optional)",
+  "es": "Tel\u00e9fono (opcional)",
+  "fr": "T\u00e9l\u00e9phone (facultatif)",
+  "it": "Telefono (facoltativo)"
+ },
+ "chat.m.plan": {
+  "en": "Here's a trip built around that \u2014 real routes, real drive times, all places we work in:",
+  "es": "Aqu\u00ed tiene un viaje construido sobre eso: rutas reales, tiempos de trayecto reales, todos lugares donde trabajamos:",
+  "fr": "Voici un voyage construit l\u00e0-dessus \u2014 de vraies routes, de vrais temps de trajet, tous des endroits o\u00f9 nous travaillons :",
+  "it": "Ecco un viaggio costruito su questo: rotte vere, tempi di percorrenza veri, tutti luoghi in cui lavoriamo:"
+ },
+ "chat.m.resume": {
+  "en": "Picking up where we left off\u2026",
+  "es": "Retomo donde lo dejamos\u2026",
+  "fr": "Je reprends o\u00f9 nous en \u00e9tions\u2026",
+  "it": "Riprendo da dove eravamo rimasti\u2026"
+ },
+ "chat.m.send": {
+  "en": "Send it over",
+  "es": "Enviar",
+  "fr": "Envoyer",
+  "it": "Invia"
+ },
+ "chat.m.sent": {
+  "en": "Thanks \u2014 that's with our team. Someone will come back to you shortly.",
+  "es": "Gracias: ya est\u00e1 con nuestro equipo. Alguien se pondr\u00e1 en contacto en breve.",
+  "fr": "Merci \u2014 c'est transmis \u00e0 notre \u00e9quipe. Quelqu'un vous recontactera sous peu.",
+  "it": "Grazie \u2014 \u00e8 arrivato al nostro team. Qualcuno vi ricontatter\u00e0 a breve."
+ },
+ "chat.m.sent2": {
+  "en": "Thanks \u2014 we've got your details. If you don't hear back today, email us directly and we'll jump on it.",
+  "es": "Gracias: tenemos sus datos. Si hoy no tiene noticias, escr\u00edbanos directamente y nos ponemos con ello.",
+  "fr": "Merci \u2014 nous avons vos coordonn\u00e9es. Sans nouvelles aujourd'hui, \u00e9crivez-nous directement et nous nous en occupons.",
+  "it": "Grazie \u2014 abbiamo i vostri dati. Se non ricevete risposta oggi, scriveteci direttamente e ce ne occupiamo subito."
+ },
+ "chat.o.b1": {
+  "en": "Under $2,000",
+  "es": "Menos de 2.000 $",
+  "fr": "Moins de 2 000 $",
+  "it": "Meno di 2.000 $"
+ },
+ "chat.o.b2": {
+  "en": "$2,000 \u2013 $3,500",
+  "es": "2.000 \u2013 3.500 $",
+  "fr": "2 000 \u2013 3 500 $",
+  "it": "2.000 \u2013 3.500 $"
+ },
+ "chat.o.b3": {
+  "en": "$3,500 \u2013 $5,000",
+  "es": "3.500 \u2013 5.000 $",
+  "fr": "3 500 \u2013 5 000 $",
+  "it": "3.500 \u2013 5.000 $"
+ },
+ "chat.o.b4": {
+  "en": "$5,000 \u2013 $8,000",
+  "es": "5.000 \u2013 8.000 $",
+  "fr": "5 000 \u2013 8 000 $",
+  "it": "5.000 \u2013 8.000 $"
+ },
+ "chat.o.b5": {
+  "en": "$8,000+",
+  "es": "M\u00e1s de 8.000 $",
+  "fr": "Plus de 8 000 $",
+  "it": "Oltre 8.000 $"
+ },
+ "chat.o.bx": {
+  "en": "Rather not say",
+  "es": "Prefiero no decirlo",
+  "fr": "Je pr\u00e9f\u00e8re ne pas le dire",
+  "it": "Preferisco non dirlo"
+ },
+ "chat.o.east": {
+  "en": "East India & Kolkata",
+  "es": "El este y Calcuta",
+  "fr": "L'Est et Calcutta",
+  "it": "L'Est e Calcutta"
+ },
+ "chat.o.goa": {
+  "en": "Goa",
+  "es": "Goa",
+  "fr": "Goa",
+  "it": "Goa"
+ },
+ "chat.o.h3": {
+  "en": "Comfortable & clean",
+  "es": "C\u00f3modo y limpio",
+  "fr": "Confortable et propre",
+  "it": "Comodo e pulito"
+ },
+ "chat.o.h4": {
+  "en": "A step up",
+  "es": "Un paso por encima",
+  "fr": "Un cran au-dessus",
+  "it": "Un gradino sopra"
+ },
+ "chat.o.h5": {
+  "en": "Properly luxurious",
+  "es": "Verdadero lujo",
+  "fr": "Vraiment luxueux",
+  "it": "Davvero di lusso"
+ },
+ "chat.o.hany": {
+  "en": "Not fussed",
+  "es": "Me da igual",
+  "fr": "Peu importe",
+  "it": "Indifferente"
+ },
+ "chat.o.hher": {
+  "en": "Heritage & palaces",
+  "es": "Casas hist\u00f3ricas y palacios",
+  "fr": "Demeures historiques et palais",
+  "it": "Dimore storiche e palazzi"
+ },
+ "chat.o.ladakh": {
+  "en": "Ladakh & the Himalaya",
+  "es": "Ladakh y el Himalaya",
+  "fr": "Le Ladakh et l'Himalaya",
+  "it": "Ladakh e l'Himalaya"
+ },
+ "chat.o.n14": {
+  "en": "Two weeks",
+  "es": "Dos semanas",
+  "fr": "Deux semaines",
+  "it": "Due settimane"
+ },
+ "chat.o.n19": {
+  "en": "Three weeks or more",
+  "es": "Tres semanas o m\u00e1s",
+  "fr": "Trois semaines ou plus",
+  "it": "Tre settimane o pi\u00f9"
+ },
+ "chat.o.n5": {
+  "en": "Under a week",
+  "es": "Menos de una semana",
+  "fr": "Moins d'une semaine",
+  "it": "Meno di una settimana"
+ },
+ "chat.o.n7": {
+  "en": "About a week",
+  "es": "Alrededor de una semana",
+  "fr": "Environ une semaine",
+  "it": "Circa una settimana"
+ },
+ "chat.o.ne": {
+  "en": "The North East",
+  "es": "El noreste",
+  "fr": "Le Nord-Est",
+  "it": "Il Nord-Est"
+ },
+ "chat.o.nepal": {
+  "en": "India & Nepal",
+  "es": "India y Nepal",
+  "fr": "Inde et N\u00e9pal",
+  "it": "India e Nepal"
+ },
+ "chat.o.nx": {
+  "en": "Not decided",
+  "es": "A\u00fan sin decidir",
+  "fr": "Pas encore d\u00e9cid\u00e9",
+  "it": "Non ancora deciso"
+ },
+ "chat.o.p1": {
+  "en": "Solo",
+  "es": "Yo solo",
+  "fr": "Seul(e)",
+  "it": "Da solo"
+ },
+ "chat.o.p2": {
+  "en": "Just the two of us",
+  "es": "Solo nosotros dos",
+  "fr": "Juste nous deux",
+  "it": "Solo noi due"
+ },
+ "chat.o.pfam": {
+  "en": "Family with children",
+  "es": "En familia, con ni\u00f1os",
+  "fr": "En famille, avec enfants",
+  "it": "In famiglia, con bambini"
+ },
+ "chat.o.pfri": {
+  "en": "A group of friends",
+  "es": "Un grupo de amigos",
+  "fr": "Un groupe d'amis",
+  "it": "Un gruppo di amici"
+ },
+ "chat.o.plrg": {
+  "en": "Larger group / tour",
+  "es": "Grupo grande / circuito",
+  "fr": "Grand groupe / circuit",
+  "it": "Gruppo numeroso / tour"
+ },
+ "chat.o.raj": {
+  "en": "Rajasthan",
+  "es": "Rajast\u00e1n",
+  "fr": "Rajasthan",
+  "it": "Rajasthan"
+ },
+ "chat.o.south": {
+  "en": "Keralam & the south",
+  "es": "Kerala y el sur",
+  "fr": "Le Kerala et le Sud",
+  "it": "Kerala e il Sud"
+ },
+ "chat.o.triangle": {
+  "en": "Delhi, Agra & Jaipur",
+  "es": "Delhi, Agra y Jaipur",
+  "fr": "Delhi, Agra et Jaipur",
+  "it": "Delhi, Agra e Jaipur"
+ },
+ "chat.o.unsure": {
+  "en": "I'm not sure yet",
+  "es": "A\u00fan no lo s\u00e9",
+  "fr": "Je ne sais pas encore",
+  "it": "Non lo so ancora"
+ },
+ "chat.o.vietnam": {
+  "en": "Vietnam",
+  "es": "Vietnam",
+  "fr": "Vietnam",
+  "it": "Vietnam"
+ },
+ "chat.q.budget": {
+  "en": "Any rough budget per person? It only changes which hotels we suggest.",
+  "es": "\u00bfUn presupuesto aproximado por persona? Solo cambia los hoteles que le proponemos.",
+  "fr": "Un budget approximatif par personne ? Cela ne change que les h\u00f4tels que nous proposons.",
+  "it": "Un budget indicativo a persona? Cambia solo gli hotel che vi proponiamo."
+ },
+ "chat.q.hotel": {
+  "en": "What sort of places do you like to stay?",
+  "es": "\u00bfQu\u00e9 tipo de alojamiento prefiere?",
+  "fr": "Quel genre d'h\u00e9bergement aimez-vous ?",
+  "it": "Che tipo di sistemazione preferite?"
+ },
+ "chat.q.nights": {
+  "en": "Roughly how long have you got?",
+  "es": "\u00bfCu\u00e1nto tiempo tiene, m\u00e1s o menos?",
+  "fr": "Vous partez combien de temps, \u00e0 peu pr\u00e8s ?",
+  "it": "Pi\u00f9 o meno quanto tempo avete?"
+ },
+ "chat.q.party": {
+  "en": "Who's travelling?",
+  "es": "\u00bfQui\u00e9n viaja?",
+  "fr": "Qui voyage ?",
+  "it": "Chi viaggia?"
+ },
+ "chat.q.region": {
+  "en": "Where are you drawn to?",
+  "es": "\u00bfQu\u00e9 le atrae?",
+  "fr": "Qu'est-ce qui vous attire ?",
+  "it": "Cosa vi attira?"
+ },
  "chat.teaser": {
   "en": "Planning a trip to India? I'll build you an itinerary in about a minute \u2014 free, no obligation.",
   "es": "\u00bfEst\u00e1 planeando un viaje a la India? Le preparo un itinerario en un minuto: gratis y sin compromiso.",

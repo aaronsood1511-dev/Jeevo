@@ -151,10 +151,20 @@ module.exports = async (req, res) => {
   let body = req.body;
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch { body = {}; } }
   const incoming = Array.isArray(body?.messages) ? body.messages : [];
+
+  /* The visitor picks a language in the header. Arjun has to answer in it —
+     a Spanish visitor getting an English itinerary is a broken experience. */
+  const LANGS = {
+    en: { name: 'English',  full: "We've covered plenty here — let me pass this to a consultant who can finish it off properly. Pop your details in below and someone will come back to you." },
+    fr: { name: 'French',   full: "Nous avons bien avancé — je passe la main à un conseiller qui finalisera tout cela. Laissez vos coordonnées ci-dessous et quelqu'un vous recontactera." },
+    it: { name: 'Italian',  full: "Abbiamo coperto parecchio — passo ora a un consulente che finirà il lavoro come si deve. Lasciate i vostri dati qui sotto e qualcuno vi ricontatterà." },
+    es: { name: 'Spanish',  full: "Ya hemos avanzado bastante — se lo paso a un asesor que lo terminará como es debido. Déjenos sus datos abajo y alguien se pondrá en contacto." },
+  };
+  const lang = LANGS[body?.lang] ? body.lang : 'en';
   if (!incoming.length) return res.status(400).json({ error: 'No messages' });
   if (incoming.length > MAX_TURNS) {
     return res.status(200).json({
-      reply: "We've covered plenty here — let me pass this to a consultant who can finish it off properly. Pop your details in below and someone will come back to you.",
+      reply: LANGS[lang].full,
       done: true,
     });
   }
@@ -172,7 +182,12 @@ module.exports = async (req, res) => {
     '\n\n## Jeevo itineraries (summary)\n' + JSON.stringify(k.index.itineraries) +
     '\n\n## Road legs Jeevo has operated (real distances and drive times)\n' + JSON.stringify(k.index.routes) +
     (matches.length ? '\n\n## Closest matching itineraries, in full\n' + JSON.stringify(matches) : '') +
-    '\n\n## Contact details\nNever ask for a name, email or phone number. The website collects those separately. If someone offers them, thank them and say the form below will pass them on.';
+    '\n\n## Contact details\nNever ask for a name, email or phone number. The website collects those separately. If someone offers them, thank them and say the form below will pass them on.' +
+    (lang === 'en' ? '' :
+      '\n\n## Language\nThis visitor has chosen ' + LANGS[lang].name + '. Write every reply in ' +
+      LANGS[lang].name + ', including any day-by-day itinerary, headings and questions. ' +
+      'Do this even if they write to you in English. Leave place names, hotel names and ' +
+      'our own itinerary titles in their usual form rather than translating them.');
 
   try {
     const models = (await candidates()).filter(m => !DEAD.has(m));

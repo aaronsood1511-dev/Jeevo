@@ -11,33 +11,36 @@
 
   var answers = {}, step = 0, el = {}, resumedMode = null;
 
-  var STEPS = [
-    { key:'region', q:"Where are you drawn to?",
-      opts:[ ['Rajasthan','Rajasthan'], ['Keralam & the south','South India'],
-            ['Goa','Goa'], ['Ladakh & the Himalaya','Ladakh & the Himalaya'],
-            ['The North East','North East India'],
-             ['Delhi, Agra & Jaipur','Rajasthan'], ['East India & Kolkata','East India'],
-             ['India & Nepal','India & Nepal'], ['Vietnam','Vietnam'],
-             ["I'm not sure yet",''] ] },
-    { key:'nights', q:"Roughly how long have you got?",
-      opts:[ ['Under a week','5'], ['About a week','7'], ['Two weeks','14'],
-             ['Three weeks or more','19'], ['Not decided',''] ] },
-    { key:'party', q:"Who's travelling?",
-      opts:[ ['Just the two of us','2 adults'], ['Solo','1 adult'],
-             ['Family with children','family'], ['A group of friends','group'],
-             ['Larger group / tour','large group'] ] },
-    { key:'hotel', q:"What sort of places do you like to stay?",
-      opts:[ ['Comfortable & clean','3-star – comfortable'],
-             ['A step up','4-star – premium'],
-             ['Properly luxurious','5-star – luxury'],
-             ['Heritage & palaces','Heritage / palace stays'],
-             ['Not fussed','' ] ] },
-    { key:'budget', q:"Any rough budget per person? It only changes which hotels we suggest.",
-      opts:[ ['Under $2,000','Under $2,000'], ['$2,000 – $3,500','$2,000 – $3,500'],
-             ['$3,500 – $5,000','$3,500 – $5,000'], ['$5,000 – $8,000','$5,000 – $8,000'],
-             ['$8,000+','$8,000+'], ['Rather not say',''] ] },
-  ];
+  /* The visitor's chosen language. Labels are looked up; the values sent to
+     the backend stay English so enquiries arrive readable either way. */
+  function T(k, fb){ return (window.jvT ? window.jvT(k, fb) : fb); }
 
+  var STEPS = [
+    { key:'region', q:'chat.q.region',
+      opts:[ ['chat.o.raj','Rajasthan'], ['chat.o.south','South India'],
+             ['chat.o.goa','Goa'], ['chat.o.ladakh','Ladakh & the Himalaya'],
+             ['chat.o.ne','North East India'],
+             ['chat.o.triangle','Rajasthan'], ['chat.o.east','East India'],
+             ['chat.o.nepal','India & Nepal'], ['chat.o.vietnam','Vietnam'],
+             ['chat.o.unsure',''] ] },
+    { key:'nights', q:'chat.q.nights',
+      opts:[ ['chat.o.n5','5'], ['chat.o.n7','7'], ['chat.o.n14','14'],
+             ['chat.o.n19','19'], ['chat.o.nx',''] ] },
+    { key:'party', q:'chat.q.party',
+      opts:[ ['chat.o.p2','2 adults'], ['chat.o.p1','1 adult'],
+             ['chat.o.pfam','family'], ['chat.o.pfri','group'],
+             ['chat.o.plrg','large group'] ] },
+    { key:'hotel', q:'chat.q.hotel',
+      opts:[ ['chat.o.h3','3-star – comfortable'],
+             ['chat.o.h4','4-star – premium'],
+             ['chat.o.h5','5-star – luxury'],
+             ['chat.o.hher','Heritage / palace stays'],
+             ['chat.o.hany',''] ] },
+    { key:'budget', q:'chat.q.budget',
+      opts:[ ['chat.o.b1','Under $2,000'], ['chat.o.b2','$2,000 – $3,500'],
+             ['chat.o.b3','$3,500 – $5,000'], ['chat.o.b4','$5,000 – $8,000'],
+             ['chat.o.b5','$8,000+'], ['chat.o.bx',''] ] },
+  ];
   /* The widget is on every page, so a visitor who chats on the homepage
      and then opens a tour page would otherwise lose the conversation.
      Keep the last 20 turns for the browser session. */
@@ -147,7 +150,7 @@
     el.opts.innerHTML='';
     list.forEach(function(o){
       var b=document.createElement('button');
-      b.type='button'; b.className='jv-chat-opt'; b.textContent=o[0];
+      b.type='button'; b.className='jv-chat-opt'; b.textContent=T(o[0],o[0]);
       b.addEventListener('click', function(){ onPick(o); });
       el.opts.appendChild(b);
     });
@@ -278,24 +281,24 @@
     var seen = chatting ? readConversation() : null;
     var trip = chatting ? null : buildItinerary();
     if (!trip || trip.stops.length < 2){
-      bubble("Let me get a consultant to put this one together properly for you.", 'bot');
+      bubble(T('chat.m.consultant', "Let me get a consultant to put this one together properly for you."), 'bot');
       return askContact();
     }
-    bubble("Here's a trip built around that — real routes, real drive times, all places we work in:", 'bot');
+    bubble(T('chat.m.plan', "Here's a trip built around that — real routes, real drive times, all places we work in:"), 'bot');
     bubble(planHtml(trip), 'plan');
-    bubble("A consultant will fine-tune it around your dates and confirm pricing. Shall I have someone come back to you?", 'bot');
+    bubble(T('chat.m.finetune', "A consultant will fine-tune it around your dates and confirm pricing. Shall I have someone come back to you?"), 'bot');
     askContact();
   }
 
   function askContact(soft){
     if(!soft) el.row.hidden = true;
-    if(soft) bubble("If you'd like, pop your details in below and a consultant will pick this up \u2014 or keep asking me things.", 'bot');
+    if(soft) bubble(T('chat.m.details', "If you'd like, pop your details in below and a consultant will pick this up \u2014 or keep asking me things."), 'bot');
     el.opts.innerHTML=
       '<form class="jv-chat-lead">'+
-        '<input name="name"  type="text"  placeholder="Your name" required>'+
-        '<input name="email" type="email" placeholder="Email" required>'+
-        '<input name="phone" type="tel"   placeholder="Phone (optional)">'+
-        '<button type="submit" class="jv-chat-opt is-go">Send it over</button>'+
+        '<input name="name"  type="text"  placeholder="'+T('chat.m.name',"Your name")+'" required>'+
+        '<input name="email" type="email" placeholder="'+T('chat.m.email',"Email")+'" required>'+
+        '<input name="phone" type="tel"   placeholder="'+T('chat.m.phone',"Phone (optional)")+'">'+
+        '<button type="submit" class="jv-chat-opt is-go">'+T('chat.m.send',"Send it over")+'</button>'+
       '</form>';
     el.opts.querySelector('form').addEventListener('submit', sendLead);
   }
@@ -338,8 +341,8 @@
       .catch(function(){ return false; })
       .then(function(ok){
         el.opts.innerHTML='';
-        bubble(ok ? "Thanks — that's with our team. Someone will come back to you shortly."
-                  : "Thanks — we've got your details. If you don't hear back today, email us directly and we'll jump on it.", 'bot');
+        bubble(ok ? T('chat.m.sent', "Thanks — that's with our team. Someone will come back to you shortly.")
+                  : T('chat.m.sent2', "Thanks — we've got your details. If you don't hear back today, email us directly and we'll jump on it."), 'bot');
         try{ sessionStorage.removeItem(STORE); }catch(err){}
       });
   }
@@ -363,7 +366,7 @@
   function fallToGuided(explain){
     botOff = true;
     el.row.hidden = true;
-    if(explain) bubble("Let me ask you a few quick questions instead — it only takes a minute.", 'bot');
+    if(explain) bubble(T('chat.m.guided', "Let me ask you a few quick questions instead — it only takes a minute."), 'bot');
     /* the opening question is already on screen from start(); re-asking
        it here printed it twice */
     if(step === 0 && el.opts.children.length) return;
@@ -385,7 +388,7 @@
     sending=true; el.send.disabled=true; dots(true);
 
     fetch('/api/chat',{ method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ messages: history }) })
+      body: JSON.stringify({ messages: history, lang: (window.jvLang ? window.jvLang() : 'en') }) })
       .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
       .then(function(res){
         if(res.ok && res.j.reply){
@@ -405,7 +408,7 @@
           return;
         }
         sending=false; el.send.disabled=false; dots(false);
-        bubble("Sorry — I could not reach our planner just then. Try me again in a moment, or answer a few quick questions instead.", 'bot');
+        bubble(T('chat.m.down', "Sorry — I could not reach our planner just then. Try me again in a moment, or answer a few quick questions instead."), 'bot');
         fallToGuided(false);
       });
   }
@@ -468,7 +471,7 @@
      buttons. Blocking the form instead just stalled the conversation: he
      had said the form was coming and nothing appeared. */
   function askBudgetThenContact(){
-    bubble("Before I pass this to a consultant \u2014 roughly what were you thinking per person? It only changes which hotels we suggest.", 'bot');
+    bubble(T('chat.m.budget', "Before I pass this to a consultant \u2014 roughly what were you thinking per person? It only changes which hotels we suggest."), 'bot');
     options([
       ['Under $2,000','Under $2,000'], ['$2,000 \u2013 $3,500','$2,000 - $3,500'],
       ['$3,500 \u2013 $5,000','$3,500 - $5,000'], ['$5,000 \u2013 $8,000','$5,000 - $8,000'],
@@ -664,10 +667,10 @@
   function ask(){
     if(step>=STEPS.length) return showPlan();
     var s=STEPS[step];
-    bubble(s.q,'bot');
+    bubble(T(s.q,''),'bot');
     options(s.opts, function(o){
       el.row.hidden = true;
-      bubble(o[0],'me');
+      bubble(T(o[0],''),'me');
       answers[s.key]=o[1];
       step++; save();
       setTimeout(ask, 260);
@@ -681,7 +684,7 @@
   function resume(){
     if(!history.length) return false;
     el.log.innerHTML='';
-    bubble("Picking up where we left off\u2026", 'bot');
+    bubble(T('chat.m.resume', "Picking up where we left off\u2026"), 'bot');
     history.forEach(function(m){ bubble(m.content, m.role==='user' ? 'me' : 'bot'); });
     botOff = (resumedMode === 'guided');
     el.row.hidden = botOff;
@@ -699,11 +702,11 @@
         if(st && st.ready){
           botOff = false;
           el.row.hidden = false;
-          bubble("Hi, I'm Arjun \u2014 I help plan trips here at Jeevo. Ask me anything, or just tell me what you're thinking.", 'bot');
+          bubble(T('chat.m.hi', "Hi, I'm Arjun \u2014 I help plan trips here at Jeevo. Ask me anything, or just tell me what you're thinking."), 'bot');
           setTimeout(function(){ el.input.focus(); }, 80);
         } else {
           botOff = true;
-          bubble("Hi, I'm Arjun. Answer a few quick questions and I'll build you an itinerary.", 'bot');
+          bubble(T('chat.m.hi2', "Hi, I'm Arjun. Answer a few quick questions and I'll build you an itinerary."), 'bot');
           setTimeout(ask, 320);
         }
       });
