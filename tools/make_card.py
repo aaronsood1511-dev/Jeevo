@@ -63,10 +63,8 @@ def icon(kind):
 # left margin, first text line on the disc's centre line.
 ROWS = [
     ('phone', '+91 88004 92691', 'Gurugram, India',     268),
-    ('phone', '+61 493 574 631', 'Brisbane, Australia', 341),
-    ('mail',  'jeevotoursandtravels@gmail.com', '',     414),
-    ('web',   'jeevo.co.in',                    '',     462),
-    ('insta', '@jeevotoursandtravels',           '',    510),
+    ('mail',  'jeevotoursandtravels@gmail.com', '',     364),
+    ('web',   'jeevo.co.in',                    '',     460),
 ]
 
 def rows_html():
@@ -124,9 +122,9 @@ HTML = u'''<!doctype html>
           align-items: flex-start; gap: __ROW_G__mm; }
   .ic   { flex: none; width: __IC__mm; height: __IC__mm; display: block; }
   .tx   { display: flex; flex-direction: column; }
-  .main { font-family: 'Mukta', sans-serif; font-weight: 500; font-size: 5.9pt;
+  .main { font-family: 'Mukta', sans-serif; font-weight: 500; font-size: 6.5pt;
           line-height: __IC__mm; color: __INK__; letter-spacing: .008em; }
-  .sub  { font-family: 'Mukta', sans-serif; font-weight: 400; font-size: 5.2pt;
+  .sub  { font-family: 'Mukta', sans-serif; font-weight: 400; font-size: 5.8pt;
           line-height: 1.05; color: __SUB__; letter-spacing: .045em; margin-top: .2mm; }
 
   @media screen {
@@ -165,7 +163,7 @@ def build():
         '__ROLE_L__':  f(x(150)),  '__ROLE_T__': f(y(208)),
         '__RULE_L__':  f(x(95)),   '__RULE_T__': f(y(252)),
         '__RULE_W__':  f(d(385)),  '__DIA_L__':  f(d(168)),
-        '__ROW_L__':   f(x(95)),   '__ROW_G__':  f(d(25)),  '__IC__': f(d(32)),
+        '__ROW_L__':   f(x(95)),   '__ROW_G__':  f(d(18)),  '__IC__': f(d(32)),
         '__INK__': INK, '__SUB__': SUB, '__RULE__': RULE, '__GOLD__': GOLD,
         '__LOGO__': logo, '__ROWS__': rows_html(),
         '__FRONT_ART__': b64('card-front-art.jpg'),
