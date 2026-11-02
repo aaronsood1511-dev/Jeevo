@@ -10,8 +10,11 @@ worker.js
 dev-server.js
 check-airtable.js
 
-# The assistant's knowledge base - used by the Vercel function, not the browser
-ai/
+# The assistant's knowledge base - used by the Vercel function, not the browser.
+# Exception: jeevo-chat.js fetches planner-data.json from the BROWSER, so a
+# blanket "ai/" 404s it and the trip planner silently stops working.
+ai/*
+!ai/planner-data.json
 
 # Repo furniture
 .git/
@@ -20,3 +23,10 @@ components/
 *.md
 wrangler.jsonc
 .assetsignore
+
+# Build tooling - was publicly readable, and make_card2.py served the direct
+# line that was deliberately kept off the public site
+tools/
+docs/
+*.py
+*.swift

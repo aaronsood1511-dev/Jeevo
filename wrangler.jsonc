@@ -5,6 +5,12 @@
   "assets": {
     "directory": "./",
     "binding": "ASSETS",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // Cloudflare normally answers a request that matches a file in here
+    // without ever running worker.js, so the www -> bare-domain redirect in
+    // the Worker only fired on URLs that matched no file - i.e. never on a
+    // real page. This routes requests through the Worker first; it still
+    // falls through to ASSETS.fetch for everything it does not redirect.
+    "run_worker_first": true
   }
 }

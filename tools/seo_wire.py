@@ -52,7 +52,10 @@ def jsonld(rel, title, desc, img, canon):
     if rel == 'index.html':
         node = {
           "@context": "https://schema.org", "@type": "TravelAgency",
-          "name": BIZ['name'], "url": SITE + '/',
+          "name": BIZ['name'],
+          # the short forms people actually type, tied to the one business
+          "alternateName": ["Jeevo Tours", "Jeevo Travels", "Jeevo"],
+          "url": SITE + '/',
           "logo": SITE + "/assets/jeevo-logo.svg",
           "image": img, "description": desc,
           "telephone": BIZ['phone'], "email": BIZ['email'],

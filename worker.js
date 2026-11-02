@@ -16,6 +16,16 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    /* One host, one set of search signals. Both www and the bare domain
+       answered 200, so Google indexed the www copy while every canonical tag
+       on the site points at the bare one - it had to guess which was real.
+       A permanent redirect removes the guess and hands the www version's
+       standing to the host we actually publish. */
+    if (url.hostname === 'www.jeevo.co.in') {
+      url.hostname = 'jeevo.co.in';
+      return Response.redirect(url.toString(), 301);
+    }
+
     if (url.pathname.startsWith('/api/')) {
       const headers = new Headers(request.headers);
       headers.set('host', 'jeevo-tours.vercel.app');
